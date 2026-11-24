@@ -1,0 +1,31 @@
+.env
+
+# Python runtime artifacts
+__pycache__/
+*.py[cod]
+*.pyc.*
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Local uploads and generated runtime outputs
+app/tools/document_uploads/
+data/tool_outputs/
+data/logs/
+outputs/
+data/llm_prompt_overrides.json
+app/capabilities/providers/*/templates/orchestration_runs/
+tmp_*
+*.tmp
+
+# Experimental database runtime state
+data/experimental_db/catalog/
+data/experimental_db/objects/
+data/experimental_db/registry/
+data/experimental_db/samples/
+
+# Optional local knowledge assets not required for the release
+knowledge/papers/
+knowledge/reports/
+knowledge/standards/
+knowledge/tool_kb/

@@ -1,0 +1,769 @@
+﻿source,target,weight
+ESI FT-ICR MS,naphthenic acids,60
+desorption ionization,laser desorption ionization,58
+catalytic cracking,fluid catalytic cracking,53
+TAN,naphthenic acids,40
+FCC,catalytic cracking,39
+desorption ionization,matrix-assisted laser desorption ionization,36
+laser desorption ionization,matrix-assisted laser desorption ionization,36
+FCC,fluid catalytic cracking,35
+field desorption ionization,field ionization,29
+APPI FT-ICR MS,ESI FT-ICR MS,29
+carboxylic acids,naphthenic acids,28
+ESI FT-ICR MS,TAN,26
+desorption ionization,field desorption ionization,23
+ESI FT-ICR MS,carboxylic acids,23
+petroleum fraction,catalytic cracking,22
+LCO,catalytic cracking,21
+negative-ion electrospray ionization,negative-ion electrospray ionization esi,21
+electrospray ionization esi fourier,electrospray ionization esi fourier transform,20
+ESI FT-ICR MS,rings plus double bonds,19
+ESI FT-ICR MS,negative-ion electrospray ionization,19
+ESI FT-ICR MS,vacuum residue,19
+desorption electrospray ionization,desorption electrospray ionization ionization,18
+APPI FT-ICR MS,atmospheric pressure photoionization,18
+ESI FT-ICR MS,desorption ionization,17
+ESI FT-ICR MS,laser desorption ionization,17
+desorption ionization,field ionization,17
+ESI FT-ICR MS,formic acid,17
+naphthenic acids,negative-ion electrospray ionization,17
+field desorption ionization,field desorption ionization fd,17
+aromatic acids,naphthenic acids,17
+ESI FT-ICR MS,electrospray ionization esi fourier,17
+catalytic cracking,vacuum residue,17
+field desorption ionization,matrix-assisted laser desorption ionization,16
+petroleum fraction,fluid catalytic cracking,16
+LC-MS,formic acid,16
+ESI FT-ICR MS,negative-ion electrospray ionization esi,16
+field ionization,field ionization fi,16
+GC-FID,flame ionization detector,16
+ESI FT-ICR MS,petroleum fraction,16
+desorption ionization,field desorption ionization ionization,15
+FCC,LCO,15
+LCO,fluid catalytic cracking,15
+FCC,petroleum fraction,15
+APPI FT-ICR MS,naphthenic acids,15
+vacuum residue,vacuum residue vr,15
+ESI FT-ICR MS,electrospray ionization esi fourier transform,15
+field desorption ionization,field desorption ionization ionization,14
+positive-ion electrospray ionization,positive-ion electrospray ionization esi,14
+naphthenic acids,negative-ion electrospray ionization esi,14
+APPI FT-ICR MS,vacuum residue,14
+aromatic rings,vacuum residue,14
+diesel fuel,field ionization,14
+ESI FT-ICR MS,positive-ion electrospray ionization,13
+field desorption ionization,laser desorption ionization,13
+desorption electrospray ionization ionization,desorption ionization,13
+APPI FT-ICR MS,laser desorption ionization,13
+ESI FT-ICR MS,field desorption ionization,13
+ESI FT-ICR MS,matrix-assisted laser desorption ionization,13
+TAN,carboxylic acids,13
+naphthenic acids,rings plus double bonds,13
+ESI FT-ICR MS,aromatic rings,13
+catalytic cracking,catalytic pyrolysis,12
+fatty acids,naphthenic acids,12
+GC-FID,diesel fuel,12
+ESI-MS,acetic acid,12
+ESI FT-ICR MS,atmospheric pressure photoionization,12
+APPI FT-ICR MS,desorption ionization,12
+electrospray ionization esi fourier,naphthenic acids,12
+LCO,petroleum fraction,12
+laser desorption ionization,naphthenic acids,12
+formic acid,naphthenic acids,12
+ESI FT-ICR MS,negative electrospray ionization,11
+FTIR,PLS,11
+ESI-MS,formic acid,11
+HRMS,naphthenic acids,11
+vacuum residue,vacuum residues,11
+naphthenic acids,vacuum residue,11
+APPI FT-ICR MS,field desorption ionization,11
+desorption electrospray ionization,desorption ionization,11
+petroleum fraction,vacuum residue,11
+catalytic cracking,diesel fuel,11
+APPI FT-ICR MS,petroleum fraction,11
+aromatics resins asphaltenes,saturates aromatics resins asphaltenes,11
+GC-FID,PAH,10
+field desorption ionization ionization,field ionization,10
+desorption ionization,field desorption ionization fd,10
+PLS,TAN,10
+laser desorption ionization,vacuum residue,10
+electrospray ionization esi fourier transform,naphthenic acids,10
+ESI FT-ICR MS,aromatic acids,10
+desorption ionization,naphthenic acids,10
+ESI FT-ICR MS,electrospray ionization esi coupled,10
+FCC,catalytic pyrolysis,9
+ESI FT-ICR MS,electrospray ionization esi ft-icr ms,9
+ESI FT-ICR MS,positive-ion electrospray ionization esi,9
+HDS,catalytic cracking,9
+FCC,diesel fuel,9
+HDS,diesel fuel,9
+electrospray ionization esi fourier,negative-ion electrospray ionization esi,9
+electrospray ionization esi fourier transform,negative-ion electrospray ionization esi,9
+field ionization,laser desorption ionization,9
+LC-MS,PAH,9
+petroleum fraction,diesel fuel,9
+fluid catalytic cracking,vacuum residue,9
+petroleum fraction,naphthenic acids,9
+ESI FT-ICR MS,catalytic cracking,9
+ESI FT-ICR MS,double bond equivalents equivalents,9
+GC-FID,HRMS,9
+aromatic rings,naphthenic rings,9
+diesel fuel,fuel diesel,9
+ESI FT-ICR MS,high-performance liquid chromatography,8
+field ionization,matrix-assisted laser desorption ionization,8
+injection field desorption ionization,liquid injection field desorption ionization,8
+aromatic rings,catalytic cracking,8
+ESI FT-ICR MS,diesel fuel,8
+ESI FT-ICR MS,double bonds,8
+diesel fuel,naphthenic acids,8
+ESI-MS,LC-MS,8
+PAH,desorption ionization,8
+HDS,petroleum fraction,8
+field desorption ionization fd,field ionization,8
+atmospheric pressure photoionization,desorption ionization,8
+carboxylic acids,fatty acids,8
+diesel fuel,flame ionization detector,8
+electrospray ionization esi fourier,negative-ion electrospray ionization,8
+electrospray ionization esi fourier transform,negative-ion electrospray ionization,8
+electron ionization,field ionization,8
+aromatic acids,carboxylic acids,8
+FTIR,TAN,8
+ESI FT-ICR MS,field desorption ionization ionization,8
+APPI FT-ICR MS,aromatic rings,8
+ESI FT-ICR MS,ionization efficiency,8
+PLS,naphthenic acids,8
+TAN,aromatic acids,8
+diesel fuel,fluid catalytic cracking,8
+petroleum fraction,field desorption ionization,8
+FTIR,naphthenic acids,8
+ESI FT-ICR MS,HRMS,8
+ESI FT-ICR MS,double bond equivalents dbe versus,8
+acetic acid,formic acid,8
+petroleum fraction,field ionization,8
+GC-FID,catalytic cracking,8
+ESI FT-ICR MS,naphthenic rings,8
+GC-FID,liquid chromatography,8
+high-performance liquid chromatography,liquid chromatography,8
+ESI FT-ICR MS,fatty acids,8
+carboxylic acids,formic acid,8
+field desorption ionization ionization,matrix-assisted laser desorption ionization,7
+catalytic pyrolysis,fluid catalytic cracking,7
+FCC,aromatic rings,7
+petroleum fraction,aromatic rings,7
+ESI FT-ICR MS,acetic acid,7
+ESI FT-ICR MS,positive electrospray ionization,7
+naphthenic acids,negative electrospray ionization,7
+FTIR,nuclear magnetic resonance,7
+APPI FT-ICR MS,positive-ion electrospray ionization,7
+ESI FT-ICR MS,oxygen atoms,7
+PAH,laser desorption ionization,7
+desorption ionization,nuclear magnetic resonance,7
+laser desorption ionization,nuclear magnetic resonance,7
+APPI FT-ICR MS,ionization efficiency,7
+FCC,HDS,7
+HDS,fluid catalytic cracking,7
+aromatic ring,aromatic rings,7
+atmospheric pressure photoionization,laser desorption ionization,7
+desorption ionization,electron ionization,7
+HRMS,carboxylic acids,7
+catalytic cracking,thermal cracking,7
+electrospray ionization esi fourier,vacuum residue,7
+electrospray ionization esi fourier transform,vacuum residue,7
+ESI-MS,liquid chromatography,7
+atmospheric pressure photoionization,naphthenic acids,7
+desorption electrospray ionization ionization,laser desorption ionization,7
+APPI FT-ICR MS,matrix-assisted laser desorption ionization,7
+aromatic rings,field desorption ionization,7
+aromatic rings,laser desorption ionization,7
+APPI FT-ICR MS,rings plus double bonds,7
+atmospheric pressure photoionization,ionization efficiency,7
+TAN,rings plus double bonds,7
+diesel fuel,liquid chromatography,7
+ESI FT-ICR MS,fluid catalytic cracking,7
+naphthenic acids,naphthenic rings,7
+desorption electrospray ionization,laser desorption ionization,7
+ESI FT-ICR MS,FTIR,7
+FTIR,carboxylic acids,7
+HRMS,formic acid,7
+ESI FT-ICR MS,fossil fuels,7
+FTIR,aromatic rings,7
+nuclear magnetic resonance,vacuum residue,7
+ESI-MS,desorption ionization,7
+ESI-MS,laser desorption ionization,7
+ESI-MS,matrix-assisted laser desorption ionization,7
+PAH,diesel fuel,7
+LC-MS,electron ionization,7
+desorption ionization,diesel fuel,7
+electron ionization,field ionization fi,7
+ESI FT-ICR MS,field ionization,7
+HRMS,petroleum fraction,7
+naphthenic acids,ring naphthenic acids,7
+catalytic cracking,flame ionization detector,7
+desorption electrospray ionization,matrix-assisted laser desorption ionization,7
+catalytic cracking,nuclear magnetic resonance,7
+electrospray ionization esi coupled,naphthenic acids,7
+matrix-assisted laser desorption ionization,vacuum residue,7
+catalytic cracking,laser desorption ionization,7
+aromatic rings,naphthenic acids,7
+field desorption ionization,rings plus double bonds,7
+stochastic reconstruction,vacuum residue,7
+desorption ionization,rings plus double bonds,6
+field desorption ionization ionization,injection field desorption ionization,6
+field desorption ionization ionization,liquid injection field desorption ionization,6
+aromatic rings,fluid catalytic cracking,6
+TAN,acetic acid,6
+TAN,negative electrospray ionization,6
+acetic acid,naphthenic acids,6
+double bonds,naphthenic acids,6
+naphthenic acids,positive-ion electrospray ionization,6
+catalytic cracking,catalytic hydrogenation,6
+APPI FT-ICR MS,positive-ion electrospray ionization esi,6
+field desorption ionization fd,matrix-assisted laser desorption ionization,6
+fluid catalytic cracking,thermal cracking,6
+electron ionization,field desorption ionization,6
+field desorption ionization,vacuum residue,6
+APPI FT-ICR MS,high-performance liquid chromatography,6
+high-performance liquid chromatography,vacuum residue,6
+TAN,vacuum residue,6
+petroleum fraction,electrospray ionization esi fourier,6
+catalytic cracking,jet fuel,6
+field ionization,rings plus double bonds,6
+field desorption ionization ionization,laser desorption ionization,6
+fluid catalytic cracking,laser desorption ionization,6
+carboxylic acids,negative-ion electrospray ionization,6
+HDS,LCO,6
+liquid chromatography,vacuum residue,6
+APPI FT-ICR MS,catalytic cracking,6
+PAH,liquid chromatography,6
+aromatic rings,liquid chromatography,6
+petroleum fraction,naphthenic rings,6
+atmospheric pressure photoionization,formic acid,6
+ESI FT-ICR MS,RICO,6
+acetic acid,desorption ionization,6
+TAN,double bond equivalents equivalents,6
+double bond equivalents equivalents,naphthenic acids,6
+carboxylic acids,oxygen atoms,6
+GC-FID,fluid catalytic cracking,6
+acetic acid,carboxylic acids,6
+ionization efficiency,naphthenic acids,6
+HRMS,LC-MS,6
+petroleum fraction,high-performance liquid chromatography,6
+catalytic cracking,naphthenic acids,6
+ESI FT-ICR MS,ring naphthenic acids,6
+petroleum fraction,vacuum residue vr,6
+CCS,LC-MS,6
+desorption electrospray ionization ionization,matrix-assisted laser desorption ionization,6
+ESI FT-ICR MS,PLS,6
+aromatic rings,nuclear magnetic resonance,6
+fluid catalytic cracking,nuclear magnetic resonance,6
+ESI-MS,ionization efficiency,6
+field desorption ionization,field ionization fi,6
+catalytic cracking,field ionization,6
+ESI-MS,naphthenic acids,6
+ESI FT-ICR MS,double bond equivalents dbes,6
+fuel diesel,jet fuel,6
+ESI-MS,carboxylic acids,6
+catalytic cracking,stochastic reconstruction,6
+DOM,ESI FT-ICR MS,5
+high-performance liquid chromatography,rings plus double bonds,5
+ESI FT-ICR MS,GC-FID,5
+desorption ionization,injection field desorption ionization,5
+desorption ionization,liquid injection field desorption ionization,5
+field desorption ionization,injection field desorption ionization,5
+field desorption ionization,liquid injection field desorption ionization,5
+catalytic cracking,structure-oriented lumping,5
+petroleum fraction,catalytic pyrolysis,5
+ESI FT-ICR MS,aromatic ring,5
+TAN,double bonds,5
+aromatic ring,double bonds,5
+acetic acid,catalytic pyrolysis,5
+APPI FT-ICR MS,electrospray ionization esi ft-icr ms,5
+APPI FT-ICR MS,PAH,5
+catalytic cracking,fossil fuels,5
+catalytic pyrolysis,fossil fuels,5
+desorption electrospray ionization ionization,field desorption ionization,5
+electron ionization,field desorption ionization fd,5
+field desorption ionization fd,laser desorption ionization,5
+FCC,thermal cracking,5
+RICO,electrospray ionization esi fourier,5
+RICO,electrospray ionization esi fourier transform,5
+field ionization,vacuum residue,5
+aromatic rings,carboxylic acids,5
+APPI FT-ICR MS,vacuum residue vr,5
+FTIR,vacuum residue,5
+FTIR,diesel fuel,5
+PLS,diesel fuel,5
+PAH,naphthenic acids,5
+atmospheric pressure photoionization,liquid chromatography,5
+desorption ionization,field ionization fi,5
+APPI FT-ICR MS,fluid catalytic cracking,5
+atmospheric pressure photoionization,rings plus double bonds,5
+ionization efficiency,rings plus double bonds,5
+TAN,electrospray ionization esi fourier,5
+carboxylic acids,negative-ion electrospray ionization esi,5
+carboxylic acids,rings plus double bonds,5
+FTIR,aromatic ring,5
+matrix-assisted laser desorption ionization,naphthenic acids,5
+aromatic ring,laser desorption ionization,5
+ESI FT-ICR MS,vacuum residues,5
+HRMS,TAN,5
+naphthenic acids,naphthenic acids corrosion,5
+PAH,aromatic rings,5
+aromatic rings,vacuum residue vr,5
+double bonds,vacuum residue,5
+TAN,formic acid,5
+double bond equivalents dbe versus,formic acid,5
+fossil fuels,naphthenic acids,5
+electron ionization,naphthenic acids,5
+APPI FT-ICR MS,carboxylic acids,5
+carboxylic acids,nuclear magnetic resonance,5
+flame ionization detector,vacuum residue,5
+LC-MS,naphthenic acids,5
+GC-FID,field ionization,5
+GC-FID,naphthenic acids,5
+fluid catalytic cracking,naphthenic acids,5
+FCC,aromatic ring,5
+FCC,nuclear magnetic resonance,5
+diesel fuel,field ionization fi,5
+petroleum fraction,atmospheric pressure photoionization,5
+liquid chromatography,naphthenic acids,5
+field ionization,flame ionization detector,5
+double bond equivalents dbes,naphthenic acids,5
+high-performance liquid chromatography,naphthenic acids,5
+HRMS,diesel fuel,5
+GC-FID,petroleum fraction,5
+flame ionization detector,fluid catalytic cracking,5
+LCO,nuclear magnetic resonance,5
+ESI-MS,field ionization,5
+field desorption ionization fd,field ionization fi,5
+APPI FT-ICR MS,field ionization,5
+LC-MS,ionization efficiency,5
+FTIR,catalytic cracking,5
+FTIR,fluid catalytic cracking,5
+formic acid,ionization efficiency,5
+CCS,ESI FT-ICR MS,5
+diesel fuel,laser desorption ionization,5
+atmospheric pressure photoionization,double bond equivalents dbe versus,5
+PAH,double bonds,5
+FCC,vacuum residue,5
+diesel fuel,jet fuel,5
+catalytic cracking,desorption ionization,5
+liquid chromatography,nuclear magnetic resonance,5
+ESI FT-ICR MS,ESI-MS,5
+stochastic reconstruction,vacuum residues,5
+ESI FT-ICR MS,LC-MS,5
+LC-MS,liquid chromatography,5
+DOM,laser desorption ionization,4
+desorption ionization,high-performance liquid chromatography,4
+laser desorption ionization,rings plus double bonds,4
+field ionization,injection field desorption ionization,4
+field ionization,liquid injection field desorption ionization,4
+FCC,structure-oriented lumping,4
+LCO,catalytic pyrolysis,4
+aromatic rings,structure-oriented lumping,4
+catalytic cracking,fuel diesel,4
+TAN,diesel fuel,4
+acetic acid,positive-ion electrospray ionization,4
+diesel fuel,positive-ion electrospray ionization,4
+negative electrospray ionization,positive electrospray ionization,4
+acetic acid,catalytic cracking,4
+carboxylic acids,catalytic cracking,4
+GC-FID,acetic acid,4
+CFM-ID,LC-MS,4
+APPI FT-ICR MS,formic acid,4
+formic acid,negative-ion electrospray ionization,4
+PAH,high-performance liquid chromatography,4
+PAH,thermal cracking,4
+high-performance liquid chromatography,nuclear magnetic resonance,4
+APPI FT-ICR MS,thermal cracking,4
+PAH,ionization efficiency,4
+FCC,catalytic fast pyrolysis,4
+FCC,fossil fuels,4
+HDS,catalytic pyrolysis,4
+petroleum fraction,catalytic fast pyrolysis,4
+catalytic cracking,catalytic fast pyrolysis,4
+catalytic fast pyrolysis,catalytic pyrolysis,4
+fluid catalytic cracking,fossil fuels,4
+desorption electrospray ionization ionization,field ionization,4
+desorption electrospray ionization ionization,field desorption ionization fd,4
+atmospheric pressure photoionization,electron ionization,4
+PAH,atmospheric pressure photoionization,4
+negative-ion electrospray ionization esi,vacuum residue,4
+aromatic acids,fatty acids,4
+APPI FT-ICR MS,vacuum residues,4
+FTIR,high-performance liquid chromatography,4
+PLS,vacuum residue,4
+LC-MS,atmospheric pressure photoionization,4
+diesel fuel,vacuum residue,4
+APPI FT-ICR MS,liquid chromatography,4
+double bonds,liquid chromatography,4
+petroleum fraction,electrospray ionization esi fourier transform,4
+APPI FT-ICR MS,field desorption ionization ionization,4
+atmospheric pressure photoionization,field desorption ionization,4
+field desorption ionization,fluid catalytic cracking,4
+TAN,electrospray ionization esi fourier transform,4
+TAN,negative-ion electrospray ionization,4
+petroleum fraction,carboxylic acids,4
+petroleum fraction,rings plus double bonds,4
+carboxylic acids,electrospray ionization esi fourier,4
+electrospray ionization esi fourier,rings plus double bonds,4
+aromatic acids,negative-ion electrospray ionization,4
+LCO,diesel fuel,4
+ESI FT-ICR MS,injection field desorption ionization,4
+ESI FT-ICR MS,liquid injection field desorption ionization,4
+ESI FT-ICR MS,spectrometry energy fuels,4
+field desorption ionization ionization,naphthenic acids,4
+petroleum fraction,positive-ion electrospray ionization,4
+petroleum fraction,vacuum residues,4
+catalytic cracking,vacuum residues,4
+RICO,naphthenic acids,4
+electrospray ionization esi fourier,positive-ion electrospray ionization,4
+electrospray ionization esi ft-icr ms,naphthenic acids,4
+naphthenic acids,positive-ion electrospray ionization esi,4
+naphthenic acids,oxygen atoms,4
+carboxylic acids,laser desorption ionization,4
+field desorption ionization,ionization efficiency,4
+field desorption ionization,liquid chromatography,4
+petroleum fraction,ionization efficiency,4
+double bond equivalents dbe versus,fossil fuels,4
+double bond equivalents dbe versus,naphthenic acids,4
+flame ionization detector,fossil fuels,4
+matrix effects,naphthenic acids,4
+TAN,naphthenic acids corrosion,4
+acetic acid,laser desorption ionization,4
+acetic acid,matrix-assisted laser desorption ionization,4
+desorption ionization,formic acid,4
+formic acid,laser desorption ionization,4
+aromatic rings,vacuum residues,4
+flame ionization detector,thermal cracking,4
+thermal cracking,vacuum residue,4
+carboxylic acids,matrix effects,4
+HRMS,field ionization,4
+field ionization,fluid catalytic cracking,4
+field ionization,naphthenic acids,4
+FCC,FTIR,4
+aromatic ring,nuclear magnetic resonance,4
+aromatic rings,thermal cracking,4
+carboxylic acids,naphthenic rings,4
+FTIR,acetic acid,4
+acetic acid,high-performance liquid chromatography,4
+diesel fuel,fossil fuels,4
+LC-MS,desorption ionization,4
+diesel fuel,electron ionization,4
+APPI FT-ICR MS,negative electrospray ionization,4
+carboxylic acids,ionization efficiency,4
+carboxylic acids,negative electrospray ionization,4
+petroleum fraction,desorption ionization,4
+petroleum fraction,liquid chromatography,4
+petroleum fraction,double bonds,4
+double bonds,high-performance liquid chromatography,4
+ESI FT-ICR MS,vacuum residue vr,4
+HRMS,flame ionization detector,4
+GC-FID,high-performance liquid chromatography,4
+TAN,naphthenic rings,4
+aromatic rings,desorption ionization,4
+HDS,aromatic rings,4
+GC-FID,catalytic pyrolysis,4
+ESI-MS,high-performance liquid chromatography,4
+PLS,double bond equivalents equivalents,4
+aromatic rings,field ionization,4
+field ionization,liquid chromatography,4
+flame ionization detector,liquid chromatography,4
+DOM,HRMS,4
+LC-MS,acetic acid,4
+GC-FID,nuclear magnetic resonance,4
+ESI-MS,fatty acids,4
+LC-MS,fatty acids,4
+ESI-MS,oxygen atoms,4
+electrospray ionization esi coupled,laser desorption ionization,4
+desorption ionization,vacuum residue,4
+diesel fuel,nuclear magnetic resonance,4
+flame ionization detector,nuclear magnetic resonance,4
+petroleum fraction,laser desorption ionization,4
+petroleum fraction,nuclear magnetic resonance,4
+fatty acids,naphthenic rings,4
+electrospray ionization esi coupled,negative-ion electrospray ionization,4
+aromatic ring,catalytic cracking,4
+aromatic ring,fluid catalytic cracking,4
+aromatic rings,high-performance liquid chromatography,4
+fatty acids,fossil fuels,4
+aromatic ring,desorption ionization,4
+aromatic rings,rings plus double bonds,4
+TAN,aromatic rings,4
+DOM,electrospray ionization esi coupled,4
+fuel diesel,vacuum residue,4
+double bond equivalents dbe versus,laser desorption ionization,4
+aromatic ring,rings plus double bonds,4
+LCO,vacuum residue,4
+APPI FT-ICR MS,naphthenic rings,4
+matrix-assisted laser desorption ionization,rings plus double bonds,4
+double bond equivalents dbe versus,positive-ion electrospray ionization,4
+double bond equivalents dbe versus,positive-ion electrospray ionization esi,4
+diesel fuel,fatty acids,4
+naphthenic rings,vacuum residue,4
+catalytic cracking,matrix-assisted laser desorption ionization,4
+LCO,stochastic reconstruction,4
+FTIR,GC-FID,4
+GC-FID,fatty acids,4
+diesel fuel,field desorption ionization,4
+DOM,desorption ionization,3
+high-performance liquid chromatography,laser desorption ionization,3
+ESI FT-ICR MS,PAH,3
+aromatic rings,electron ionization,3
+injection field desorption ionization,matrix-assisted laser desorption ionization,3
+liquid injection field desorption ionization,matrix-assisted laser desorption ionization,3
+LCO,structure-oriented lumping,3
+fluid catalytic cracking,structure-oriented lumping,3
+aromatics resins asphaltenes,fluid catalytic cracking,3
+acetic acid,diesel fuel,3
+acetic acid,double bonds,3
+acetic acid,negative electrospray ionization,3
+diesel fuel,double bonds,3
+fatty acids,formic acid,3
+catalytic hydrogenation,catalytic pyrolysis,3
+CFM-ID,ESI-MS,3
+APPI FT-ICR MS,negative-ion electrospray ionization esi,3
+APPI FT-ICR MS,oxygen atoms,3
+electrospray ionization esi ft-icr ms,negative-ion electrospray ionization,3
+electrospray ionization esi ft-icr ms,negative-ion electrospray ionization esi,3
+formic acid,negative-ion electrospray ionization esi,3
+formic acid,oxygen atoms,3
+formic acid,positive-ion electrospray ionization,3
+formic acid,positive-ion electrospray ionization esi,3
+oxygen atoms,positive-ion electrospray ionization,3
+oxygen atoms,positive-ion electrospray ionization esi,3
+PAH,nuclear magnetic resonance,3
+nuclear magnetic resonance,thermal cracking,3
+HDS,fossil fuels,3
+petroleum fraction,fossil fuels,3
+catalytic fast pyrolysis,fluid catalytic cracking,3
+catalytic fast pyrolysis,fossil fuels,3
+desorption electrospray ionization,field ionization,3
+desorption electrospray ionization,field desorption ionization,3
+desorption electrospray ionization,field desorption ionization fd,3
+field ionization,ionization efficiency,3
+atmospheric pressure photoionization,matrix-assisted laser desorption ionization,3
+electron ionization,laser desorption ionization,3
+electron ionization,matrix-assisted laser desorption ionization,3
+catalytic hydrogenation,fluid catalytic cracking,3
+catalytic hydrogenation,thermal cracking,3
+CCS,PAH,3
+FCC,flame ionization detector,3
+electrospray ionization esi fourier transform,field ionization,3
+electrospray ionization esi fourier transform,vacuum residue vr,3
+field ionization,negative-ion electrospray ionization,3
+field ionization,vacuum residue vr,3
+negative-ion electrospray ionization esi,vacuum residue vr,3
+electrospray ionization esi fourier,field desorption ionization,3
+electrospray ionization esi fourier transform,field desorption ionization,3
+aromatic ring,carboxylic acids,3
+APPI FT-ICR MS,FTIR,3
+FTIR,vacuum residue vr,3
+PLS,vacuum residue vr,3
+acetic acid,liquid chromatography,3
+APPI FT-ICR MS,double bonds,3
+desorption ionization,double bond equivalents equivalents,3
+double bond equivalents equivalents,laser desorption ionization,3
+petroleum fraction,electrospray ionization esi coupled,3
+electrospray ionization esi coupled,fluid catalytic cracking,3
+desorption electrospray ionization ionization,field ionization fi,3
+field ionization fi,laser desorption ionization,3
+atmospheric pressure photoionization,field desorption ionization ionization,3
+PAH,selective ionization,3
+field desorption ionization fd,field desorption ionization ionization,3
+LC-MS,field ionization,3
+naphthenic rings,structure-oriented lumping,3
+HRMS,double bonds,3
+APPI FT-ICR MS,HDS,3
+atmospheric pressure photoionization,high-performance liquid chromatography,3
+electrospray ionization esi ft-icr ms,rings plus double bonds,3
+LC-MS,matrix effects,3
+TAN,petroleum fraction,3
+TAN,negative-ion electrospray ionization esi,3
+petroleum fraction,negative-ion electrospray ionization esi,3
+carboxylic acids,vacuum residue,3
+electrospray ionization esi fourier transform,rings plus double bonds,3
+negative-ion electrospray ionization,rings plus double bonds,3
+negative-ion electrospray ionization esi,rings plus double bonds,3
+rings plus double bonds,vacuum residue,3
+aromatic acids,negative-ion electrospray ionization esi,3
+petroleum fraction,aromatic acids,3
+atmospheric pressure photoionization,vacuum residue,3
+liquid chromatography,rings plus double bonds,3
+field desorption ionization,naphthenic acids,3
+field desorption ionization,spectrometry energy fuels,3
+injection field desorption ionization,naphthenic acids,3
+liquid injection field desorption ionization,naphthenic acids,3
+petroleum fraction,positive-ion electrospray ionization esi,3
+fluid catalytic cracking,vacuum residues,3
+PLS,flame ionization detector,3
+HRMS,RICO,3
+ESI FT-ICR MS,naphthenic acids corrosion,3
+carboxylic acids,electrospray ionization esi ft-icr ms,3
+electrospray ionization esi fourier,positive-ion electrospray ionization esi,3
+carboxylic acids,desorption ionization,3
+APPI FT-ICR MS,field desorption ionization fd,3
+PAH,field desorption ionization,3
+aromatic rings,field desorption ionization fd,3
+field desorption ionization,vacuum residue vr,3
+matrix-assisted laser desorption ionization,nuclear magnetic resonance,3
+field desorption ionization,negative-ion electrospray ionization,3
+HDS,vacuum residue,3
+HDS,vacuum residues,3
+naphthenic acids,selective ionization,3
+HRMS,high-performance liquid chromatography,3
+formic acid,high-performance liquid chromatography,3
+ESI FT-ICR MS,flame ionization detector,3
+flame ionization detector,naphthenic acids,3
+formic acid,fossil fuels,3
+formic acid,matrix effects,3
+FTIR,liquid chromatography,3
+aromatic rings,oxygen atoms,3
+liquid chromatography,oxygen atoms,3
+ESI FT-ICR MS,nuclear magnetic resonance,3
+atmospheric pressure photoionization,carboxylic acids,3
+carboxylic acids,field ionization,3
+aromatics resins asphaltenes,vacuum residue,3
+saturates aromatics resins asphaltenes,vacuum residue,3
+ESI FT-ICR MS,FCC,3
+carboxylic acids,catalytic pyrolysis,3
+catalytic pyrolysis,nuclear magnetic resonance,3
+fossil fuels,oxygen atoms,3
+HRMS,field ionization fi,3
+field ionization fi,naphthenic acids,3
+naphthenic rings,thermal cracking,3
+oxygen atoms,thermal cracking,3
+LCO,thermal cracking,3
+fossil fuels,thermal cracking,3
+FCC,acetic acid,3
+LC-MS,diesel fuel,3
+APPI FT-ICR MS,selective ionization,3
+ESI FT-ICR MS,matrix effects,3
+ionization efficiency,matrix effects,3
+ionization efficiency,negative electrospray ionization,3
+APPI FT-ICR MS,fossil fuels,3
+atmospheric pressure photoionization,fossil fuels,3
+CCS,petroleum fraction,3
+electron ionization,flame ionization detector,3
+electron ionization,jet fuel,3
+atmospheric pressure photoionization,vacuum residues,3
+liquid chromatography,vacuum residues,3
+FTIR,petroleum fraction,3
+FTIR,double bonds,3
+petroleum fraction,field ionization fi,3
+petroleum fraction,flame ionization detector,3
+atmospheric pressure photoionization,catalytic cracking,3
+atmospheric pressure photoionization,double bond equivalents dbes,3
+catalytic cracking,high-performance liquid chromatography,3
+GC-FID,aromatic rings,3
+HRMS,catalytic cracking,3
+RICO,aromatic rings,3
+double bond equivalents dbes,laser desorption ionization,3
+aromatic acids,ring naphthenic acids,3
+GC-FID,vacuum residue,3
+GC-FID,electron ionization,3
+HRMS,double bond equivalents equivalents,3
+double bond equivalents equivalents,naphthenic rings,3
+aromatic rings,atmospheric pressure photoionization,3
+desorption ionization,ionization efficiency,3
+ionization efficiency,laser desorption ionization,3
+aromatic rings,diesel fuel,3
+ESI-MS,desorption electrospray ionization,3
+ESI-MS,desorption electrospray ionization ionization,3
+electrospray ionization esi fourier transform,positive-ion electrospray ionization,3
+positive-ion electrospray ionization,vacuum residue,3
+CCS,formic acid,3
+LCO,aromatic rings,3
+catalytic cracking,naphthenic rings,3
+fluid catalytic cracking,naphthenic rings,3
+naphthenic rings,nuclear magnetic resonance,3
+HRMS,PAH,3
+ESI-MS,field desorption ionization,3
+field ionization fi,matrix-assisted laser desorption ionization,3
+LC-MS,double bonds,3
+double bonds,fatty acids,3
+ESI FT-ICR MS,electron ionization,3
+formic acid,liquid chromatography,3
+desorption ionization,electrospray ionization esi coupled,3
+electrospray ionization esi coupled,positive-ion electrospray ionization,3
+electrospray ionization esi coupled,positive-ion electrospray ionization esi,3
+LC-MS,desorption electrospray ionization,3
+LC-MS,desorption electrospray ionization ionization,3
+acetic acid,desorption electrospray ionization ionization,3
+GC-FID,thermal cracking,3
+carboxylic acids,ring naphthenic acids,3
+electrospray ionization esi coupled,negative-ion electrospray ionization esi,3
+laser desorption ionization,negative-ion electrospray ionization,3
+PAH,flame ionization detector,3
+PAH,aromatic ring,3
+electrospray ionization esi fourier,fatty acids,3
+electrospray ionization esi fourier transform,fatty acids,3
+fatty acids,negative-ion electrospray ionization,3
+HRMS,electrospray ionization esi coupled,3
+petroleum fraction,formic acid,3
+ESI-MS,TAN,3
+HRMS,negative electrospray ionization,3
+acetic acid,matrix effects,3
+carboxylic acids,double bond equivalents equivalents,3
+carboxylic acids,double bonds,3
+double bond equivalents equivalents,double bonds,3
+CCS,laser desorption ionization,3
+CCS,naphthenic acids,3
+diesel fuel,field desorption ionization ionization,3
+ESI FT-ICR MS,fuel diesel,3
+field desorption ionization ionization,rings plus double bonds,3
+APPI FT-ICR MS,double bond equivalents dbe versus,3
+aromatic rings,double bond equivalents dbe versus,3
+desorption ionization,double bond equivalents dbe versus,3
+FCC,naphthenic acids,3
+desorption electrospray ionization,diesel fuel,3
+desorption electrospray ionization ionization,diesel fuel,3
+ESI FT-ICR MS,thermal cracking,3
+catalytic cracking,double bond equivalents equivalents,3
+double bond equivalents equivalents,vacuum residue,3
+structure-oriented lumping,vacuum residue,3
+TAN,jet fuel,3
+fuel diesel,naphthenic acids,3
+jet fuel,naphthenic acids,3
+jet fuel,vacuum residue,3
+PAH,PLS,3
+ESI-MS,electrospray ionization esi coupled,3
+ESI-MS,negative electrospray ionization,3
+formic acid,negative electrospray ionization,3
+atmospheric pressure photoionization,positive-ion electrospray ionization,3
+aromatic rings,formic acid,3
+formic acid,nuclear magnetic resonance,3
+PAH,catalytic cracking,3
+PAH,matrix-assisted laser desorption ionization,3
+fatty acids,nuclear magnetic resonance,3
+aromatic ring,high-performance liquid chromatography,3
+aromatic ring,liquid chromatography,3
+formic acid,rings plus double bonds,3
+TAN,ring naphthenic acids,3
+TAN,electron ionization,3
+TAN,fatty acids,3
+electrospray ionization esi coupled,fatty acids,3
+GC-FID,carboxylic acids,3
+double bond equivalents dbe versus,field ionization,3
+double bond equivalents dbe versus,negative-ion electrospray ionization,3
+double bond equivalents dbe versus,negative-ion electrospray ionization esi,3
+catalytic cracking,field desorption ionization,3
+desorption ionization,fluid catalytic cracking,3
+fluid catalytic cracking,matrix-assisted laser desorption ionization,3
+aromatic rings,double bonds,3
+double bond equivalents equivalents,oxygen atoms,3
+fluid catalytic cracking,stochastic reconstruction,3
+stochastic reconstruction,structure-oriented lumping,3
+FCC,stochastic reconstruction,3
+FCC,delayed coking,3
+aromatic rings,stochastic reconstruction,3
+double bond equivalents equivalents,fatty acids,3
+double bond equivalents dbe versus,oxygen atoms,3
+HRMS,nuclear magnetic resonance,3
+LC-MS,aromatic ring,3
+catalytic pyrolysis,fatty acids,3
+double bond equivalents dbe versus,rings plus double bonds,3
+fatty acids,flame ionization detector,3
+catalytic cracking,vacuum residue vr,3
+FCC,jet fuel,3
+carboxylic acids,flame ionization detector,3

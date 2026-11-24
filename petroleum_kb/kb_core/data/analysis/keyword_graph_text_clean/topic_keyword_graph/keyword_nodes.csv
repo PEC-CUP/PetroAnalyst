@@ -1,0 +1,86 @@
+﻿id,label,score,doc_freq,group,color
+ESI FT-ICR MS,ESI FT-ICR MS,10327.6176,145,ionization,#3b82f6
+naphthenic acids,naphthenic acids,8628.2549,118,acids,#ef4444
+diesel fuel,diesel fuel,6132.1336,87,feedstocks,#14b8a6
+vacuum residue,vacuum residue,5842.4391,81,ionization,#3b82f6
+catalytic cracking,catalytic cracking,5381.8567,115,process,#10b981
+APPI FT-ICR MS,APPI FT-ICR MS,3860.2525,66,ionization,#3b82f6
+fluid catalytic cracking,fluid catalytic cracking,3453.2702,72,process,#10b981
+catalytic pyrolysis,catalytic pyrolysis,3435.0209,23,process,#10b981
+laser desorption ionization,laser desorption ionization,3430.6469,97,ionization,#3b82f6
+petroleum fraction,petroleum fraction,3017.4801,89,feedstocks,#14b8a6
+desorption ionization,desorption ionization,2985.7788,116,ionization,#3b82f6
+field ionization,field ionization,2868.1975,87,ionization,#3b82f6
+field desorption ionization,field desorption ionization,2753.6119,70,ionization,#3b82f6
+matrix-assisted laser desorption ionization,matrix-assisted laser desorption ionization,2392.2344,56,ionization,#3b82f6
+TAN,TAN,2226.9726,74,other,#64748b
+PLS,PLS,1989.2702,41,modeling,#f97316
+FCC,FCC,1938.412,75,process,#10b981
+CCS,CCS,1663.7269,22,massspec,#8b5cf6
+aromatic rings,aromatic rings,1454.8214,110,other,#64748b
+carboxylic acids,carboxylic acids,1366.564,83,acids,#ef4444
+formic acid,formic acid,1275.7222,73,acids,#ef4444
+DOM,DOM,1252.2204,15,feedstocks,#14b8a6
+negative-ion electrospray ionization,negative-ion electrospray ionization,1224.8024,34,ionization,#3b82f6
+atmospheric pressure photoionization,atmospheric pressure photoionization,1132.9954,78,ionization,#3b82f6
+LCO,LCO,1078.5388,35,chromatography,#f59e0b
+HRMS,HRMS,1053.4155,57,massspec,#8b5cf6
+desorption electrospray ionization ionization,desorption electrospray ionization ionization,1022.7808,28,ionization,#3b82f6
+acetic acid,acetic acid,1016.9569,57,acids,#ef4444
+PAH,PAH,1016.1525,91,other,#64748b
+field desorption ionization ionization,field desorption ionization ionization,1011.5796,24,ionization,#3b82f6
+RICO,RICO,997.1746,26,other,#64748b
+desorption electrospray ionization,desorption electrospray ionization,951.3329,29,ionization,#3b82f6
+aromatic acids,aromatic acids,948.9957,27,acids,#ef4444
+ESI-MS,ESI-MS,936.5305,59,ionization,#3b82f6
+negative electrospray ionization,negative electrospray ionization,929.5646,20,ionization,#3b82f6
+rings plus double bonds,rings plus double bonds,914.5794,51,other,#64748b
+thermal cracking,thermal cracking,890.3523,36,process,#10b981
+positive-ion electrospray ionization,positive-ion electrospray ionization,886.1041,23,ionization,#3b82f6
+naphthenic rings,naphthenic rings,881.5467,46,acids,#ef4444
+FTIR,FTIR,860.2233,60,massspec,#8b5cf6
+liquid chromatography,liquid chromatography,857.2695,57,chromatography,#f59e0b
+catalytic fast pyrolysis,catalytic fast pyrolysis,821.7458,11,process,#10b981
+HDS,HDS,819.1656,44,process,#10b981
+GC-FID,GC-FID,819.0641,79,chromatography,#f59e0b
+matrix effects,matrix effects,816.2031,20,other,#64748b
+CFM-ID,CFM-ID,812.1219,12,other,#64748b
+fatty acids,fatty acids,796.9524,45,acids,#ef4444
+ring naphthenic acids,ring naphthenic acids,781.6637,8,acids,#ef4444
+ionization efficiency,ionization efficiency,769.7836,45,ionization,#3b82f6
+fossil fuels,fossil fuels,756.3355,39,feedstocks,#14b8a6
+double bond equivalents dbe versus,double bond equivalents dbe versus,753.8542,20,other,#64748b
+electrospray ionization esi fourier,electrospray ionization esi fourier,743.8899,23,ionization,#3b82f6
+nuclear magnetic resonance,nuclear magnetic resonance,724.1973,76,other,#64748b
+LC-MS,LC-MS,716.7375,69,chromatography,#f59e0b
+double bonds,double bonds,701.9855,58,other,#64748b
+flame ionization detector,flame ionization detector,689.3503,68,ionization,#3b82f6
+electron ionization,electron ionization,688.1121,51,ionization,#3b82f6
+electrospray ionization esi fourier transform,electrospray ionization esi fourier transform,683.0517,21,ionization,#3b82f6
+field ionization fi,field ionization fi,674.6603,33,ionization,#3b82f6
+double bond equivalents dbes,double bond equivalents dbes,674.6498,15,other,#64748b
+catalytic hydrogenation,catalytic hydrogenation,667.0623,14,process,#10b981
+negative-ion electrospray ionization esi,negative-ion electrospray ionization esi,659.961,24,ionization,#3b82f6
+aromatic ring,aromatic ring,652.3163,47,other,#64748b
+double bond equivalents equivalents,double bond equivalents equivalents,649.459,21,other,#64748b
+jet fuel,jet fuel,631.5091,25,feedstocks,#14b8a6
+aromatics resins asphaltenes,aromatics resins asphaltenes,625.7687,19,ionization,#3b82f6
+vacuum residue vr,vacuum residue vr,625.7687,19,ionization,#3b82f6
+high-performance liquid chromatography,high-performance liquid chromatography,609.7196,51,chromatography,#f59e0b
+liquid injection field desorption ionization,liquid injection field desorption ionization,606.5266,11,ionization,#3b82f6
+positive electrospray ionization,positive electrospray ionization,606.5266,11,ionization,#3b82f6
+saturates aromatics resins asphaltenes,saturates aromatics resins asphaltenes,598.5806,16,ionization,#3b82f6
+fuel diesel,fuel diesel,574.6374,16,feedstocks,#14b8a6
+spectrometry energy fuels,spectrometry energy fuels,574.2167,5,feedstocks,#14b8a6
+electrospray ionization esi ft-icr ms,electrospray ionization esi ft-icr ms,573.9177,11,ionization,#3b82f6
+positive-ion electrospray ionization esi,positive-ion electrospray ionization esi,570.1579,18,ionization,#3b82f6
+naphthenic acids corrosion,naphthenic acids corrosion,543.5918,5,acids,#ef4444
+field desorption ionization fd,field desorption ionization fd,524.4737,25,ionization,#3b82f6
+electrospray ionization esi coupled,electrospray ionization esi coupled,510.1269,20,ionization,#3b82f6
+oxygen atoms,oxygen atoms,508.7945,28,other,#64748b
+structure-oriented lumping,structure-oriented lumping,508.6998,11,modeling,#f97316
+injection field desorption ionization,injection field desorption ionization,502.178,11,ionization,#3b82f6
+vacuum residues,vacuum residues,497.6755,24,ionization,#3b82f6
+stochastic reconstruction,stochastic reconstruction,486.2341,15,modeling,#f97316
+selective ionization,selective ionization,486.179,12,ionization,#3b82f6
+delayed coking,delayed coking,476.6878,9,other,#64748b

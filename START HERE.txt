@@ -1,0 +1,28 @@
+PetroAnalyst reviewer workspace
+===============================
+
+Option A (recommended, Windows executable)
+
+1. Double-click "PetroAnalyst.exe".
+2. Wait for the browser to open.
+3. Click "API settings".
+4. Enter the review API key, OpenAI-compatible base URL, and exact model name.
+5. Click "Save connection" and then "Test connection".
+
+The executable stores your API key only in a local .env file under
+%LOCALAPPDATA%\PetroAnalyst. Do not add the real key to the source archive or
+manuscript.
+
+Option B (source mode)
+
+1. Double-click "Launch PetroAnalyst.cmd".
+2. The first launch creates a local Python environment and installs dependencies.
+3. The browser opens the same local workspace.
+
+The guided page provides:
+
+- historical-evidence property inference;
+- literature question answering with the three RAG routes;
+- execution of the reviewed hydrocarbon-type calculator;
+- template-based database import, knowledge-base construction and keyword-graph
+  visualization.

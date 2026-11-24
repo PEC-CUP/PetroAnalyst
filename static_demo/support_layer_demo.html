@@ -1,0 +1,3299 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PetroAnalyst Support Layer Demo</title>
+  <link rel="stylesheet" href="./support_workbench.css">
+  <style>
+    .demo-shell { min-height: 100vh; background: var(--bg); }
+    .demo-header { padding: 28px 36px 16px; background: linear-gradient(135deg, #eef5ff, #fff4e7); border-bottom: 1px solid var(--line); }
+    .demo-chip { display:inline-flex; align-items:center; border-radius:999px; padding:6px 10px; background:#fff7e8; color:#a05a00; font-size:12px; font-weight:700; margin-bottom:10px; }
+    .demo-copy { max-width: 1180px; }
+    .demo-copy h1 { margin:0 0 8px; }
+    .demo-copy p { margin:6px 0; }
+    .demo-note { margin-top:12px; border-left:4px solid var(--orange); border-radius:12px; padding:12px 14px; background:#fff8ed; color:var(--ink); }
+    .demo-tabs { display:flex; gap:10px; flex-wrap:wrap; margin-top:16px; }
+    .demo-tabs button { margin:0; }
+    .demo-tabs button.active { background: var(--blue); color:#fff; }
+    .demo-main { padding: 22px clamp(14px, 3vw, 42px); }
+    .panel { width:100%; }
+    .frame-wrap { position:relative; width:100%; border:1px solid var(--line); border-radius:22px; overflow:hidden; background:#fff; box-shadow:0 10px 28px rgba(28,57,102,.06); }
+    .frame-note { position:absolute; top:12px; right:12px; z-index:2; max-width:min(420px, calc(100% - 24px)); padding:10px 12px; border:1px solid #d8e3f2; border-radius:14px; background:rgba(255,255,255,.95); color:var(--muted); font-size:12px; line-height:1.4; box-shadow:0 8px 22px rgba(28,57,102,.08); }
+    .demo-frame { display:block; width:100%; height:calc(100vh - 170px); min-height:980px; border:0; background:#fff; }
+    @media (max-width: 960px) {
+      .demo-header { padding:22px 18px 14px; }
+      .frame-note { position:static; max-width:none; margin:12px 12px 0; }
+      .demo-frame { height:1200px; min-height:1200px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="demo-shell">
+    <header class="demo-header">
+      <div class="demo-copy">
+        <div class="demo-chip">Static demonstration only</div>
+        <h1>PetroAnalyst Support Layer</h1>
+        <p>This page is a no-install visual demo built from static mirrors of the released runtime workbenches. It is intended only to demonstrate the interface functions and design.</p>
+        <div class="demo-note">The original runtime page structures are preserved as closely as possible inside the panels below. Form submission, file upload, API calls, and route navigation are disabled in this static demo, while passive frontend interactions such as dropdown selection, help-dot expansion, and preset-driven field updates remain available where possible.</div>
+        <div class="demo-tabs" role="tablist" aria-label="Support layer demo tabs">
+          <button type="button" class="active" data-panel="overview">Overview</button>
+          <button type="button" data-panel="kb">KB Construction &amp; QA Generation</button>
+          <button type="button" data-panel="rag">PetroAnalyst RAG</button>
+          <button type="button" data-panel="db">Experimental Database</button>
+          <button type="button" data-panel="tool">Analytical Tool Onboarding</button>
+        </div>
+      </div>
+    </header>
+    <main class="demo-main">
+      <section id="panel-overview" class="panel" style="display:block;">
+      <div class="frame-wrap">
+        <div class="frame-note">Static demo of the runtime page. Visual layout is preserved as closely as possible; backend execution is disabled.</div>
+        <iframe class="demo-frame" title="Overview" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;
+  &lt;title&gt;PetroAnalyst Support Layer&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;./support_workbench.css&quot;&gt;
+  &lt;style&gt;
+    nav{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 0}
+    nav button{margin:0}.active-tab{background:var(--blue);color:#fff}
+    .panel{display:none}.panel.active{display:block}
+    .overview-card{display:flex;flex-direction:column;justify-content:space-between;width:100%;height:100%;min-height:220px;margin:0;text-align:left;color:var(--ink);background:var(--panel);font:inherit}
+    .overview-card:hover{border-color:#8bb4ff;transform:translateY(-1px)}
+    .pill{display:inline-block;margin:4px 4px 0 0;border-radius:999px;padding:5px 9px;background:#edf3ff;color:#24508d;font-size:13px}
+    .open-card{display:block;height:100%;text-decoration:none}
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header class=&quot;workbench-header&quot;&gt;
+    &lt;div class=&quot;workbench-copy&quot;&gt;
+      &lt;h1&gt;PetroAnalyst Support Layer&lt;/h1&gt;
+      &lt;p&gt;Unified support workbench for KB construction, QA generation, Evidence-grounded RAG, Experimental Database, and Analytical Tool Onboarding.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;nav&gt;
+      &lt;button class=&quot;active-tab&quot; data-panel=&quot;overview&quot;&gt;Overview&lt;/button&gt;
+      &lt;a href=&quot;javascript:void(0)&quot;&gt;&lt;button type=&quot;button&quot;&gt;KB Construction &amp; QA Generation&lt;/button&gt;&lt;/a&gt;
+      &lt;a href=&quot;javascript:void(0)&quot;&gt;&lt;button type=&quot;button&quot;&gt;PetroAnalyst RAG&lt;/button&gt;&lt;/a&gt;
+      &lt;a href=&quot;javascript:void(0)&quot;&gt;&lt;button type=&quot;button&quot;&gt;Experimental Database&lt;/button&gt;&lt;/a&gt;
+      &lt;a href=&quot;javascript:void(0)&quot;&gt;&lt;button type=&quot;button&quot;&gt;Analytical Tool Onboarding&lt;/button&gt;&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+  &lt;main class=&quot;workbench-main&quot;&gt;
+    &lt;section id=&quot;overview&quot; class=&quot;panel active&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+      &lt;a class=&quot;open-card&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;button class=&quot;card overview-card&quot; type=&quot;button&quot;&gt;&lt;h2&gt;KB Construction &amp; QA Generation&lt;/h2&gt;&lt;p&gt;Build staged literature KBs and keyword graphs for inspection without modifying the active RAG KB, then generate reviewed single-doc/two-doc QA, specific-fact open QA, MCQ, and naive baselines.&lt;/p&gt;&lt;span class=&quot;pill&quot;&gt;staged KB&lt;/span&gt;&lt;span class=&quot;pill&quot;&gt;keyword graph&lt;/span&gt;&lt;span class=&quot;pill&quot;&gt;QA benchmark&lt;/span&gt;&lt;/button&gt;&lt;/a&gt;
+        &lt;a class=&quot;open-card&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;button class=&quot;card overview-card&quot; type=&quot;button&quot;&gt;&lt;h2&gt;Evidence-grounded RAG&lt;/h2&gt;&lt;p&gt;Current naive, QA-oriented, and iterative review RAG routes with same-query comparison, query refinement, BM25, reranker, KB status, and index controls.&lt;/p&gt;&lt;span class=&quot;pill&quot;&gt;naive baseline&lt;/span&gt;&lt;span class=&quot;pill&quot;&gt;QA-oriented&lt;/span&gt;&lt;span class=&quot;pill&quot;&gt;iterative review&lt;/span&gt;&lt;/button&gt;&lt;/a&gt;
+        &lt;a class=&quot;open-card&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;button class=&quot;card overview-card&quot; type=&quot;button&quot;&gt;&lt;h2&gt;Experimental Database&lt;/h2&gt;&lt;p&gt;Standardize and store historical sample workbooks as sample-centered records, manage registry and catalog entries, and run training-free property reasoning from historical-neighbor evidence.&lt;/p&gt;&lt;div&gt;&lt;span class=&quot;pill&quot;&gt;data standardization&lt;/span&gt;&lt;span class=&quot;pill&quot;&gt;sample storage&lt;/span&gt;&lt;span class=&quot;pill&quot;&gt;property reasoning&lt;/span&gt;&lt;/div&gt;&lt;/button&gt;&lt;/a&gt;
+        &lt;a class=&quot;open-card&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;button class=&quot;card overview-card&quot; type=&quot;button&quot;&gt;&lt;h2&gt;Analytical Tool Onboarding&lt;/h2&gt;&lt;p&gt;Package reviewed analytical scripts or callables as Planner-visible evidence tools, attach input templates, return structured tool evidence, and test the full Planner-routed upload path.&lt;/p&gt;&lt;span class=&quot;pill&quot;&gt;tool evidence&lt;/span&gt;&lt;span class=&quot;pill&quot;&gt;input template&lt;/span&gt;&lt;span class=&quot;pill&quot;&gt;planner test&lt;/span&gt;&lt;/button&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+  &lt;script&gt;
+    function openPanel(panel){
+      document.querySelectorAll(&quot;nav button&quot;).forEach(button=&gt;button.classList.toggle(&quot;active-tab&quot;,button.dataset.panel===panel));
+      document.querySelectorAll(&quot;.panel&quot;).forEach(node=&gt;node.classList.toggle(&quot;active&quot;,node.id===panel));
+    }
+    document.querySelectorAll(&quot;nav button[data-panel]&quot;).forEach(button=&gt;button.onclick=()=&gt;openPanel(button.dataset.panel));
+  &lt;/script&gt;
+&lt;script&gt;
+(function(){
+  function attachHelpDots(){
+    document.querySelectorAll(&#x27;.field-help, .hint, .option-help, .action-guide&#x27;).forEach(function(help, idx){
+      const text = (help.textContent || &#x27;&#x27;).trim().replace(/\s+/g, &#x27; &#x27;);
+      if (!text) return;
+      help.classList.add(&#x27;collapsed&#x27;);
+      const dot = document.createElement(&#x27;button&#x27;);
+      dot.type = &#x27;button&#x27;;
+      dot.className = &#x27;help-dot&#x27;;
+      dot.textContent = &#x27;?&#x27;;
+      dot.title = text;
+      dot.setAttribute(&#x27;aria-label&#x27;, text);
+      dot.addEventListener(&#x27;click&#x27;, function(e){
+        e.preventDefault();
+        help.classList.toggle(&#x27;collapsed&#x27;);
+        help.classList.toggle(&#x27;help-open&#x27;);
+      });
+      const anchor = help.previousElementSibling;
+      if (anchor &amp;&amp; /^(LABEL|SUMMARY|H3|H4|P)$/i.test(anchor.tagName)) {
+        anchor.appendChild(dot);
+      } else if (help.parentNode) {
+        help.parentNode.insertBefore(dot, help);
+      }
+    });
+  }
+  attachHelpDots();
+  document.querySelectorAll(&#x27;a&#x27;).forEach(function(a){
+    a.addEventListener(&#x27;click&#x27;, function(e){ e.preventDefault(); });
+    a.setAttribute(&#x27;href&#x27;, &#x27;javascript:void(0)&#x27;);
+  });
+  document.querySelectorAll(&#x27;form&#x27;).forEach(function(f){
+    f.addEventListener(&#x27;submit&#x27;, function(e){ e.preventDefault(); });
+  });
+})();
+&lt;/script&gt;&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+      </div>
+    </section>
+      <section id="panel-kb" class="panel" style="display:none;">
+      <div class="frame-wrap">
+        <div class="frame-note">Static demo of the runtime page. Visual layout is preserved as closely as possible; backend execution is disabled.</div>
+        <iframe class="demo-frame" title="KB Construction and QA Generation" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot; /&gt;
+  &lt;title&gt;KB Construction and QA Generation Workbench&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;./support_workbench.css&quot; /&gt;
+  &lt;style&gt;
+    .workbench-main{width:100%;max-width:none}
+    .row{grid-template-columns:1fr}
+    .row&gt;.card{width:100%}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .qa-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .qa-grid .wide-field{grid-column:span 2}
+    .preset-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:12px 0}
+    .preset-grid button{margin:0;text-align:left;background:#f7fbff;border:1px solid var(--line);color:var(--ink)}
+    .preset-grid button b{display:block;margin-bottom:4px;color:#173f91}
+    .preset-grid button span{display:block;color:var(--muted);font-size:12px;line-height:1.35}
+    .ratios{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .manual-body.wide{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .manual-card.full{grid-column:1/-1}
+    .metric-table{width:100%;border-collapse:collapse;color:var(--muted);font-size:14px}
+    .metric-table th,.metric-table td{border-bottom:1px solid var(--line);padding:7px 6px;text-align:left;vertical-align:top}
+    .field-help{margin:4px 0 0;color:var(--muted);font-size:13px;line-height:1.4}
+    .path-row{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:end}
+    .path-row button{margin-top:0;white-space:nowrap}
+    .hidden-file-input{display:none}
+    button.primary-action{background:var(--blue);color:#fff}
+    button.alt{background:#edf3ff;color:#173e85;margin-left:8px}
+    button.orange{background:var(--orange)}
+    button.danger{background:#fee2e2;color:#9f1239;margin-left:8px}
+    .help-button{margin:2px 0 0;white-space:nowrap;background:#e8eef8;color:var(--ink);border:1px solid var(--line)}
+    .output-details{margin-top:14px;border:1px solid var(--line);border-radius:18px;background:#f8fbff;overflow:hidden}
+    .output-details summary{cursor:pointer;padding:14px 18px;font-weight:800;color:var(--ink);list-style:none}
+    .output-details summary::-webkit-details-marker{display:none}
+    .output-details summary::before{content:&quot;▶&quot;;display:inline-block;margin-right:8px;color:#315ca5;transition:transform .15s ease}
+    .output-details[open] summary::before{transform:rotate(90deg)}
+    .output-details .details-body{padding:0 18px 18px}
+    ul{padding-left:20px;color:var(--muted)}
+    @media(max-width:1280px){.qa-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.qa-grid .wide-field{grid-column:span 1}}
+    @media(max-width:980px){.preset-grid,.ratios,.qa-grid{grid-template-columns:1fr}}
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header class=&quot;workbench-header&quot;&gt;
+  &lt;div class=&quot;workbench-header-row&quot;&gt;
+    &lt;div class=&quot;workbench-copy&quot;&gt;
+      &lt;h1&gt;KB Construction and QA Generation Workbench&lt;/h1&gt;
+      &lt;p&gt;Build staged literature knowledge bases and keyword graphs for inspection, and generate evidence-conditioned QA benchmarks without changing the active RAG knowledge base.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;button id=&quot;manualBtn&quot; class=&quot;help-button&quot; type=&quot;button&quot;&gt;KB construction and QA generation manual&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+
+&lt;div id=&quot;manualModal&quot; class=&quot;modal-backdrop&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;div class=&quot;manual-modal&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot; aria-labelledby=&quot;manualTitle&quot;&gt;
+    &lt;div class=&quot;manual-head&quot;&gt;
+      &lt;h2 id=&quot;manualTitle&quot;&gt;KB construction and QA generation manual&lt;/h2&gt;
+      &lt;button id=&quot;manualCloseBtn&quot; class=&quot;close-button&quot; type=&quot;button&quot; data-manual-close&gt;Close&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;manual-body wide&quot;&gt;
+      &lt;div class=&quot;manual-card&quot;&gt;
+        &lt;h3&gt;What this page does&lt;/h3&gt;
+        &lt;p&gt;This workbench has two linked but separate functions: staged petroleum literature knowledge-base construction and QA benchmark generation. The first prepares or inspects literature evidence resources, whereas the second generates evaluation datasets from those resources without changing the active RAG runtime by default.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;manual-card&quot;&gt;
+        &lt;h3&gt;Staged KB construction&lt;/h3&gt;
+        &lt;p&gt;The KB panel runs PDF parsing, scientific chunking, cleaning, embedding-index construction, and optional keyword-graph generation as a staged build under &lt;code&gt;outputs/kb_construction&lt;/code&gt;. This page is mainly for safe inspection of newly added literature before any manual production update.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;manual-card&quot;&gt;
+        &lt;h3&gt;Active KB and keyword graph&lt;/h3&gt;
+        &lt;p&gt;&lt;b&gt;Refresh KB status&lt;/b&gt; checks the active clean chunks, active index, and active keyword graph. &lt;b&gt;Open active keyword graph&lt;/b&gt; opens the current production graph for corpus-level inspection. Staged graphs are generated separately and should be inspected before replacing any active resource.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;manual-card&quot;&gt;
+        &lt;h3&gt;QA source modes&lt;/h3&gt;
+        &lt;p&gt;&lt;b&gt;Existing processed chunks&lt;/b&gt; uses the current cleaned KB source and is the normal route for reproducing benchmark datasets from the active literature resource. &lt;b&gt;PDF directory&lt;/b&gt; first processes a separate PDF set and then generates QA from those newly prepared documents without overwriting the active KB.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;manual-card&quot;&gt;
+        &lt;h3&gt;QA benchmark types&lt;/h3&gt;
+        &lt;p&gt;The preset routes cover the current paper benchmark types: reviewed single-document semantic QA, reviewed two-document semantic QA, specific-fact open QA, specific-fact MCQ, and naive baseline datasets. These types support evaluation of evidence localization, cross-document synthesis, narrow factual retrieval, and controlled factual verification.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;manual-card&quot;&gt;
+        &lt;h3&gt;Reviewed and baseline modes&lt;/h3&gt;
+        &lt;p&gt;&lt;b&gt;Reviewed&lt;/b&gt; applies quality audit, duplicate control, and revision gates before writing accepted QA items. &lt;b&gt;Naive baseline&lt;/b&gt; keeps a weaker generation route for comparison and should be treated as a construction baseline rather than a paper-grade benchmark.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;manual-card full&quot;&gt;
+        &lt;h3&gt;Quality review dimensions&lt;/h3&gt;
+        &lt;table class=&quot;metric-table&quot;&gt;
+          &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Dimension&lt;/th&gt;&lt;th&gt;Purpose&lt;/th&gt;&lt;th&gt;Paper interpretation&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;&lt;td&gt;self_contained_score&lt;/td&gt;&lt;td&gt;Question is understandable without hidden evidence labels.&lt;/td&gt;&lt;td&gt;Higher is better.&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;answerable_score&lt;/td&gt;&lt;td&gt;Evidence can answer the item.&lt;/td&gt;&lt;td&gt;Higher is better.&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;objective_score&lt;/td&gt;&lt;td&gt;Answer is evidence-based rather than opinion.&lt;/td&gt;&lt;td&gt;Higher is better.&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;specificity_score&lt;/td&gt;&lt;td&gt;Question names concrete methods, samples, targets, or facts.&lt;/td&gt;&lt;td&gt;Higher is better, especially for specific-fact QA.&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;evidence_locality_score&lt;/td&gt;&lt;td&gt;Answer is locally grounded in selected papers.&lt;/td&gt;&lt;td&gt;Higher means less closed-book answerability.&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;hallucination_risk_score&lt;/td&gt;&lt;td&gt;Risk of unsupported generation.&lt;/td&gt;&lt;td&gt;Lower is better.&lt;/td&gt;&lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;manual-card full&quot;&gt;
+        &lt;h3&gt;Output boundary&lt;/h3&gt;
+        &lt;p&gt;Running this page creates or updates staged KB artifacts and benchmark JSONL datasets only. It does not by itself change the active RAG route definitions, planner logic, or evaluation code.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;main class=&quot;workbench-main&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;section class=&quot;card&quot;&gt;
+      &lt;h2&gt;1. KB construction&lt;/h2&gt;
+      &lt;p&gt;Build a staged KB from a PDF directory using the existing PDF parsing, chunking, cleaning, embedding-index, and keyword-graph pipeline. The staged build is for inspection and does not overwrite the active KB.&lt;/p&gt;
+      &lt;div class=&quot;grid&quot;&gt;
+        &lt;div&gt;
+          &lt;label&gt;PDF source directory&lt;/label&gt;
+          &lt;div class=&quot;path-row&quot;&gt;
+            &lt;input id=&quot;kbSourceDir&quot; placeholder=&quot;F:/petrogent_KB/selected_literature/article&quot; /&gt;
+            &lt;button type=&quot;button&quot;&gt;Choose folder&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;input id=&quot;kbDirPicker&quot; class=&quot;hidden-file-input&quot; type=&quot;file&quot; webkitdirectory directory multiple /&gt;
+          &lt;p class=&quot;field-help&quot;&gt;Folder containing the PDF papers to process into a staged KB. Browser folder selection may only return a folder name; paste the absolute path if needed.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;label&gt;Staged build name&lt;/label&gt;
+          &lt;input id=&quot;kbBuildName&quot; value=&quot;kb.paper.staged&quot; /&gt;
+          &lt;p class=&quot;field-help&quot;&gt;A timestamp is appended automatically. The active KB is not changed.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;label&gt;PDF parser / chunking&lt;/label&gt;
+          &lt;div class=&quot;grid&quot; style=&quot;grid-template-columns:1fr 1fr&quot;&gt;
+            &lt;select id=&quot;kbPdfParserBackend&quot;&gt;&lt;option value=&quot;grobid&quot;&gt;GROBID&lt;/option&gt;&lt;option value=&quot;pymupdf&quot;&gt;PyMuPDF&lt;/option&gt;&lt;/select&gt;
+            &lt;select id=&quot;kbChunkMode&quot;&gt;&lt;option value=&quot;scientific_sentence&quot;&gt;Scientific sentence&lt;/option&gt;&lt;option value=&quot;sentence&quot;&gt;Sentence&lt;/option&gt;&lt;option value=&quot;char&quot;&gt;Char&lt;/option&gt;&lt;/select&gt;
+          &lt;/div&gt;
+          &lt;p class=&quot;field-help&quot;&gt;Parser controls PDF-to-text extraction. Chunking controls how cleaned text is split before embedding and QA use; scientific sentence is the current paper workflow.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;label&gt;Staged outputs&lt;/label&gt;
+          &lt;div class=&quot;grid&quot; style=&quot;grid-template-columns:1fr 1fr&quot;&gt;
+            &lt;label class=&quot;check&quot;&gt;&lt;input id=&quot;kbBuildIndex&quot; type=&quot;checkbox&quot; checked&gt; Build staged embedding index&lt;/label&gt;
+            &lt;label class=&quot;check&quot;&gt;&lt;input id=&quot;kbBuildKeywordGraph&quot; type=&quot;checkbox&quot; checked&gt; Build staged keyword graph&lt;/label&gt;
+          &lt;/div&gt;
+          &lt;p class=&quot;field-help&quot;&gt;Choose which non-production artifacts are generated for the staged build. The embedding index supports later retrieval checks; the keyword graph supports corpus-structure inspection.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div&gt;&lt;label&gt;Chunk token size&lt;/label&gt;&lt;input id=&quot;kbChunkTokenSize&quot; type=&quot;number&quot; min=&quot;32&quot; max=&quot;4096&quot; value=&quot;384&quot;&gt;&lt;p class=&quot;field-help&quot;&gt;Approximate token budget for each evidence chunk. Larger chunks keep more context but reduce retrieval granularity.&lt;/p&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;label&gt;Sentence overlap&lt;/label&gt;&lt;input id=&quot;kbSentenceOverlap&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;20&quot; value=&quot;2&quot;&gt;&lt;p class=&quot;field-help&quot;&gt;Number of neighboring sentences repeated between adjacent chunks to preserve boundary context.&lt;/p&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;label&gt;Embedding model&lt;/label&gt;&lt;input id=&quot;kbEmbeddingModel&quot; placeholder=&quot;active default&quot;&gt;&lt;p class=&quot;field-help&quot;&gt;Model used to convert text chunks into vectors for the staged FAISS index. Leave blank to use the active default embedding model.&lt;/p&gt;&lt;/div&gt;
+        &lt;div&gt;
+          &lt;label&gt;Embedding safety&lt;/label&gt;
+          &lt;div class=&quot;grid&quot; style=&quot;grid-template-columns:1fr 1fr&quot;&gt;
+            &lt;label class=&quot;check&quot;&gt;&lt;input id=&quot;kbEmbeddingLocal&quot; type=&quot;checkbox&quot; checked&gt; Local model cache only&lt;/label&gt;
+            &lt;label class=&quot;check&quot;&gt;&lt;input id=&quot;kbAllowHashFallback&quot; type=&quot;checkbox&quot;&gt; Allow hash fallback&lt;/label&gt;
+          &lt;/div&gt;
+          &lt;p class=&quot;field-help&quot;&gt;Safety controls for staged embedding. Local model cache only prevents accidental model downloads. Hash fallback creates deterministic placeholder vectors only when a real embedding model is unavailable, and should not be used for paper-grade retrieval results.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;button id=&quot;kbBuildBtn&quot; class=&quot;teal&quot;&gt;Build staged KB&lt;/button&gt;
+      &lt;button class=&quot;teal&quot;&gt;Build staged KB + graph&lt;/button&gt;
+      &lt;button class=&quot;alt&quot;&gt;Refresh KB status&lt;/button&gt;
+      &lt;button class=&quot;alt&quot;&gt;Open active keyword graph&lt;/button&gt;
+      &lt;div id=&quot;kbStatus&quot; class=&quot;status&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;note&quot;&gt;&lt;b&gt;Safety:&lt;/b&gt; this builds a separate staged KB and staged keyword graph. It does not modify &lt;code&gt;petroleum_kb/kb_core/data&lt;/code&gt;, the active FAISS/BM25 index, existing benchmarks, the active keyword graph, or the Experimental DB.&lt;/div&gt;
+      &lt;details class=&quot;output-details&quot;&gt;
+        &lt;summary&gt;KB construction status&lt;/summary&gt;
+        &lt;div class=&quot;details-body&quot;&gt;
+          &lt;pre id=&quot;kbOutput&quot;&gt;{}&lt;/pre&gt;
+        &lt;/div&gt;
+      &lt;/details&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;section class=&quot;card&quot;&gt;
+      &lt;h2&gt;2. QA benchmark construction&lt;/h2&gt;
+      &lt;p&gt;Use presets for the current paper datasets, or manually tune the same backend parameters. This page does not modify the core QA-generation or RAG code.&lt;/p&gt;
+
+      &lt;label&gt;Current paper presets&lt;/label&gt;
+      &lt;div class=&quot;preset-grid&quot;&gt;
+        &lt;button type=&quot;button&quot;&gt;&lt;b&gt;Reviewed single&lt;/b&gt;&lt;span&gt;semantic, open, single-doc only&lt;/span&gt;&lt;/button&gt;
+        &lt;button type=&quot;button&quot;&gt;&lt;b&gt;Reviewed two-doc&lt;/b&gt;&lt;span&gt;semantic, open, two-doc only&lt;/span&gt;&lt;/button&gt;
+        &lt;button type=&quot;button&quot;&gt;&lt;b&gt;Specific-fact open&lt;/b&gt;&lt;span&gt;specific_fact, open, single-doc&lt;/span&gt;&lt;/button&gt;
+        &lt;button type=&quot;button&quot;&gt;&lt;b&gt;Specific-fact MCQ&lt;/b&gt;&lt;span&gt;specific_fact, mcq, single-doc&lt;/span&gt;&lt;/button&gt;
+        &lt;button type=&quot;button&quot;&gt;&lt;b&gt;Naive baseline single&lt;/b&gt;&lt;span&gt;semantic, weak baseline prompt&lt;/span&gt;&lt;/button&gt;
+        &lt;button type=&quot;button&quot;&gt;&lt;b&gt;Naive baseline two-doc&lt;/b&gt;&lt;span&gt;semantic, weak baseline prompt&lt;/span&gt;&lt;/button&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;grid qa-grid&quot;&gt;
+        &lt;div&gt;
+          &lt;label&gt;Benchmark name&lt;/label&gt;
+          &lt;input id=&quot;benchmarkName&quot; value=&quot;benchmark.reviewed.single.200.ui&quot; /&gt;
+          &lt;p class=&quot;field-help&quot;&gt;Output JSONL name under &lt;code&gt;petroleum_kb/eval/datasets&lt;/code&gt;.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;label&gt;Write mode&lt;/label&gt;
+          &lt;select id=&quot;writeMode&quot;&gt;
+            &lt;option value=&quot;new&quot;&gt;Create / replace benchmark&lt;/option&gt;
+            &lt;option value=&quot;append&quot;&gt;Append to benchmark&lt;/option&gt;
+          &lt;/select&gt;
+          &lt;p class=&quot;field-help&quot;&gt;Create / replace starts a fresh benchmark file with the selected name. Append adds new accepted QA items to an existing benchmark.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;label&gt;Benchmark mode&lt;/label&gt;
+          &lt;select id=&quot;benchmarkMode&quot;&gt;
+            &lt;option value=&quot;reviewed&quot;&gt;Reviewed benchmark&lt;/option&gt;
+            &lt;option value=&quot;naive_baseline&quot;&gt;Naive baseline&lt;/option&gt;
+          &lt;/select&gt;
+          &lt;p class=&quot;field-help&quot;&gt;Reviewed is the paper-grade mode. Baselines are mainly for construction comparison.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;label&gt;Benchmark style&lt;/label&gt;
+          &lt;select id=&quot;benchmarkStyle&quot;&gt;
+            &lt;option value=&quot;semantic&quot;&gt;Semantic literature QA&lt;/option&gt;
+            &lt;option value=&quot;specific_fact&quot;&gt;Specific-fact literature QA&lt;/option&gt;
+          &lt;/select&gt;
+          &lt;p class=&quot;field-help&quot;&gt;Semantic QA evaluates explanation and synthesis from evidence. Specific-fact QA targets narrow values, method names, conditions, instruments, species, or other checkable facts.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;label&gt;Answer format&lt;/label&gt;
+          &lt;select id=&quot;answerFormat&quot;&gt;
+            &lt;option value=&quot;open&quot;&gt;Open short-answer QA&lt;/option&gt;
+            &lt;option value=&quot;mcq&quot;&gt;Strict four-option MCQ&lt;/option&gt;
+          &lt;/select&gt;
+          &lt;p class=&quot;field-help&quot;&gt;Open QA expects a short evidence-grounded answer. MCQ generates one correct option plus distractors for direct factual verification.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;label&gt;QA count for this run&lt;/label&gt;
+          &lt;input id=&quot;questionCount&quot; type=&quot;number&quot; min=&quot;1&quot; max=&quot;200&quot; value=&quot;200&quot; /&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;label&gt;Quality minimum score&lt;/label&gt;
+          &lt;input id=&quot;quality&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;1&quot; step=&quot;0.05&quot; value=&quot;0.7&quot; /&gt;
+          &lt;p class=&quot;field-help&quot;&gt;Used as write threshold only in reviewed mode.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;label&gt;Language&lt;/label&gt;
+          &lt;select id=&quot;language&quot;&gt;
+            &lt;option value=&quot;en&quot;&gt;English&lt;/option&gt;
+            &lt;option value=&quot;zh&quot;&gt;Chinese&lt;/option&gt;
+          &lt;/select&gt;
+          &lt;p class=&quot;field-help&quot;&gt;Language used for generated QA items.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;label&gt;Question type ratios&lt;/label&gt;
+      &lt;div class=&quot;ratios&quot;&gt;
+        &lt;div&gt;&lt;small&gt;single doc&lt;/small&gt;&lt;input id=&quot;ratio1&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;1&quot; step=&quot;0.05&quot; value=&quot;1.00&quot; /&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;small&gt;2 documents&lt;/small&gt;&lt;input id=&quot;ratio2&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;1&quot; step=&quot;0.05&quot; value=&quot;0.00&quot; /&gt;&lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;grid qa-grid&quot;&gt;
+        &lt;div&gt;
+          &lt;label&gt;Benchmark data source&lt;/label&gt;
+          &lt;select id=&quot;sourceMode&quot;&gt;
+            &lt;option value=&quot;existing_chunks&quot;&gt;Existing processed chunks JSONL&lt;/option&gt;
+            &lt;option value=&quot;pdf_directory&quot;&gt;PDF directory: parse and chunk first&lt;/option&gt;
+          &lt;/select&gt;
+          &lt;p class=&quot;field-help&quot;&gt;Existing processed chunks reproduces the current cleaned KB benchmark path. PDF directory mode first parses a separate PDF folder, then generates QA from that temporary source.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;wide-field&quot;&gt;
+          &lt;label&gt;Existing chunks JSONL path&lt;/label&gt;
+          &lt;div class=&quot;path-row&quot;&gt;
+            &lt;input id=&quot;chunksPath&quot; value=&quot;petroleum_kb/kb_core/data/processed/chunks_clean.jsonl&quot; /&gt;
+            &lt;button id=&quot;chunksChooseBtn&quot; type=&quot;button&quot;&gt;Choose file&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;input id=&quot;chunksFilePicker&quot; class=&quot;hidden-file-input&quot; type=&quot;file&quot; accept=&quot;.jsonl,.json&quot; /&gt;
+          &lt;p class=&quot;field-help&quot;&gt;Use the default cleaned KB source for reproducing the current paper benchmarks unless you intentionally test a separate source.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;wide-field&quot;&gt;
+          &lt;label&gt;PDF directory path&lt;/label&gt;
+          &lt;div class=&quot;path-row&quot;&gt;
+            &lt;input id=&quot;pdfDir&quot; placeholder=&quot;F:/petrogent_KB/selected_literature/article&quot; /&gt;
+            &lt;button type=&quot;button&quot;&gt;Choose folder&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;input id=&quot;pdfDirPicker&quot; class=&quot;hidden-file-input&quot; type=&quot;file&quot; webkitdirectory directory multiple /&gt;
+          &lt;p class=&quot;field-help&quot;&gt;Only used when Benchmark data source is PDF directory. This path is parsed for QA generation and does not update the active RAG KB.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;label&gt;PDF parser / chunking&lt;/label&gt;
+          &lt;div class=&quot;grid&quot; style=&quot;grid-template-columns:1fr 1fr&quot;&gt;
+            &lt;select id=&quot;pdfParserBackend&quot;&gt;&lt;option value=&quot;grobid&quot;&gt;GROBID&lt;/option&gt;&lt;option value=&quot;pymupdf&quot;&gt;PyMuPDF&lt;/option&gt;&lt;/select&gt;
+            &lt;select id=&quot;chunkMode&quot;&gt;&lt;option value=&quot;scientific_sentence&quot;&gt;Scientific sentence&lt;/option&gt;&lt;option value=&quot;sentence&quot;&gt;Sentence&lt;/option&gt;&lt;option value=&quot;char&quot;&gt;Char&lt;/option&gt;&lt;/select&gt;
+          &lt;/div&gt;
+          &lt;p class=&quot;field-help&quot;&gt;Controls PDF parsing and temporary chunking for QA generation when PDF directory mode is selected.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;button id=&quot;generateBtn&quot; class=&quot;orange&quot;&gt;Generate QA benchmark&lt;/button&gt;
+      &lt;button id=&quot;stopBtn&quot; class=&quot;danger&quot; disabled&gt;Stop generation&lt;/button&gt;
+      &lt;button class=&quot;alt&quot;&gt;Refresh existing benchmarks&lt;/button&gt;
+      &lt;div class=&quot;note&quot;&gt;&lt;b&gt;Safety:&lt;/b&gt; this UI only starts the existing benchmark-generation job. It does not change the QA-generation logic, RAG retrieval, judge prompts, or paper-results analysis workflow.&lt;/div&gt;
+      &lt;details class=&quot;output-details&quot;&gt;
+        &lt;summary&gt;QA construction result&lt;/summary&gt;
+        &lt;div class=&quot;details-body&quot;&gt;
+          &lt;p id=&quot;datasets&quot;&gt;Loading benchmark datasets...&lt;/p&gt;
+          &lt;div id=&quot;generationStatus&quot; class=&quot;status&quot;&gt;&lt;/div&gt;
+          &lt;pre id=&quot;benchmarkOutput&quot;&gt;{}&lt;/pre&gt;
+        &lt;/div&gt;
+      &lt;/details&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;
+&lt;/main&gt;
+
+
+  
+&lt;script&gt;
+(function(){
+  function attachHelpDots(){
+    document.querySelectorAll(&#x27;.field-help, .hint, .option-help, .action-guide&#x27;).forEach(function(help, idx){
+      const text = (help.textContent || &#x27;&#x27;).trim().replace(/\s+/g, &#x27; &#x27;);
+      if (!text) return;
+      help.classList.add(&#x27;collapsed&#x27;);
+      const dot = document.createElement(&#x27;button&#x27;);
+      dot.type = &#x27;button&#x27;;
+      dot.className = &#x27;help-dot&#x27;;
+      dot.textContent = &#x27;?&#x27;;
+      dot.title = text;
+      dot.setAttribute(&#x27;aria-label&#x27;, text);
+      dot.addEventListener(&#x27;click&#x27;, function(e){
+        e.preventDefault();
+        help.classList.toggle(&#x27;collapsed&#x27;);
+        help.classList.toggle(&#x27;help-open&#x27;);
+      });
+      const anchor = help.previousElementSibling;
+      if (anchor &amp;&amp; /^(LABEL|SUMMARY|H3|H4|P)$/i.test(anchor.tagName)) {
+        anchor.appendChild(dot);
+      } else if (help.parentNode) {
+        help.parentNode.insertBefore(dot, help);
+      }
+    });
+  }
+  attachHelpDots();
+  document.querySelectorAll(&#x27;a&#x27;).forEach(function(a){
+    a.addEventListener(&#x27;click&#x27;, function(e){ e.preventDefault(); });
+    a.setAttribute(&#x27;href&#x27;, &#x27;javascript:void(0)&#x27;);
+  });
+  document.querySelectorAll(&#x27;form&#x27;).forEach(function(f){
+    f.addEventListener(&#x27;submit&#x27;, function(e){ e.preventDefault(); });
+  });
+})();
+
+(function(){
+  const cleanChunks = &quot;petroleum_kb/kb_core/data/processed/chunks_clean.jsonl&quot;;
+  const presetOrder = [
+    &quot;reviewed_single&quot;,
+    &quot;reviewed_twodoc&quot;,
+    &quot;specific_open&quot;,
+    &quot;specific_mcq&quot;,
+    &quot;naive_single&quot;,
+    &quot;naive_twodoc&quot;
+  ];
+  const presets = {
+    reviewed_single: {
+      benchmarkName: &quot;benchmark.reviewed.single.200.en.final&quot;,
+      benchmarkMode: &quot;reviewed&quot;,
+      benchmarkStyle: &quot;semantic&quot;,
+      answerFormat: &quot;open&quot;,
+      questionCount: 200,
+      ratio1: 1,
+      ratio2: 0,
+      quality: 0.7
+    },
+    reviewed_twodoc: {
+      benchmarkName: &quot;benchmark.reviewed.twodoc.200.en.final&quot;,
+      benchmarkMode: &quot;reviewed&quot;,
+      benchmarkStyle: &quot;semantic&quot;,
+      answerFormat: &quot;open&quot;,
+      questionCount: 200,
+      ratio1: 0,
+      ratio2: 1,
+      quality: 0.7
+    },
+    specific_open: {
+      benchmarkName: &quot;benchmark.reviewed.specific_fact.single.open.200.en&quot;,
+      benchmarkMode: &quot;reviewed&quot;,
+      benchmarkStyle: &quot;specific_fact&quot;,
+      answerFormat: &quot;open&quot;,
+      questionCount: 200,
+      ratio1: 1,
+      ratio2: 0,
+      quality: 0.8
+    },
+    specific_mcq: {
+      benchmarkName: &quot;benchmark.reviewed.specific_fact.single.mcq.100.en&quot;,
+      benchmarkMode: &quot;reviewed&quot;,
+      benchmarkStyle: &quot;specific_fact&quot;,
+      answerFormat: &quot;mcq&quot;,
+      questionCount: 100,
+      ratio1: 1,
+      ratio2: 0,
+      quality: 0.8
+    },
+    naive_single: {
+      benchmarkName: &quot;benchmark.naive_baseline.single.200.en.final&quot;,
+      benchmarkMode: &quot;naive_baseline&quot;,
+      benchmarkStyle: &quot;semantic&quot;,
+      answerFormat: &quot;open&quot;,
+      questionCount: 200,
+      ratio1: 1,
+      ratio2: 0,
+      quality: 0.7
+    },
+    naive_twodoc: {
+      benchmarkName: &quot;benchmark.naive_baseline.twodoc.200.en.final&quot;,
+      benchmarkMode: &quot;naive_baseline&quot;,
+      benchmarkStyle: &quot;semantic&quot;,
+      answerFormat: &quot;open&quot;,
+      questionCount: 200,
+      ratio1: 0,
+      ratio2: 1,
+      quality: 0.7
+    }
+  };
+  function showStatus(id, message){
+    const node = document.getElementById(id);
+    if (!node) return;
+    node.textContent = message;
+    node.classList.add(&#x27;ok&#x27;);
+    node.style.display = &#x27;block&#x27;;
+  }
+  function syncSourceMode(){
+    const sourceMode = document.getElementById(&#x27;sourceMode&#x27;);
+    const chunksPath = document.getElementById(&#x27;chunksPath&#x27;);
+    const chunksChooseBtn = document.getElementById(&#x27;chunksChooseBtn&#x27;);
+    if (!sourceMode || !chunksPath) return;
+    const pdfMode = sourceMode.value === &#x27;pdf_directory&#x27;;
+    chunksPath.disabled = pdfMode;
+    if (chunksChooseBtn) chunksChooseBtn.disabled = pdfMode;
+    if (pdfMode) {
+      chunksPath.value = &#x27;&#x27;;
+      showStatus(&#x27;generationStatus&#x27;, &#x27;PDF directory mode selected. Existing chunks JSONL path is ignored in static demo.&#x27;);
+    }
+  }
+  function applyBenchmarkPreset(preset){
+    const cfg = presets[preset];
+    if (!cfg) return;
+    const set = (id, value) =&gt; {
+      const node = document.getElementById(id);
+      if (node) node.value = value;
+    };
+    set(&#x27;benchmarkName&#x27;, cfg.benchmarkName);
+    set(&#x27;benchmarkMode&#x27;, cfg.benchmarkMode);
+    set(&#x27;benchmarkStyle&#x27;, cfg.benchmarkStyle);
+    set(&#x27;answerFormat&#x27;, cfg.answerFormat);
+    set(&#x27;questionCount&#x27;, String(cfg.questionCount));
+    set(&#x27;ratio1&#x27;, cfg.ratio1.toFixed(2));
+    set(&#x27;ratio2&#x27;, cfg.ratio2.toFixed(2));
+    set(&#x27;quality&#x27;, String(cfg.quality));
+    set(&#x27;language&#x27;, &#x27;en&#x27;);
+    set(&#x27;writeMode&#x27;, &#x27;new&#x27;);
+    set(&#x27;sourceMode&#x27;, &#x27;existing_chunks&#x27;);
+    set(&#x27;chunksPath&#x27;, cleanChunks);
+    syncSourceMode();
+    showStatus(&#x27;generationStatus&#x27;, &#x27;Preset loaded in static demo: &#x27; + cfg.benchmarkName);
+  }
+  window.syncSourceMode = syncSourceMode;
+  const sourceModeNode = document.getElementById(&#x27;sourceMode&#x27;);
+  if (sourceModeNode) sourceModeNode.addEventListener(&#x27;change&#x27;, syncSourceMode);
+  document.querySelectorAll(&#x27;.preset-grid button&#x27;).forEach(function(btn, index){
+    const preset = presetOrder[index];
+    if (!preset) return;
+    btn.addEventListener(&#x27;click&#x27;, function(e){
+      e.preventDefault();
+      applyBenchmarkPreset(preset);
+    });
+  });
+  [&#x27;manualBtn&#x27;, &#x27;kbBuildBtn&#x27;, &#x27;chunksChooseBtn&#x27;, &#x27;stopBtn&#x27;, &#x27;generateBtn&#x27;].forEach(function(id){
+    const node = document.getElementById(id);
+    if (node) node.disabled = true;
+  });
+  document.querySelectorAll(&#x27;button&#x27;).forEach(function(btn){
+    const text = (btn.textContent || &#x27;&#x27;).trim();
+    if ([&#x27;Build staged KB + graph&#x27;, &#x27;Refresh KB status&#x27;, &#x27;Open active keyword graph&#x27;, &#x27;Refresh dataset list&#x27;].includes(text)) {
+      btn.addEventListener(&#x27;click&#x27;, function(e){
+        e.preventDefault();
+        showStatus(text.includes(&#x27;KB&#x27;) ? &#x27;kbStatus&#x27; : &#x27;generationStatus&#x27;, &#x27;Backend execution is disabled in this static demo.&#x27;);
+      });
+    }
+  });
+  syncSourceMode();
+})();
+&lt;/script&gt;&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+      </div>
+    </section>
+      <section id="panel-rag" class="panel" style="display:none;">
+      <div class="frame-wrap">
+        <div class="frame-note">Static demo of the runtime page. Visual layout is preserved as closely as possible; backend execution is disabled.</div>
+        <iframe class="demo-frame" title="PetroAnalyst RAG" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;
+  &lt;title&gt;PetroAnalyst RAG Workbench&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;./support_workbench.css&quot;&gt;
+  &lt;style&gt;
+    .control-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    .compare-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+    .compare-actions button{margin-top:14px}
+    .subtle{border-left:4px solid var(--teal);background:#eefdfb}
+    @media(max-width:980px){.control-grid{grid-template-columns:1fr}.compare-actions{display:block}}
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header class=&quot;workbench-header&quot;&gt;
+    &lt;div class=&quot;workbench-header-row&quot;&gt;
+      &lt;div class=&quot;workbench-copy&quot;&gt;
+        &lt;h1&gt;PetroAnalyst RAG Workbench&lt;/h1&gt;
+        &lt;p&gt;Test the current petroleum KB with the three main paper-facing RAG routes: naive RAG, QA-oriented RAG, and iterative review RAG. This page only changes request-time options; it does not modify retrieval or synthesis code.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;button id=&quot;ragManualBtn&quot; class=&quot;manual-button&quot; type=&quot;button&quot;&gt;RAG manual&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+
+  &lt;div id=&quot;ragManual&quot; class=&quot;modal-backdrop&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;manual-modal&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot; aria-labelledby=&quot;ragManualTitle&quot;&gt;
+      &lt;div class=&quot;manual-head&quot;&gt;
+        &lt;h2 id=&quot;ragManualTitle&quot;&gt;RAG manual&lt;/h2&gt;
+        &lt;button class=&quot;close-button&quot; type=&quot;button&quot; data-manual-close&gt;Close&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;manual-body&quot;&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;
+          &lt;h3&gt;What this page does&lt;/h3&gt;
+          &lt;p&gt;This workbench evaluates the current petroleum literature knowledge base with the three main manuscript-facing RAG routes and exposes request-time retrieval overrides for controlled comparison. It is for route testing and KB inspection, not for editing the core synthesis logic.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;
+          &lt;h3&gt;QA-oriented RAG&lt;/h3&gt;
+          &lt;p&gt;This is the main factual question-answering route. It combines broader evidence recall, evidence filtering, and document-level organization to produce evidence-grounded answers for petroleum-domain QA tasks.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;
+          &lt;h3&gt;Naive RAG&lt;/h3&gt;
+          &lt;p&gt;This is the direct retrieval baseline. It is useful for simple questions and route comparison, but it may miss sufficient evidence for broader synthesis tasks.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;
+          &lt;h3&gt;Iterative Review RAG&lt;/h3&gt;
+          &lt;p&gt;This route extends QA-oriented retrieval with iterative evidence review and supplementary retrieval. It is intended for questions that require broader evidence coverage or multi-document synthesis.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;
+          &lt;h3&gt;Route comparison&lt;/h3&gt;
+          &lt;p&gt;&lt;b&gt;Run selected mode&lt;/b&gt; tests one route. &lt;b&gt;Compare all RAG routes&lt;/b&gt; runs the same question through the three main routes so that evidence recall and synthesis differences can be inspected under the same query condition.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;
+          &lt;h3&gt;Retrieval overrides&lt;/h3&gt;
+          &lt;p&gt;Query refinement, BM25 fusion, and reranker settings are request-time overrides. They are mainly for ablation or debugging. Leave them as default when reproducing the current paper-facing settings.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;
+          &lt;h3&gt;KB pipeline panel&lt;/h3&gt;
+          &lt;p&gt;The lower panel is for petroleum KB maintenance actions such as source scanning, ingest, chunking, and index building. These actions write KB artifacts and should not be run casually during evaluation.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;
+          &lt;h3&gt;Output boundary&lt;/h3&gt;
+          &lt;p&gt;This page changes request-time retrieval behavior and can trigger KB maintenance actions, but it does not redefine the underlying route implementations.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;main class=&quot;workbench-main&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;section class=&quot;card&quot;&gt;
+        &lt;h2&gt;1. RAG query test&lt;/h2&gt;
+        &lt;p&gt;Run the same petroleum-literature question through one or all RAG routes. For paper-like tests, keep overrides at default.&lt;/p&gt;
+
+        &lt;label&gt;RAG mode&lt;/label&gt;
+        &lt;p class=&quot;field-help&quot;&gt;Choose one of the three main RAG routes used in the manuscript. QA-oriented RAG is the default factual route, whereas iterative review RAG adds a review loop for evidence sufficiency checking and supplementary retrieval.&lt;/p&gt;
+        &lt;select id=&quot;ragMode&quot;&gt;
+          &lt;option value=&quot;qa_oriented&quot;&gt;QA-oriented RAG&lt;/option&gt;
+          &lt;option value=&quot;iterative_review&quot;&gt;Iterative review RAG&lt;/option&gt;
+          &lt;option value=&quot;naive&quot;&gt;Naive RAG&lt;/option&gt;
+        &lt;/select&gt;
+
+        &lt;label&gt;Test query&lt;/label&gt;
+        &lt;p class=&quot;field-help&quot;&gt;Enter the same petroleum-domain question when comparing routes. This allows retrieval differences and evidence-processing differences to be inspected under the same query condition.&lt;/p&gt;
+        &lt;textarea id=&quot;ragQuery&quot;&gt;Provide reference information on the DPF method, including the author, DOI number, and paper title.&lt;/textarea&gt;
+
+        &lt;div class=&quot;control-grid&quot;&gt;
+          &lt;div&gt;
+            &lt;label&gt;Query refinement override&lt;/label&gt;
+            &lt;p class=&quot;field-help&quot;&gt;Override whether the route first rewrites or expands the original question before retrieval. Leave as default unless you are testing the effect of refinement on evidence recall.&lt;/p&gt;
+            &lt;select id=&quot;refinementAgent&quot;&gt;
+              &lt;option value=&quot;&quot;&gt;default&lt;/option&gt;
+              &lt;option value=&quot;true&quot;&gt;enable&lt;/option&gt;
+              &lt;option value=&quot;false&quot;&gt;disable&lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;label&gt;BM25 fusion override&lt;/label&gt;
+            &lt;p class=&quot;field-help&quot;&gt;Override whether keyword-based BM25 retrieval is fused with semantic retrieval. This is useful for checking whether lexical recall improves evidence coverage for narrow factual questions.&lt;/p&gt;
+            &lt;select id=&quot;bm25&quot;&gt;
+              &lt;option value=&quot;&quot;&gt;default&lt;/option&gt;
+              &lt;option value=&quot;true&quot;&gt;enable&lt;/option&gt;
+              &lt;option value=&quot;false&quot;&gt;disable&lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;label&gt;Reranker override&lt;/label&gt;
+            &lt;p class=&quot;field-help&quot;&gt;Override whether a reranker reorders the retrieved candidates before synthesis. Disable this only when isolating the contribution of candidate ranking quality.&lt;/p&gt;
+            &lt;select id=&quot;reranker&quot;&gt;
+              &lt;option value=&quot;&quot;&gt;default&lt;/option&gt;
+              &lt;option value=&quot;true&quot;&gt;enable&lt;/option&gt;
+              &lt;option value=&quot;false&quot;&gt;disable&lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;compare-actions&quot;&gt;
+          &lt;button class=&quot;teal&quot;&gt;Run selected mode&lt;/button&gt;
+          &lt;button class=&quot;primary&quot;&gt;Compare all RAG routes&lt;/button&gt;
+          &lt;button&gt;Refresh RAG status&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;note subtle&quot;&gt;&lt;b&gt;Interpretation:&lt;/b&gt; use selected-mode testing for debugging one route; use compare mode to inspect whether QA-oriented or iterative review RAG recovers evidence that naive RAG misses.&lt;/div&gt;
+      &lt;/section&gt;
+
+      &lt;section class=&quot;card&quot;&gt;
+        &lt;h2&gt;RAG status / result&lt;/h2&gt;
+        &lt;pre id=&quot;ragOut&quot;&gt;{}&lt;/pre&gt;
+      &lt;/section&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;section class=&quot;card&quot;&gt;
+        &lt;h2&gt;2. Petroleum KB build pipeline&lt;/h2&gt;
+        &lt;p class=&quot;action-guide&quot;&gt;These controls operate on knowledge-base construction artifacts rather than question answering itself. They are mainly for KB maintenance, inspection, or controlled rebuilds.&lt;/p&gt;
+        &lt;p&gt;These actions write KB artifacts. Do not run ingest or build_index during evaluation unless you intentionally want to refresh the active KB.&lt;/p&gt;
+        &lt;div class=&quot;grid&quot;&gt;
+          &lt;div&gt;
+            &lt;label&gt;Pipeline action&lt;/label&gt;
+            &lt;p class=&quot;field-help&quot;&gt;Select which maintenance step to run on the petroleum knowledge base, such as scanning source files, ingesting and chunking text, or rebuilding the embedding index.&lt;/p&gt;
+            &lt;select id=&quot;kbAction&quot;&gt;
+              &lt;option value=&quot;list_sources&quot;&gt;List registered sources&lt;/option&gt;
+              &lt;option value=&quot;scan_sources&quot;&gt;Scan source files&lt;/option&gt;
+              &lt;option value=&quot;ingest_sources&quot;&gt;Ingest and chunk sources&lt;/option&gt;
+              &lt;option value=&quot;build_index&quot;&gt;Build embedding index&lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;label&gt;Label mode for ingest&lt;/label&gt;
+            &lt;p class=&quot;field-help&quot;&gt;Choose how document labels or metadata annotations are assigned during ingestion. Keep the default setting unless you are testing an alternative ingest configuration.&lt;/p&gt;
+            &lt;select id=&quot;kbLabel&quot;&gt;
+              &lt;option value=&quot;hybrid&quot;&gt;hybrid&lt;/option&gt;
+              &lt;option value=&quot;rule&quot;&gt;rule&lt;/option&gt;
+              &lt;option value=&quot;llm&quot;&gt;llm&lt;/option&gt;
+              &lt;option value=&quot;none&quot;&gt;none&lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;label&gt;Chunk mode&lt;/label&gt;
+            &lt;p class=&quot;field-help&quot;&gt;Control how source text is split into retrievable units. Scientific sentence chunking is the paper-aligned setting for structured literature evidence.&lt;/p&gt;
+            &lt;select id=&quot;kbChunk&quot;&gt;&lt;option value=&quot;&quot;&gt;active default&lt;/option&gt;&lt;option value=&quot;scientific_sentence&quot;&gt;scientific sentence&lt;/option&gt;&lt;option value=&quot;sentence&quot;&gt;sentence&lt;/option&gt;&lt;option value=&quot;char&quot;&gt;char&lt;/option&gt;&lt;/select&gt;
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;label&gt;Chunk token size&lt;/label&gt;
+            &lt;p class=&quot;field-help&quot;&gt;Approximate token budget for each chunk. Larger chunks preserve more context, whereas smaller chunks increase retrieval granularity.&lt;/p&gt;
+            &lt;input id=&quot;kbChunkSize&quot; type=&quot;number&quot; min=&quot;32&quot; max=&quot;4096&quot; placeholder=&quot;active default&quot;&gt;
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;label&gt;Sentence overlap&lt;/label&gt;
+            &lt;p class=&quot;field-help&quot;&gt;Number of sentences repeated between adjacent chunks to reduce information loss at chunk boundaries.&lt;/p&gt;
+            &lt;input id=&quot;kbOverlap&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;20&quot; placeholder=&quot;active default&quot;&gt;
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;label&gt;Embedding model for index build&lt;/label&gt;
+            &lt;p class=&quot;field-help&quot;&gt;Specify the embedding model used when rebuilding the vector index. Leave blank to keep the active default model configuration.&lt;/p&gt;
+            &lt;input id=&quot;kbEmbedding&quot; placeholder=&quot;active default&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;grid&quot;&gt;
+          &lt;label class=&quot;check&quot;&gt;Append ingest into existing chunks
+            &lt;p class=&quot;field-help&quot;&gt;If enabled, newly ingested content is appended to the current chunk store rather than replacing it. Use with caution when maintaining the active KB.&lt;/p&gt;
+            &lt;input id=&quot;kbAppend&quot; type=&quot;checkbox&quot; checked&gt;
+          &lt;/label&gt;
+          &lt;label class=&quot;check&quot;&gt;Load embedding model from local cache only
+            &lt;p class=&quot;field-help&quot;&gt;Restrict index building to models already available in the local cache. This helps avoid unintended downloads or environment changes during evaluation.&lt;/p&gt;
+            &lt;input id=&quot;kbLocal&quot; type=&quot;checkbox&quot; checked&gt;
+          &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;button class=&quot;teal&quot;&gt;Run KB pipeline action&lt;/button&gt;
+        &lt;div class=&quot;note&quot;&gt;&lt;b&gt;Current paper setup:&lt;/b&gt; the active index should point to &lt;code&gt;chunks_clean.jsonl&lt;/code&gt;. Use status output to confirm before evaluation.&lt;/div&gt;
+      &lt;/section&gt;
+
+      &lt;section class=&quot;card&quot;&gt;
+        &lt;h2&gt;KB pipeline result&lt;/h2&gt;
+        &lt;pre id=&quot;kbOut&quot;&gt;{}&lt;/pre&gt;
+      &lt;/section&gt;
+    &lt;/div&gt;
+  &lt;/main&gt;
+
+  
+  
+&lt;script&gt;
+(function(){
+  function attachHelpDots(){
+    document.querySelectorAll(&#x27;.field-help, .hint, .option-help, .action-guide&#x27;).forEach(function(help, idx){
+      const text = (help.textContent || &#x27;&#x27;).trim().replace(/\s+/g, &#x27; &#x27;);
+      if (!text) return;
+      help.classList.add(&#x27;collapsed&#x27;);
+      const dot = document.createElement(&#x27;button&#x27;);
+      dot.type = &#x27;button&#x27;;
+      dot.className = &#x27;help-dot&#x27;;
+      dot.textContent = &#x27;?&#x27;;
+      dot.title = text;
+      dot.setAttribute(&#x27;aria-label&#x27;, text);
+      dot.addEventListener(&#x27;click&#x27;, function(e){
+        e.preventDefault();
+        help.classList.toggle(&#x27;collapsed&#x27;);
+        help.classList.toggle(&#x27;help-open&#x27;);
+      });
+      const anchor = help.previousElementSibling;
+      if (anchor &amp;&amp; /^(LABEL|SUMMARY|H3|H4|P)$/i.test(anchor.tagName)) {
+        anchor.appendChild(dot);
+      } else if (help.parentNode) {
+        help.parentNode.insertBefore(dot, help);
+      }
+    });
+  }
+  attachHelpDots();
+  document.querySelectorAll(&#x27;a&#x27;).forEach(function(a){
+    a.addEventListener(&#x27;click&#x27;, function(e){ e.preventDefault(); });
+    a.setAttribute(&#x27;href&#x27;, &#x27;javascript:void(0)&#x27;);
+  });
+  document.querySelectorAll(&#x27;form&#x27;).forEach(function(f){
+    f.addEventListener(&#x27;submit&#x27;, function(e){ e.preventDefault(); });
+  });
+})();
+
+(function(){
+  [&#x27;ragManualBtn&#x27;].forEach(function(id){
+    const node = document.getElementById(id);
+    if (node) node.disabled = true;
+  });
+  document.querySelectorAll(&#x27;button&#x27;).forEach(function(btn){
+    const text = (btn.textContent || &#x27;&#x27;).trim();
+    if ([&#x27;Run selected mode&#x27;, &#x27;Compare all RAG routes&#x27;, &#x27;Refresh RAG status&#x27;, &#x27;Run KB pipeline action&#x27;].includes(text)) {
+      btn.addEventListener(&#x27;click&#x27;, function(e){
+        e.preventDefault();
+        const target = text === &#x27;Run KB pipeline action&#x27; ? document.getElementById(&#x27;kbOut&#x27;) : document.getElementById(&#x27;ragOut&#x27;);
+        if (target) {
+          target.textContent = JSON.stringify({
+            mode: &#x27;static_demo&#x27;,
+            action: text,
+            message: &#x27;Backend execution is disabled. Frontend-only controls remain available.&#x27;
+          }, null, 2);
+        }
+      });
+    }
+  });
+})();
+&lt;/script&gt;&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+      </div>
+    </section>
+      <section id="panel-db" class="panel" style="display:none;">
+      <div class="frame-wrap">
+        <div class="frame-note">Static demo of the runtime page. Visual layout is preserved as closely as possible; backend execution is disabled.</div>
+        <iframe class="demo-frame" title="Experimental Database" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;
+  &lt;title&gt;Experimental Database Workbench&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;./support_workbench.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header class=&quot;workbench-header&quot;&gt;
+    &lt;div class=&quot;workbench-header-row&quot;&gt;
+      &lt;div class=&quot;workbench-copy&quot;&gt;
+        &lt;h1&gt;Experimental Database Workbench&lt;/h1&gt;
+        &lt;p&gt;Manage sample-centered petroleum sample information and analysis data, then build historical-neighbor evidence for training-free property inference.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;header-actions&quot;&gt;
+        &lt;a class=&quot;button-link button-link-primary&quot; href=&quot;javascript:void(0)&quot;&gt;Open sample manager&lt;/a&gt;
+        &lt;button id=&quot;dbManualBtn&quot; class=&quot;manual-button&quot; type=&quot;button&quot;&gt;Experimental Database manual&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div id=&quot;dbManual&quot; class=&quot;modal-backdrop&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;manual-modal&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot; aria-labelledby=&quot;dbManualTitle&quot;&gt;
+      &lt;div class=&quot;manual-head&quot;&gt;&lt;h2 id=&quot;dbManualTitle&quot;&gt;Experimental Database manual&lt;/h2&gt;&lt;button class=&quot;close-button&quot; type=&quot;button&quot; data-manual-close&gt;Close&lt;/button&gt;&lt;/div&gt;
+      &lt;div class=&quot;manual-body&quot;&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;&lt;h3&gt;What this page does&lt;/h3&gt;&lt;p&gt;This workbench manages sample-centered historical experimental records and tests the historical-neighbor evidence workflow used for training-free property inference. It separates persistent database import from transient query evidence testing.&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;&lt;h3&gt;Sample-centered records&lt;/h3&gt;&lt;p&gt;Each imported record is keyed by &lt;code&gt;sample_id&lt;/code&gt; and can retain sample information, bulk properties, analysis rows, relations, artifacts, and provenance. The goal is to keep each historical sample as one traceable database object rather than as scattered files.&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;&lt;h3&gt;Import and storage&lt;/h3&gt;&lt;p&gt;Excel workbooks are the normal import path. Imported content is written into sample records under &lt;code&gt;samples/&lt;/code&gt; and indexed through registry files and &lt;code&gt;catalog/experimental_samples.sqlite&lt;/code&gt; for browsing and search.&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;&lt;h3&gt;Sample Manager&lt;/h3&gt;&lt;p&gt;The separate Sample Manager is the maintenance interface for browsing, filtering, supplementing, and deleting persistent database records. Use this workbench when importing new records or running evidence tests.&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;&lt;h3&gt;Feature extraction path&lt;/h3&gt;&lt;p&gt;The evidence test converts available analysis data into comparable features before neighbor retrieval. Tabular properties can be used directly, while supported GC-FID or IR data follow the embedded featureization path already configured in the current implementation.&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;&lt;h3&gt;Historical-neighbor retrieval&lt;/h3&gt;&lt;p&gt;The evidence test compares the query sample with historical records in a shared feature space and returns the top-k nearest historical samples after weighted ranking. The query workbook remains transient during this process and is not inserted into the database automatically.&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;&lt;h3&gt;Training-free property inference&lt;/h3&gt;&lt;p&gt;No dedicated property regressor is retrained during the test. Retrieved neighbors are summarized into evidence ranges, weighted evidence centers, and supporting sample lists, which can then be interpreted with optional petroleum expert LLM reasoning.&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;&lt;h3&gt;Evidence output&lt;/h3&gt;&lt;p&gt;The returned output is a structured evidence package for inspection, manuscript use, or downstream comparison. It includes the query profile, retrieved neighbors, property summaries, and raw JSON evidence rather than only a single final number.&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;&lt;h3&gt;Template governance&lt;/h3&gt;&lt;p&gt;The active Excel template defines the current import structure. Template update is an advanced governance path for redefining laboratory-specific sheets and fields and should be used only when the database schema itself needs to change.&lt;/p&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;main class=&quot;workbench-main&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;section class=&quot;card&quot;&gt;
+        &lt;h2&gt;Sample database import&lt;/h2&gt;
+        &lt;p class=&quot;action-guide&quot;&gt;Import standardized historical sample workbooks into the Experimental Database. This panel is for persistent database entry rather than transient query testing.&lt;/p&gt;
+        &lt;p&gt;The Excel template is the normal import path. Fill the &lt;code&gt;sample_information&lt;/code&gt; sheet and analysis-data sheets, then upload the workbook.&lt;/p&gt;
+        &lt;a class=&quot;button-link button-link-primary&quot; href=&quot;/support-layer/experimental-db/template&quot;&gt;Download Excel template&lt;/a&gt;
+        &lt;label&gt;Import sample workbook(s)&lt;/label&gt;
+        &lt;p&gt;Select one or more Excel workbooks. If supported by your browser, you can also select a folder containing workbooks.&lt;/p&gt;
+        &lt;div class=&quot;file-picker&quot;&gt;
+          &lt;input id=&quot;dbWorkbook&quot; class=&quot;native-file-input&quot; type=&quot;file&quot; accept=&quot;.xlsx,.xls&quot; multiple&gt;
+          &lt;input id=&quot;dbWorkbookFolder&quot; class=&quot;native-file-input&quot; type=&quot;file&quot; webkitdirectory directory multiple&gt;
+          &lt;button id=&quot;dbWorkbookButton&quot; type=&quot;button&quot;&gt;Choose workbook(s)&lt;/button&gt;
+          &lt;button id=&quot;dbWorkbookFolderButton&quot; type=&quot;button&quot;&gt;Choose folder&lt;/button&gt;
+          &lt;span id=&quot;dbWorkbookName&quot; class=&quot;file-name&quot;&gt;No workbook selected&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;button class=&quot;teal&quot;&gt;Import workbook(s)&lt;/button&gt;
+        &lt;details&gt;
+          &lt;summary&gt;&lt;b&gt;Advanced JSON import&lt;/b&gt; - for API/debug use; manual JSON entry is not required for normal Excel imports.&lt;/summary&gt;
+          &lt;label&gt;Import sample JSON payload&lt;/label&gt;
+          &lt;textarea id=&quot;dbSampleJson&quot;&gt;{
+  &quot;sample_information&quot;: {&quot;sample_id&quot;: &quot;sample_petroleum_fraction_001&quot;, &quot;sample_type&quot;: &quot;petroleum fraction&quot;, &quot;origin&quot;: &quot;pilot&quot;},
+  &quot;bulk_properties&quot;: [{&quot;property_name&quot;: &quot;density_20c&quot;, &quot;value&quot;: 0.912, &quot;unit&quot;: &quot;g_cm-3&quot;}],
+  &quot;analyses&quot;: [{&quot;analysis_type&quot;: &quot;hydrocarbon_types&quot;, &quot;rows&quot;: [{&quot;component&quot;: &quot;paraffins&quot;, &quot;content&quot;: 36.2, &quot;unit&quot;: &quot;wt_percent&quot;}]}]
+}&lt;/textarea&gt;
+          &lt;button&gt;Import JSON&lt;/button&gt;
+        &lt;/details&gt;
+        &lt;details&gt;
+          &lt;summary&gt;&lt;b&gt;Template update&lt;/b&gt; - hidden governance path for replacing the active Experimental Database template with a new lab-defined workbook.&lt;/summary&gt;
+          &lt;p&gt;Upload a revised Excel template to redefine sheet structure for this Experimental Database. The workbench will persist the workbook and regenerate the active template definition used by import parsing.&lt;/p&gt;
+          &lt;div class=&quot;file-picker&quot;&gt;
+            &lt;input id=&quot;dbTemplateWorkbook&quot; class=&quot;native-file-input&quot; type=&quot;file&quot; accept=&quot;.xlsx,.xls&quot;&gt;
+            &lt;button id=&quot;dbTemplateWorkbookButton&quot; type=&quot;button&quot;&gt;Choose template workbook&lt;/button&gt;
+            &lt;span id=&quot;dbTemplateWorkbookName&quot; class=&quot;file-name&quot;&gt;No file selected&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;button class=&quot;orange&quot;&gt;Update active template&lt;/button&gt;
+          &lt;pre id=&quot;dbTemplateOut&quot;&gt;{}&lt;/pre&gt;
+        &lt;/details&gt;
+        &lt;div id=&quot;dbImportStatus&quot; class=&quot;status&quot;&gt;&lt;/div&gt;
+      &lt;/section&gt;
+      &lt;section class=&quot;card&quot; id=&quot;sample-update&quot;&gt;
+        &lt;h2&gt;Imported sample update&lt;/h2&gt;
+        &lt;p class=&quot;action-guide&quot;&gt;Update an already imported database record by supplementing relations, artifacts, or missing analysis information without rebuilding the whole workbook entry.&lt;/p&gt;
+        &lt;p&gt;The workbook import already submits the sample. Use this panel to update or supplement analysis data and append relation or artifact evidence. Use the sample manager for full-list browsing.&lt;/p&gt;
+        &lt;div class=&quot;grid&quot;&gt;
+          &lt;div&gt;&lt;label&gt;Sample id&lt;/label&gt;&lt;input id=&quot;dbInspectSample&quot; placeholder=&quot;petroleum_fraction_db_001&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;action-stack&quot;&gt;
+            &lt;label&gt;Sample manager&lt;/label&gt;
+            &lt;a class=&quot;button-link button-link-primary&quot; href=&quot;javascript:void(0)&quot;&gt;Browse all samples&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;details&gt;
+          &lt;summary&gt;&lt;b&gt;Optional relation supplement&lt;/b&gt; - add a crude/fraction/feedstock relation after import.&lt;/summary&gt;
+          &lt;label&gt;Add sample relation&lt;/label&gt;
+          &lt;p&gt;In the Excel template the same fields are available in &lt;code&gt;sample_information&lt;/code&gt; and can be left blank.&lt;/p&gt;
+          &lt;div class=&quot;grid&quot;&gt;
+            &lt;div&gt;&lt;input id=&quot;dbRelatedSample&quot; placeholder=&quot;related sample id, e.g. crude_001&quot;&gt;&lt;/div&gt;
+            &lt;div&gt;
+              &lt;select id=&quot;dbRelationType&quot;&gt;
+                &lt;option value=&quot;&quot;&gt;Select relation type&lt;/option&gt;
+                &lt;option value=&quot;fraction_of&quot;&gt;fraction_of&lt;/option&gt;
+                &lt;option value=&quot;product_of&quot;&gt;product_of&lt;/option&gt;
+                &lt;option value=&quot;feedstock_of&quot;&gt;feedstock_of&lt;/option&gt;
+                &lt;option value=&quot;has_fraction&quot;&gt;has_fraction&lt;/option&gt;
+                &lt;option value=&quot;derived_from&quot;&gt;derived_from&lt;/option&gt;
+                &lt;option value=&quot;blend_of&quot;&gt;blend_of&lt;/option&gt;
+                &lt;option value=&quot;repeat_of&quot;&gt;repeat_of&lt;/option&gt;
+                &lt;option value=&quot;same_feedstock&quot;&gt;same_feedstock&lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;input id=&quot;dbRelationDescription&quot; placeholder=&quot;optional relation description&quot;&gt;
+          &lt;button&gt;Add relation&lt;/button&gt;
+        &lt;/details&gt;
+        &lt;details&gt;
+          &lt;summary&gt;&lt;b&gt;Optional artifact attachment&lt;/b&gt; - bind an extra raw/processed file to the inspected sample.&lt;/summary&gt;
+          &lt;label&gt;Attach analysis artifact to inspected sample&lt;/label&gt;
+          &lt;p&gt;Use this when the database record should retain a source workbook, raw spectrum, chromatogram, or exported result file.&lt;/p&gt;
+          &lt;div class=&quot;grid&quot;&gt;
+            &lt;div&gt;&lt;input id=&quot;dbArtifactType&quot; placeholder=&quot;analysis type, e.g. gc_fid&quot;&gt;&lt;/div&gt;
+            &lt;div&gt;
+              &lt;div class=&quot;file-picker file-picker-compact&quot;&gt;
+                &lt;input id=&quot;dbArtifactFile&quot; class=&quot;native-file-input&quot; type=&quot;file&quot;&gt;
+                &lt;button id=&quot;dbArtifactButton&quot; type=&quot;button&quot;&gt;Choose artifact&lt;/button&gt;
+                &lt;span id=&quot;dbArtifactName&quot; class=&quot;file-name&quot;&gt;No file selected&lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;button&gt;Attach artifact&lt;/button&gt;
+        &lt;/details&gt;
+        &lt;pre id=&quot;dbSampleOut&quot;&gt;{}&lt;/pre&gt;
+      &lt;/section&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;section class=&quot;card&quot;&gt;
+        &lt;h2&gt;Experimental Database evidence test&lt;/h2&gt;
+        &lt;p class=&quot;action-guide&quot;&gt;Run the historical-neighbor evidence workflow on a transient query workbook. The uploaded query stays outside the historical database unless it is explicitly imported elsewhere.&lt;/p&gt;
+        &lt;p&gt;Upload a new query sample workbook, keep it outside the historical database, and compare its analysis data against historical samples for training-free property inference.&lt;/p&gt;
+        &lt;label&gt;Query sample workbook&lt;/label&gt;
+        &lt;p class=&quot;field-help&quot;&gt;Upload a temporary workbook for evidence testing. This file is compared with historical records but is not inserted into the Experimental Database during the test run.&lt;/p&gt;
+        &lt;div class=&quot;file-picker&quot;&gt;
+          &lt;input id=&quot;dbEvidenceWorkbook&quot; class=&quot;native-file-input&quot; type=&quot;file&quot; accept=&quot;.xlsx,.xls&quot;&gt;
+          &lt;button id=&quot;dbEvidenceWorkbookButton&quot; type=&quot;button&quot;&gt;Choose query workbook&lt;/button&gt;
+          &lt;span id=&quot;dbEvidenceWorkbookName&quot; class=&quot;file-name&quot;&gt;No query workbook selected&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;grid&quot;&gt;
+          &lt;div&gt;
+            &lt;label&gt;Top-k similar historical samples&lt;/label&gt;
+            &lt;p class=&quot;field-help&quot;&gt;Maximum number of nearest historical samples returned after weighted shared-feature ranking. Larger values broaden the evidence range but may introduce weaker neighbors.&lt;/p&gt;
+            &lt;input id=&quot;dbTopK&quot; type=&quot;number&quot; value=&quot;10&quot; min=&quot;1&quot; max=&quot;50&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;label&gt;Property evidence query&lt;/label&gt;
+        &lt;p class=&quot;field-help&quot;&gt;Describe which target properties should be inferred and which analysis channels should be used, so the evidence workflow can build the corresponding query profile.&lt;/p&gt;
+        &lt;textarea id=&quot;dbQuery&quot;&gt;Use IR and GC-FID to infer density, distillation distribution, and saturates for this petroleum fraction sample.&lt;/textarea&gt;
+        &lt;label class=&quot;inline-check&quot;&gt;&lt;input id=&quot;dbUseLlmReasoning&quot; type=&quot;checkbox&quot; checked&gt; Use petroleum expert LLM reasoning&lt;/label&gt;
+        &lt;button class=&quot;teal&quot;&gt;Build database evidence&lt;/button&gt;
+        &lt;button&gt;Refresh database status&lt;/button&gt;
+        &lt;div class=&quot;note&quot;&gt;Top-k means the maximum number of nearest historical samples returned after ranking by weighted shared PCA/PLS latent-feature distance. Property centers are obtained by inverse-distance weighted interpolation over the retrieved neighbors; the petroleum expert LLM must explain how this evidence supports or limits the final conclusion.&lt;/div&gt;
+      &lt;/section&gt;
+      &lt;section class=&quot;card&quot;&gt;
+        &lt;h2&gt;Evidence presentation&lt;/h2&gt;
+        &lt;p class=&quot;action-guide&quot;&gt;Inspect the returned evidence view and raw JSON output for manuscript use, debugging, or downstream comparison with other evidence sources.&lt;/p&gt;
+        &lt;div id=&quot;dbEvidenceView&quot; class=&quot;evidence-view&quot;&gt;&lt;/div&gt;
+        &lt;h3 style=&quot;margin-top:18px;&quot;&gt;Database status / raw evidence JSON&lt;/h3&gt;
+        &lt;pre id=&quot;dbOut&quot;&gt;{}&lt;/pre&gt;
+      &lt;/section&gt;
+    &lt;/div&gt;
+  &lt;/main&gt;
+  
+  
+&lt;script&gt;
+(function(){
+  function attachHelpDots(){
+    document.querySelectorAll(&#x27;.field-help, .hint, .option-help, .action-guide&#x27;).forEach(function(help, idx){
+      const text = (help.textContent || &#x27;&#x27;).trim().replace(/\s+/g, &#x27; &#x27;);
+      if (!text) return;
+      help.classList.add(&#x27;collapsed&#x27;);
+      const dot = document.createElement(&#x27;button&#x27;);
+      dot.type = &#x27;button&#x27;;
+      dot.className = &#x27;help-dot&#x27;;
+      dot.textContent = &#x27;?&#x27;;
+      dot.title = text;
+      dot.setAttribute(&#x27;aria-label&#x27;, text);
+      dot.addEventListener(&#x27;click&#x27;, function(e){
+        e.preventDefault();
+        help.classList.toggle(&#x27;collapsed&#x27;);
+        help.classList.toggle(&#x27;help-open&#x27;);
+      });
+      const anchor = help.previousElementSibling;
+      if (anchor &amp;&amp; /^(LABEL|SUMMARY|H3|H4|P)$/i.test(anchor.tagName)) {
+        anchor.appendChild(dot);
+      } else if (help.parentNode) {
+        help.parentNode.insertBefore(dot, help);
+      }
+    });
+  }
+  attachHelpDots();
+  document.querySelectorAll(&#x27;a&#x27;).forEach(function(a){
+    a.addEventListener(&#x27;click&#x27;, function(e){ e.preventDefault(); });
+    a.setAttribute(&#x27;href&#x27;, &#x27;javascript:void(0)&#x27;);
+  });
+  document.querySelectorAll(&#x27;form&#x27;).forEach(function(f){
+    f.addEventListener(&#x27;submit&#x27;, function(e){ e.preventDefault(); });
+  });
+})();
+
+(function(){
+  [&#x27;dbManualBtn&#x27;].forEach(function(id){
+    const node = document.getElementById(id);
+    if (node) node.disabled = true;
+  });
+  document.querySelectorAll(&#x27;button&#x27;).forEach(function(btn){
+    const text = (btn.textContent || &#x27;&#x27;).trim();
+    if ([&#x27;Import workbook(s)&#x27;, &#x27;Import JSON&#x27;, &#x27;Update active template&#x27;, &#x27;Add relation&#x27;, &#x27;Attach artifact&#x27;, &#x27;Build database evidence&#x27;, &#x27;Refresh database status&#x27;].includes(text)) {
+      btn.addEventListener(&#x27;click&#x27;, function(e){
+        e.preventDefault();
+        const target = document.getElementById(&#x27;dbOut&#x27;) || document.getElementById(&#x27;dbSampleOut&#x27;);
+        if (target) {
+          target.textContent = JSON.stringify({
+            mode: &#x27;static_demo&#x27;,
+            action: text,
+            message: &#x27;Backend execution is disabled. Parameter fields remain editable for interface demonstration.&#x27;
+          }, null, 2);
+        }
+      });
+    }
+  });
+})();
+&lt;/script&gt;&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+      </div>
+    </section>
+      <section id="panel-tool" class="panel" style="display:none;">
+      <div class="frame-wrap">
+        <div class="frame-note">Static demo of the runtime page. Visual layout is preserved as closely as possible; backend execution is disabled.</div>
+        <iframe class="demo-frame" title="Analytical Tool Onboarding" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
+  &lt;title&gt;Analytical Tool Onboarding&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;./support_workbench.css&quot; /&gt;
+  &lt;style&gt;
+    :root {
+      --bg: #f5f7fb;
+      --panel: #ffffff;
+      --ink: #172033;
+      --muted: #64748b;
+      --line: #dbe3ef;
+      --blue: #3268d6;
+      --green: #16825d;
+      --orange: #cc6b12;
+      --purple: #7b3fe4;
+      --danger: #b42318;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+    }
+    header {
+      padding: 28px 36px 16px;
+      background: linear-gradient(135deg, #eef5ff, #fff4e7);
+      border-bottom: 1px solid var(--line);
+    }
+    .header-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    h1 { margin: 0 0 8px; font-size: 30px; }
+    .subtitle { margin: 0; color: var(--muted); max-width: 980px; line-height: 1.5; }
+    .help-button {
+      margin-top: 2px;
+      white-space: nowrap;
+      background: #e8eef8;
+      color: var(--ink);
+      border: 1px solid var(--line);
+    }
+    main {
+      min-height: calc(100vh - 130px);
+      padding: 24px 28px 32px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .section-title {
+      padding: 18px 22px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 18px;
+    }
+    .section-title.step-title {
+      gap: 8px;
+    }
+    .section-title.step-title::before {
+      content: &quot;&quot;;
+      width: 4px;
+      height: 28px;
+      border-radius: 999px;
+      background: var(--orange);
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      background: #e8f0ff;
+      color: var(--blue);
+      font-weight: 800;
+    }
+    .content { padding: 18px 20px 22px; flex: 1; }
+    .config-grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 16px;
+      align-items: stretch;
+      min-height: 100%;
+    }
+    .config-grid .wide {
+      grid-column: 1 / -1;
+    }
+    .config-row-three {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr 1fr;
+      gap: 16px;
+      align-items: stretch;
+    }
+    .config-row-two {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(320px, .85fr);
+      gap: 16px;
+      align-items: stretch;
+    }
+    .hidden-config { display: none; }
+    .identity-panel { grid-column: span 5; }
+    .runtime-panel { grid-column: span 7; }
+    .form-block {
+      margin: 0;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fbfdff;
+      display: flex;
+      flex-direction: column;
+    }
+    .form-block h3 {
+      margin: 0 0 6px;
+      padding-left: 10px;
+      border-left: 4px solid var(--blue);
+      font-size: 17px;
+      color: #173f91;
+    }
+    .form-block p {
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    label { display: block; margin: 14px 0 6px; font-weight: 700; }
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 11px 12px;
+      font: inherit;
+      background: #fbfdff;
+      color: var(--ink);
+    }
+    textarea { min-height: 90px; resize: vertical; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    #description { min-height: 250px; flex: 1; }
+    #adapterConfig { min-height: 210px; }
+    .hint { margin-top: 5px; font-size: 12px; color: var(--muted); line-height: 1.4; }
+    .field-note {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .step-note {
+      margin: 10px 0 12px;
+      padding: 10px 12px;
+      border: 1px solid #dbe7f7;
+      border-radius: 12px;
+      background: #f7fbff;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .step-note b { color: var(--ink); }
+    .input-requirements-panel {
+      margin-top: 12px;
+      padding: 12px;
+      border: 1px solid #dbe7f7;
+      border-radius: 14px;
+      background: #f8fbff;
+    }
+    .input-requirements-panel h4 {
+      margin: 0 0 6px;
+      font-size: 15px;
+      color: #173f91;
+    }
+    .input-requirements-panel textarea {
+      min-height: 76px;
+    }
+    .template-upload-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: end;
+      margin-top: 10px;
+    }
+    .template-upload-row button {
+      margin-top: 0;
+      white-space: nowrap;
+    }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .three-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .action-panel {
+      grid-column: 1 / -1;
+      margin-top: 0;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #f8fbff;
+      display: flex;
+      flex-direction: column;
+    }
+    .action-panel h3 {
+      margin: 0 0 8px;
+      padding-left: 10px;
+      border-left: 4px solid var(--green);
+      font-size: 17px;
+      color: #0f6b4f;
+    }
+    .action-guide {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+      margin: 10px 0 12px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .action-guide b { color: var(--ink); }
+    .advanced-details {
+      display: block;
+    }
+    .advanced-details summary {
+      cursor: pointer;
+      padding-left: 10px;
+      border-left: 4px solid var(--blue);
+      color: #173f91;
+      font-weight: 800;
+      font-size: 17px;
+      list-style: none;
+    }
+    .advanced-details summary::-webkit-details-marker { display: none; }
+    .advanced-details summary small {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .advanced-details .details-body {
+      margin-top: 10px;
+    }
+    .actions { display: flex; flex-wrap: wrap; gap: 8px; }
+    .route-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+      padding: 3px 8px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #f1f5f9;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .route-badge.planner {
+      background: #eef5ff;
+      border-color: #bdd2ff;
+      color: #2252ad;
+    }
+    .route-badge.runtime {
+      background: #ecfdf5;
+      border-color: #bbf7d0;
+      color: #0f6b4f;
+    }
+    button {
+      margin-top: 18px;
+      border: 0;
+      border-radius: 12px;
+      background: var(--blue);
+      color: white;
+      padding: 12px 16px;
+      font-weight: 800;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    .actions button { margin-top: 8px; }
+    button.secondary { background: #e8eef8; color: var(--ink); }
+    button.ghost { background: transparent; color: var(--muted); border: 1px solid var(--line); }
+    button.danger { background: #fff1f0; color: var(--danger); border: 1px solid #ffc9c4; }
+    .button-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      margin-top: 8px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      background: #e8eef8;
+      color: var(--ink);
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .button-link.primary {
+      background: var(--blue);
+      color: #fff;
+    }
+    .hidden { display: none !important; }
+    .preset-callout {
+      margin: 0 0 14px;
+      padding: 14px 16px;
+      border: 1px solid #bfdbfe;
+      border-left: 5px solid var(--blue);
+      border-radius: 14px;
+      background: #eff6ff;
+      color: #1e3a8a;
+      line-height: 1.45;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .locked-panel {
+      opacity: 0.55;
+    }
+    .locked-panel textarea,
+    .locked-panel input,
+    .locked-panel select,
+    .locked-panel button {
+      cursor: not-allowed;
+    }
+    .file-button.disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+    .hidden-file-input {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .file-picker {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-height: 64px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fbfdff;
+    }
+    .file-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      margin: 0;
+      padding: 10px 14px;
+      border-radius: 12px;
+      background: #e8eef8;
+      color: #173e85;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .file-name {
+      color: var(--muted);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    button.help-dot {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      min-width: 22px;
+      margin: 0 0 0 7px;
+      padding: 0;
+      border: 1px solid #c9d7ef;
+      border-radius: 999px;
+      background: #e8f0ff;
+      color: #173e85;
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1;
+      vertical-align: middle;
+    }
+    [data-help-control].collapsed {
+      display: none !important;
+    }
+    [data-help-control].help-open {
+      display: block;
+    }
+    .result-help { margin: 0 0 10px; color: var(--muted); line-height: 1.45; font-size: 13px; }
+    pre {
+      margin: 0;
+      padding: 16px;
+      background: #0f172a;
+      color: #dbeafe;
+      border-radius: 14px;
+      max-height: 520px;
+      overflow: auto;
+      font-size: 12px;
+      line-height: 1.45;
+    }
+    .status {
+      margin-top: 10px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: #ecfdf3;
+      color: var(--green);
+      border: 1px solid #bbf7d0;
+      display: none;
+    }
+    .status.error {
+      display: block;
+      background: #fff1f0;
+      color: var(--danger);
+      border-color: #ffc9c4;
+    }
+    .status.ok { display: block; }
+    .operation-details {
+      display: none;
+      margin-top: 10px;
+      max-height: 180px;
+    }
+    .operation-details.visible { display: block; }
+    .test-section .content { padding-top: 20px; }
+    .test-grid {
+      display: grid;
+      grid-template-columns: minmax(360px, 0.85fr) minmax(420px, 1.15fr);
+      gap: 16px;
+      align-items: stretch;
+    }
+    .test-panel {
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fbfdff;
+    }
+    .test-panel h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+      color: var(--ink);
+    }
+    .test-panel p {
+      margin: 0 0 10px;
+      color: var(--muted);
+      line-height: 1.45;
+      font-size: 13px;
+    }
+    .test-composer-box {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #ffffff;
+      overflow: hidden;
+    }
+    .test-composer-box textarea {
+      min-height: 120px;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+    }
+    .test-composer-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px 12px;
+      border-top: 1px solid var(--line);
+      background: #fbfdff;
+    }
+    .test-composer-actions button,
+    .test-composer-actions .file-button {
+      margin-top: 0;
+    }
+    .test-composer-actions .file-name {
+      max-width: 260px;
+    }
+    .test-send-button {
+      margin-left: auto;
+      min-width: 84px;
+    }
+    .runtime-chat-shell {
+      min-height: 640px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background:
+        radial-gradient(circle at 15% 5%, rgba(50, 104, 214, 0.10), transparent 28%),
+        radial-gradient(circle at 85% 18%, rgba(22, 130, 93, 0.08), transparent 28%),
+        linear-gradient(135deg, #f8fbff, #fbfdfc);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .test-conversation {
+      flex: 1;
+      min-height: 380px;
+      max-height: 620px;
+      overflow: auto;
+      padding: 22px;
+      background: transparent;
+    }
+    .test-message {
+      position: relative;
+      max-width: min(760px, 82%);
+      margin: 22px 0 14px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #ffffff;
+      color: var(--ink);
+      white-space: pre-wrap;
+      line-height: 1.5;
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+    }
+    .test-message::before {
+      content: &quot;PETROANALYST&quot;;
+      position: absolute;
+      top: -20px;
+      left: 4px;
+      color: #94a3b8;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+    }
+    .test-message.user {
+      margin-left: auto;
+      border-color: #2f9279;
+      background: #3c9a82;
+      color: #ffffff;
+    }
+    .test-message.user::before {
+      content: &quot;YOU&quot;;
+      right: 4px;
+      left: auto;
+    }
+    .test-message.system {
+      margin-right: auto;
+      background: #ffffff;
+    }
+    .test-message.error { background: #fff1f0; color: var(--danger); }
+    .rag-citation {
+      display: inline-flex;
+      align-items: center;
+      margin: 0 2px;
+      padding: 2px 7px;
+      border: 1px solid #c9d7ef;
+      border-radius: 999px;
+      background: #eaf1ff;
+      color: #173e85;
+      font: inherit;
+      font-size: 0.9em;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .rag-citation.unavailable {
+      opacity: 0.55;
+      cursor: help;
+    }
+    .conversation-tool-controls {
+      display: none;
+      margin: 0 22px 14px;
+      padding: 14px;
+      border: 1px solid #fed7aa;
+      border-radius: 16px;
+      background: #fff7ed;
+      box-shadow: 0 8px 22px rgba(204, 107, 18, 0.08);
+    }
+    .conversation-tool-controls.visible { display: block; }
+    .conversation-tool-controls label {
+      margin-top: 10px;
+    }
+    .pending-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 8px;
+      font-weight: 800;
+      color: #91440b;
+    }
+    .runtime-composer {
+      border-top: 1px solid var(--line);
+      padding: 14px 16px 16px;
+      background: rgba(255, 255, 255, 0.86);
+      backdrop-filter: blur(8px);
+    }
+    .runtime-composer textarea {
+      min-height: 78px;
+      max-height: 170px;
+      border-radius: 18px;
+      background: #ffffff;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .runtime-composer-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .runtime-mode-pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #eef5ff;
+      color: #2252ad;
+      font-weight: 800;
+      border: 1px solid #bdd2ff;
+    }
+    .runtime-send {
+      min-width: 48px;
+      height: 48px;
+      margin: 0 0 0 auto;
+      padding: 0 18px;
+      border-radius: 999px;
+      background: var(--green);
+      color: #fff;
+      font-size: 17px;
+    }
+    .suggestion-button {
+      margin-top: 10px;
+      background: #e8eef8;
+      color: #173e85;
+    }
+    .runtime-session {
+      display: grid;
+      grid-template-columns: 170px minmax(0, 1fr);
+      gap: 12px;
+      align-items: center;
+      margin: 0 0 12px;
+    }
+    .runtime-session label {
+      margin: 0;
+    }
+    .test-evidence {
+      display: block;
+      max-height: 360px;
+      margin-top: 10px;
+    }
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 20;
+      display: none;
+      align-items: flex-start;
+      justify-content: center;
+      overflow: auto;
+      padding: clamp(12px, 2.5vh, 28px) 28px 28px;
+      background: rgba(15, 23, 42, 0.46);
+    }
+    .modal-backdrop.visible { display: flex; }
+    .manual-modal {
+      width: min(960px, 100%);
+      max-height: calc(100vh - 40px);
+      overflow: auto;
+      border-radius: 18px;
+      background: var(--panel);
+      box-shadow: 0 24px 80px rgba(15, 23, 42, 0.28);
+    }
+    .manual-header {
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 18px 22px;
+      border-bottom: 1px solid var(--line);
+      background: #ffffff;
+    }
+    .manual-header h2 { margin: 0; font-size: 22px; }
+    .manual-body {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      padding: 18px 22px 22px;
+    }
+    .manual-card {
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fbfdff;
+    }
+    .manual-card h3 {
+      margin: 0 0 8px;
+      color: #173f91;
+      font-size: 16px;
+    }
+    .manual-card p,
+    .manual-card li {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .manual-card ul { margin: 8px 0 0; padding-left: 18px; }
+    .close-button {
+      margin: 0;
+      padding: 8px 12px;
+      background: #eef2ff;
+      color: #243b7a;
+      border: 1px solid var(--line);
+    }
+    @media (max-width: 1050px) {
+      main { grid-template-columns: 1fr; padding: 18px; }
+      header { padding: 22px 18px 14px; }
+      .header-row { flex-direction: column; }
+      .help-button { margin-top: 10px; }
+      .config-grid, .config-row-three, .config-row-two { grid-template-columns: 1fr; }
+      .config-grid .wide { grid-column: auto; }
+      .identity-panel, .runtime-panel, .action-panel { grid-column: auto; }
+      .action-guide { grid-template-columns: 1fr; }
+      .test-grid { grid-template-columns: 1fr; }
+      .manual-body { grid-template-columns: 1fr; }
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body data-help-mode=&quot;explicit&quot;&gt;
+  &lt;header class=&quot;workbench-header&quot;&gt;
+    &lt;div class=&quot;header-row workbench-header-row&quot;&gt;
+      &lt;div&gt;
+        &lt;h1&gt;Analytical Tool Onboarding&lt;/h1&gt;
+        &lt;p class=&quot;subtitle&quot;&gt;
+          Package a reviewed analytical data-processing script as a PetroAnalyst capability. The default
+          hydrocarbon-type calculator is a complete onboarding example; advanced schemas are generated
+          from the preset and can be inspected only when needed.
+        &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;button id=&quot;manualBtn&quot; class=&quot;help-button&quot; type=&quot;button&quot;&gt;Analytical Tool Onboarding manual&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div id=&quot;manualModal&quot; class=&quot;modal-backdrop&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;manual-modal&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot; aria-labelledby=&quot;manualTitle&quot;&gt;
+      &lt;div class=&quot;manual-header&quot;&gt;
+        &lt;h2 id=&quot;manualTitle&quot;&gt;Analytical Tool Onboarding manual&lt;/h2&gt;
+        &lt;button id=&quot;manualCloseBtn&quot; class=&quot;close-button&quot; type=&quot;button&quot; data-manual-close&gt;Close&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;manual-body&quot;&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;
+          &lt;h3&gt;What this page does&lt;/h3&gt;
+          &lt;p&gt;This workbench packages a reviewed analytical script, callable function, or service endpoint as a PetroAnalyst capability that can be invoked through the planner workflow. The expected output is structured tool evidence and optional downloadable artifacts.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;
+          &lt;h3&gt;Current page structure&lt;/h3&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;b&gt;Tool identity and example&lt;/b&gt;: choose a preset and define the Planner-visible name and description.&lt;/li&gt;
+            &lt;li&gt;&lt;b&gt;Runtime adapter&lt;/b&gt;: define how the reviewed executable is called and how output is parsed.&lt;/li&gt;
+            &lt;li&gt;&lt;b&gt;Onboarding actions&lt;/b&gt;: prepare, deploy, check, or revoke a provider package.&lt;/li&gt;
+            &lt;li&gt;&lt;b&gt;Runtime test&lt;/b&gt;: send a planner-routed query and uploaded workbook through the current runtime path.&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;
+          &lt;h3&gt;Hydrocarbon-type example&lt;/h3&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;b&gt;Hydrocarbon type composition&lt;/b&gt; is the complete runnable onboarding example in the current release and deploys as &lt;code&gt;tool.hydrocarbon_type_calculator&lt;/code&gt;.&lt;/li&gt;
+            &lt;li&gt;It shows the full route from reviewed script packaging to planner-visible execution and artifact return.&lt;/li&gt;
+            &lt;li&gt;The preset is editable and can be used as a starting point when onboarding a new reviewed analytical tool.&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;
+          &lt;h3&gt;Invocation type&lt;/h3&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;code&gt;python_script&lt;/code&gt;: wraps an existing external &lt;code&gt;.py&lt;/code&gt; file through an adapter.&lt;/li&gt;
+            &lt;li&gt;&lt;code&gt;python_callable&lt;/code&gt;: imports and calls a reviewed internal function, typically under &lt;code&gt;app.tools.*&lt;/code&gt;.&lt;/li&gt;
+            &lt;li&gt;&lt;code&gt;http_api&lt;/code&gt;: calls a reviewed service endpoint.&lt;/li&gt;
+            &lt;li&gt;&lt;code&gt;manual&lt;/code&gt;: registers metadata only and does not execute automatically.&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;
+          &lt;h3&gt;Runtime adapter and config&lt;/h3&gt;
+          &lt;ul&gt;
+            &lt;li&gt;The adapter is the execution bridge between the planner-selected tool and the reviewed executable target.&lt;/li&gt;
+            &lt;li&gt;It maps uploaded inputs, calls the executable, parses the returned result, and formats structured evidence for the runtime.&lt;/li&gt;
+            &lt;li&gt;&lt;code&gt;Adapter config JSON&lt;/code&gt; is an advanced executable contract; routine users normally keep the preset value unless adapting a new tool.&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;
+          &lt;h3&gt;Input template workbook&lt;/h3&gt;
+          &lt;ul&gt;
+            &lt;li&gt;Each provider can carry a runnable input template that matches its expected workbook structure.&lt;/li&gt;
+            &lt;li&gt;After uploading a template, prepare or deploy the provider so the template is copied into the provider package.&lt;/li&gt;
+            &lt;li&gt;The runtime can then expose that template when planner-selected execution requires user input.&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;
+          &lt;h3&gt;Planner-routed runtime test&lt;/h3&gt;
+          &lt;ul&gt;
+            &lt;li&gt;The test conversation first sends a natural-language query to the planner.&lt;/li&gt;
+            &lt;li&gt;If a matching registered tool requires an input workbook, the runtime returns an input request and template link.&lt;/li&gt;
+            &lt;li&gt;Uploading a workbook sends the file through the current execution path and returns structured tool evidence.&lt;/li&gt;
+            &lt;li&gt;A follow-up query can ask the planner to read and interpret that returned evidence.&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;manual-card&quot;&gt;
+          &lt;h3&gt;Safety and review boundary&lt;/h3&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;b&gt;Prepare package&lt;/b&gt; writes the provider package files but does not enable execution.&lt;/li&gt;
+            &lt;li&gt;&lt;b&gt;Deploy to Planner&lt;/b&gt; saves, marks reviewed/enabled, and registers the provider in the current runtime.&lt;/li&gt;
+            &lt;li&gt;&lt;b&gt;Check selected provider&lt;/b&gt; audits package structure and reviewed adapter availability.&lt;/li&gt;
+            &lt;li&gt;&lt;b&gt;Revoke selected provider&lt;/b&gt; disables and unregisters a provider while keeping package files for audit and reuse.&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;main class=&quot;workbench-main&quot;&gt;
+    &lt;section&gt;
+      &lt;div class=&quot;content&quot;&gt;
+        &lt;div class=&quot;config-grid&quot;&gt;
+          &lt;div class=&quot;form-block identity-panel&quot;&gt;
+            &lt;h3&gt;1. Tool identity and example&lt;/h3&gt;
+            &lt;div class=&quot;preset-callout&quot;&gt;Start by selecting an Example preset. Other fields remain empty until a preset is selected, so the page clearly shows which configuration is being used.&lt;/div&gt;
+            &lt;p data-help-control&gt;Use a preset as an editable starting point. The hydrocarbon-type calculator is the complete runnable onboarding example; GC/IR PCA and PLS are example presets for future spectral featureization tools.&lt;/p&gt;
+            &lt;div class=&quot;grid&quot;&gt;
+              &lt;div&gt;
+                &lt;label for=&quot;toolName&quot;&gt;Tool name &lt;span class=&quot;field-note&quot;&gt;(example value)&lt;/span&gt;&lt;/label&gt;
+                &lt;input id=&quot;toolName&quot; value=&quot;&quot; placeholder=&quot;Select an Example preset first&quot; disabled /&gt;
+                &lt;div class=&quot;hint&quot;&gt;Replace this example name when onboarding a new analytical tool.&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div&gt;
+                &lt;label for=&quot;capabilityPreset&quot;&gt;Example preset&lt;/label&gt;
+                &lt;select id=&quot;capabilityPreset&quot;&gt;
+                  &lt;option value=&quot;&quot;&gt;Select an Example preset first&lt;/option&gt;
+                  &lt;option value=&quot;hydrocarbon_type&quot;&gt;Hydrocarbon type composition calculation&lt;/option&gt;
+                  &lt;option value=&quot;gc_ir_pca_featureization&quot;&gt;GC/IR PCA spectral featureization&lt;/option&gt;
+                  &lt;option value=&quot;gc_ir_pls_featureization&quot;&gt;GC/IR PLS target-guided featureization&lt;/option&gt;
+                &lt;/select&gt;
+                &lt;div class=&quot;hint&quot;&gt;This is the required first step. Choose a preset to populate the editable tool configuration.&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;label for=&quot;description&quot;&gt;Functional description &lt;span class=&quot;field-note&quot;&gt;(example text)&lt;/span&gt;&lt;/label&gt;
+            &lt;textarea id=&quot;description&quot; placeholder=&quot;Select an Example preset first&quot; disabled&gt;&lt;/textarea&gt;
+            &lt;div class=&quot;hint&quot;&gt;This description is used by Planner to decide whether the tool matches a user request.&lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div id=&quot;runtimePanel&quot; class=&quot;form-block runtime-panel locked-panel&quot;&gt;
+            &lt;h3&gt;2. Runtime adapter&lt;/h3&gt;
+            &lt;p data-help-control&gt;The adapter is the executable bridge. For this example, PetroAnalyst calls a reviewed hydrocarbon type composition Python function with an uploaded workbook path and an output folder path.&lt;/p&gt;
+            &lt;div class=&quot;step-note&quot;&gt;
+              &lt;b&gt;Runtime call steps:&lt;/b&gt; choose how PetroAnalyst calls the tool, resolve the reviewed script/callable/API, bind the uploaded workbook to the adapter input, execute the function, parse the generated output, and return structured tool evidence plus downloadable artifacts.
+            &lt;/div&gt;
+            &lt;div class=&quot;grid&quot;&gt;
+              &lt;div&gt;
+                &lt;label for=&quot;invocationType&quot;&gt;Invocation type&lt;/label&gt;
+                &lt;select id=&quot;invocationType&quot; disabled&gt;
+                  &lt;option value=&quot;python_script&quot;&gt;python_script&lt;/option&gt;
+                  &lt;option value=&quot;python_callable&quot;&gt;python_callable&lt;/option&gt;
+                  &lt;option value=&quot;http_api&quot;&gt;http_api&lt;/option&gt;
+                  &lt;option value=&quot;manual&quot;&gt;manual&lt;/option&gt;
+                &lt;/select&gt;
+                &lt;div class=&quot;hint&quot; data-help-control&gt;&lt;b&gt;Invocation type&lt;/b&gt; tells PetroAnalyst what kind of executable target is being wrapped. Use &lt;code&gt;python_script&lt;/code&gt; for an external script file, &lt;code&gt;python_callable&lt;/code&gt; for a reviewed function under &lt;code&gt;app.tools.*&lt;/code&gt;, and &lt;code&gt;http_api&lt;/code&gt; only for a reviewed service endpoint.&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div&gt;
+                &lt;label for=&quot;adapterTemplate&quot;&gt;Generic adapter template&lt;/label&gt;
+                &lt;select id=&quot;adapterTemplate&quot; disabled&gt;
+                  &lt;option value=&quot;generic_python_function&quot;&gt;generic_python_function&lt;/option&gt;
+                  &lt;option value=&quot;&quot;&gt;none / standard callable&lt;/option&gt;
+                &lt;/select&gt;
+                &lt;div class=&quot;hint&quot; data-help-control&gt;&lt;b&gt;Generic adapter template&lt;/b&gt; defines the calling convention. The current hydrocarbon example uses &lt;code&gt;generic_python_function&lt;/code&gt;, which loads the script, calls a named function, sends input/output paths, and parses the result file.&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;label for=&quot;entrypoint&quot;&gt;Entrypoint / API URL / script path &lt;span class=&quot;field-note&quot;&gt;(example for selected preset)&lt;/span&gt;&lt;/label&gt;
+            &lt;input id=&quot;entrypoint&quot; value=&quot;&quot; placeholder=&quot;Select an Example preset first&quot; disabled /&gt;
+            &lt;div class=&quot;hint&quot; data-help-control&gt;&lt;b&gt;Entrypoint&lt;/b&gt; is the executable location for the selected example. It is not fixed: replace it with the reviewed script path, internal callable, or API URL for a new tool.&lt;/div&gt;
+            &lt;div class=&quot;template-upload-row&quot;&gt;
+              &lt;div&gt;
+                &lt;label for=&quot;inputTemplateFile&quot;&gt;Input template workbook &lt;span class=&quot;field-note&quot;&gt;(optional, provider-specific)&lt;/span&gt;&lt;/label&gt;
+                &lt;input id=&quot;inputTemplateFile&quot; class=&quot;hidden-file-input&quot; type=&quot;file&quot; accept=&quot;.xlsx,.xls,.csv,.json,.txt&quot; disabled /&gt;
+                &lt;label id=&quot;inputTemplateFileButton&quot; class=&quot;file-button disabled&quot; for=&quot;inputTemplateFile&quot;&gt;Choose input template&lt;/label&gt;
+                &lt;span id=&quot;inputTemplateName&quot; class=&quot;file-name&quot;&gt;No template selected&lt;/span&gt;
+                &lt;div class=&quot;hint&quot; data-help-control&gt;Upload the runnable input template that Planner should offer for this tool. Prepare or deploy the provider after uploading so the template is copied into the provider package.&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;button id=&quot;uploadInputTemplateBtn&quot; class=&quot;secondary&quot; type=&quot;button&quot; disabled&gt;Attach template to provider&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;input-requirements-panel&quot;&gt;
+              &lt;h4&gt;Input requirements&lt;/h4&gt;
+              &lt;div class=&quot;hint&quot; data-help-control&gt;
+                These fields are written into the provider schema and used by Planner when it asks the user what file to upload. Use one sheet per line in the form &lt;code&gt;sheet_name: column_a, column_b&lt;/code&gt;.
+              &lt;/div&gt;
+              &lt;div class=&quot;grid&quot;&gt;
+                &lt;div&gt;
+                  &lt;label for=&quot;inputFileType&quot;&gt;Required file type&lt;/label&gt;
+                  &lt;input id=&quot;inputFileType&quot; placeholder=&quot;.xlsx Excel workbook&quot; disabled /&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                  &lt;label for=&quot;requiredSheetsText&quot;&gt;Required sheets / columns&lt;/label&gt;
+                  &lt;textarea id=&quot;requiredSheetsText&quot; placeholder=&quot;sheet_name: column_a, column_b&quot; disabled&gt;&lt;/textarea&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;label for=&quot;inputNotesText&quot;&gt;Planner input notes&lt;/label&gt;
+              &lt;textarea id=&quot;inputNotesText&quot; placeholder=&quot;One note per line&quot; disabled&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+            &lt;label for=&quot;adapterConfig&quot;&gt;Adapter config JSON &lt;span class=&quot;field-note&quot;&gt;(advanced executable contract)&lt;/span&gt;&lt;/label&gt;
+            &lt;textarea id=&quot;adapterConfig&quot; placeholder=&quot;Select an Example preset first&quot; disabled&gt;&lt;/textarea&gt;
+            &lt;div class=&quot;hint&quot; data-help-control&gt;&lt;b&gt;Adapter config JSON&lt;/b&gt; is consumed by the generic adapter during execution. It defines the function to call, how the uploaded file is passed in, where the output is written, how output rows are parsed, and how labels are normalized into structured evidence. Normal users should keep the preset unless a new tool has a different function signature or output format.&lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;hidden-config&quot; aria-hidden=&quot;true&quot;&gt;
+            &lt;label for=&quot;inputSchema&quot;&gt;Input schema JSON&lt;/label&gt;
+              &lt;textarea id=&quot;inputSchema&quot; disabled&gt;{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;input_file&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;Excel .xlsx workbook. Required sheets: saturate_ms (m/z, Intensity), aromatic_ms (m/z, Intensity), fractions (saturate_wt_percent, aromatic_wt_percent).&quot;
+    },
+    &quot;output_dir&quot;: {
+      &quot;type&quot;: &quot;string&quot;
+    }
+  },
+  &quot;required&quot;: [
+    &quot;input_file&quot;
+  ],
+  &quot;x_petroanalyst_input_requirements&quot;: {
+    &quot;file_type&quot;: &quot;.xlsx Excel workbook&quot;,
+    &quot;required_sheets&quot;: {
+      &quot;saturate_ms&quot;: [&quot;m/z&quot;, &quot;Intensity&quot;],
+      &quot;aromatic_ms&quot;: [&quot;m/z&quot;, &quot;Intensity&quot;],
+      &quot;fractions&quot;: [&quot;saturate_wt_percent&quot;, &quot;aromatic_wt_percent&quot;]
+    },
+    &quot;notes&quot;: [
+      &quot;m/z and Intensity are mass-spectrometric ion/intensity tables for saturated and aromatic fractions.&quot;,
+      &quot;fractions provides the mass percentages used to combine saturated and aromatic results.&quot;,
+      &quot;summary_compare is generated by the tool and is not an input sheet.&quot;
+    ],
+    &quot;input_templates&quot;: [
+      {
+        &quot;label&quot;: &quot;Example input workbook&quot;,
+        &quot;field&quot;: &quot;input_file&quot;,
+        &quot;path&quot;: &quot;templates/input_template.xlsx&quot;,
+        &quot;description&quot;: &quot;Runnable workbook copied from the reviewed hydrocarbon type calculation tool package.&quot;
+      }
+    ]
+  }
+}&lt;/textarea&gt;
+
+            &lt;label for=&quot;outputSchema&quot;&gt;Output schema JSON&lt;/label&gt;
+            &lt;textarea id=&quot;outputSchema&quot; disabled&gt;{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;status&quot;: {
+      &quot;type&quot;: &quot;string&quot;
+    },
+    &quot;tool_evidence&quot;: {
+      &quot;type&quot;: &quot;object&quot;
+    },
+    &quot;artifacts&quot;: {
+      &quot;type&quot;: &quot;object&quot;
+    }
+  },
+  &quot;required&quot;: [
+    &quot;status&quot;,
+    &quot;tool_evidence&quot;
+  ]
+}&lt;/textarea&gt;
+
+            &lt;label for=&quot;evidenceOutputs&quot;&gt;Evidence outputs&lt;/label&gt;
+            &lt;input id=&quot;evidenceOutputs&quot; value=&quot;&quot; disabled /&gt;
+            &lt;div class=&quot;hint&quot;&gt;Comma-separated.&lt;/div&gt;
+
+            &lt;label for=&quot;preconditions&quot;&gt;Preconditions&lt;/label&gt;
+            &lt;input id=&quot;preconditions&quot; value=&quot;&quot; disabled /&gt;
+
+            &lt;label for=&quot;artifacts&quot;&gt;Artifacts produced&lt;/label&gt;
+            &lt;input id=&quot;artifacts&quot; value=&quot;&quot; disabled /&gt;
+
+            &lt;label for=&quot;qualityChecks&quot;&gt;Quality checks&lt;/label&gt;
+            &lt;input id=&quot;qualityChecks&quot; value=&quot;&quot; disabled /&gt;
+
+            &lt;label for=&quot;queries&quot;&gt;Example queries&lt;/label&gt;
+            &lt;textarea id=&quot;queries&quot; disabled&gt;&lt;/textarea&gt;
+
+            &lt;label for=&quot;upstreamCapabilities&quot;&gt;Upstream capabilities&lt;/label&gt;
+            &lt;input id=&quot;upstreamCapabilities&quot; list=&quot;capabilityOptions&quot; value=&quot;&quot; disabled /&gt;
+            &lt;div class=&quot;hint&quot;&gt;Optional. Leave empty for an independent tool.&lt;/div&gt;
+
+            &lt;label for=&quot;downstreamCapabilities&quot;&gt;Downstream capabilities&lt;/label&gt;
+            &lt;input id=&quot;downstreamCapabilities&quot; list=&quot;capabilityOptions&quot; value=&quot;&quot; disabled /&gt;
+            &lt;div class=&quot;hint&quot;&gt;Optional. Leave empty if no downstream tool is required.&lt;/div&gt;
+            &lt;datalist id=&quot;capabilityOptions&quot;&gt;&lt;/datalist&gt;
+
+            &lt;label for=&quot;inputBindings&quot;&gt;Input bindings JSON&lt;/label&gt;
+            &lt;textarea id=&quot;inputBindings&quot; disabled&gt;&lt;/textarea&gt;
+
+            &lt;label for=&quot;outputBindings&quot;&gt;Output bindings JSON&lt;/label&gt;
+            &lt;textarea id=&quot;outputBindings&quot; disabled&gt;&lt;/textarea&gt;
+
+            &lt;label for=&quot;databaseIntegration&quot;&gt;Experimental DB integration contract JSON&lt;/label&gt;
+            &lt;textarea id=&quot;databaseIntegration&quot; disabled&gt;{
+  &quot;enabled&quot;: true,
+  &quot;channel_id&quot;: &quot;hydrocarbon_type&quot;,
+  &quot;record_schema&quot;: &quot;experimental-record.v1&quot;,
+  &quot;feature_schema&quot;: &quot;hydrocarbon-type-features.v1&quot;,
+  &quot;structured_result_path&quot;: &quot;tool_evidence.structured_result&quot;,
+  &quot;feature_extraction_policy&quot;: &quot;flexible_label_value_numeric_intersection&quot;,
+  &quot;sample_id_binding&quot;: &quot;input_file_stem&quot;
+}&lt;/textarea&gt;
+            &lt;div class=&quot;hint&quot;&gt;Optional. Define how current-session tool evidence can be compared with curated Experimental DB records. Runtime tool execution does not ingest new database records.&lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div id=&quot;actionPanel&quot; class=&quot;action-panel wide locked-panel&quot;&gt;
+            &lt;h3&gt;3. Onboarding actions&lt;/h3&gt;
+            &lt;div class=&quot;action-guide&quot; data-help-control&gt;
+              &lt;div&gt;&lt;b&gt;Prepare package&lt;/b&gt; creates the capability metadata, manifest, and evaluation cases. It is not callable yet.&lt;/div&gt;
+              &lt;div&gt;&lt;b&gt;Deploy to Planner&lt;/b&gt; saves, marks reviewed/enabled, and registers this provider as a runtime &lt;code&gt;tool.*&lt;/code&gt; capability.&lt;/div&gt;
+              &lt;div&gt;&lt;b&gt;Check selected provider&lt;/b&gt; checks package structure and reviewed adapter availability; execution is disabled here by default.&lt;/div&gt;
+              &lt;div&gt;&lt;b&gt;Revoke selected provider&lt;/b&gt; disables and unregisters the provider after confirmation; files are kept.&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;label for=&quot;providerSelect&quot;&gt;Saved provider&lt;/label&gt;
+            &lt;select id=&quot;providerSelect&quot; disabled&gt;
+              &lt;option value=&quot;&quot;&gt;Current generated provider or select existing provider&lt;/option&gt;
+            &lt;/select&gt;
+            &lt;div class=&quot;hint&quot; data-help-control&gt;Use this only when checking or revoking a provider that was already saved. For a new tool, generate or deploy first.&lt;/div&gt;
+            &lt;div class=&quot;actions&quot;&gt;
+              &lt;button id=&quot;generateBtn&quot; disabled&gt;Prepare package&lt;/button&gt;
+              &lt;button class=&quot;secondary&quot; id=&quot;deployBtn&quot; type=&quot;button&quot; disabled&gt;Deploy to Planner&lt;/button&gt;
+              &lt;button class=&quot;secondary&quot; id=&quot;evaluateBtn&quot; type=&quot;button&quot; disabled&gt;Check selected provider&lt;/button&gt;
+              &lt;button class=&quot;danger&quot; id=&quot;revokeBtn&quot; type=&quot;button&quot; disabled&gt;Revoke selected provider&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;status&quot; class=&quot;status&quot;&gt;&lt;/div&gt;
+            &lt;pre id=&quot;operationResult&quot; class=&quot;operation-details&quot;&gt;{}&lt;/pre&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;test-section&quot;&gt;
+      &lt;div class=&quot;section-title step-title&quot;&gt;
+        4. Runtime test
+      &lt;/div&gt;
+      &lt;div class=&quot;content&quot;&gt;
+        &lt;div class=&quot;test-grid&quot;&gt;
+          &lt;div class=&quot;test-panel&quot;&gt;
+            &lt;h3&gt;Planner-routed tool test&lt;/h3&gt;
+            &lt;p data-help-control&gt;
+              This test panel keeps the onboarding-specific layout, but execution follows the same
+              frontend routes as PetroAnalyst chat: Planner selects the tool, then the uploaded workbook
+              is sent through the normal upload execution route.
+            &lt;/p&gt;
+            &lt;label for=&quot;testSessionId&quot;&gt;Test session id&lt;/label&gt;
+            &lt;input id=&quot;testSessionId&quot; /&gt;
+            &lt;div class=&quot;hint&quot; data-help-control&gt;
+              Temporary session key for this onboarding test. It keeps the Planner request and uploaded
+              workbook in the same conversation state.
+            &lt;/div&gt;
+            &lt;label for=&quot;testQuery&quot;&gt;Test query&lt;/label&gt;
+            &lt;div class=&quot;test-composer-box&quot;&gt;
+              &lt;textarea id=&quot;testQuery&quot;&gt;Calculate hydrocarbon type composition from the uploaded workbook.&lt;/textarea&gt;
+              &lt;div class=&quot;test-composer-actions&quot;&gt;
+                &lt;label class=&quot;file-button&quot; for=&quot;testWorkbook&quot;&gt;Attach workbook&lt;/label&gt;
+                &lt;span id=&quot;testWorkbookName&quot; class=&quot;file-name&quot;&gt;No file selected&lt;/span&gt;
+                &lt;input id=&quot;testWorkbook&quot; class=&quot;hidden-file-input&quot; type=&quot;file&quot; accept=&quot;.xlsx,.xls,.csv,.json,.txt&quot; /&gt;
+                &lt;button id=&quot;runtimeSendBtn&quot; class=&quot;test-send-button&quot; type=&quot;button&quot;&gt;Send&lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;hint&quot; data-help-control&gt;
+              This built-in query is only a convenience example. After sending, the input is cleared like
+              the normal chat composer.
+            &lt;/div&gt;
+            &lt;div id=&quot;testStatus&quot; class=&quot;status&quot;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;test-panel&quot;&gt;
+            &lt;h3&gt;Test conversation&lt;/h3&gt;
+            &lt;p data-help-control&gt;
+              The messages below show the same conversation states as the frontend route: user request,
+              Planner input request, workbook upload, and returned tool result.
+            &lt;/p&gt;
+            &lt;div id=&quot;testConversation&quot; class=&quot;test-conversation&quot;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;label for=&quot;testEvidence&quot;&gt;Returned JSON&lt;/label&gt;
+        &lt;pre id=&quot;testEvidence&quot; class=&quot;test-evidence&quot;&gt;{}&lt;/pre&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+  &lt;/main&gt;
+
+  &lt;script&gt;
+    let currentPackage = {};
+    let currentProviderId = null;
+    let runtimeTestToolName = &quot;auto&quot;;
+    let runtimeLastQuery = &quot;&quot;;
+    const presetControlledFieldIds = [
+      &quot;toolName&quot;,
+      &quot;description&quot;,
+      &quot;invocationType&quot;,
+      &quot;adapterTemplate&quot;,
+      &quot;entrypoint&quot;,
+      &quot;adapterConfig&quot;,
+      &quot;inputTemplateFile&quot;,
+      &quot;inputFileType&quot;,
+      &quot;requiredSheetsText&quot;,
+      &quot;inputNotesText&quot;,
+      &quot;inputSchema&quot;,
+      &quot;outputSchema&quot;,
+      &quot;evidenceOutputs&quot;,
+      &quot;preconditions&quot;,
+      &quot;artifacts&quot;,
+      &quot;qualityChecks&quot;,
+      &quot;queries&quot;,
+      &quot;upstreamCapabilities&quot;,
+      &quot;downstreamCapabilities&quot;,
+      &quot;inputBindings&quot;,
+      &quot;outputBindings&quot;,
+      &quot;databaseIntegration&quot;,
+      &quot;providerSelect&quot;,
+      &quot;generateBtn&quot;,
+      &quot;deployBtn&quot;,
+      &quot;evaluateBtn&quot;,
+      &quot;revokeBtn&quot;,
+      &quot;uploadInputTemplateBtn&quot;,
+      &quot;testSessionId&quot;,
+      &quot;testQuery&quot;,
+      &quot;testWorkbook&quot;,
+      &quot;runtimeSendBtn&quot;,
+    ];
+
+    function newRuntimeTestSessionId() {
+      const randomPart = window.crypto?.randomUUID ? window.crypto.randomUUID() : `${Date.now()}_${Math.random().toString(16).slice(2)}`;
+      return `tool_onboarding_test_${randomPart}`;
+    }
+
+    function ensureRuntimeTestSessionId() {
+      const input = document.getElementById(&quot;testSessionId&quot;);
+      if (!input.value.trim()) {
+        input.value = newRuntimeTestSessionId();
+      }
+      return input.value.trim();
+    }
+
+    function setRuntimeTestDefaultsForPreset(preset) {
+      const sessionInput = document.getElementById(&quot;testSessionId&quot;);
+      const queryInput = document.getElementById(&quot;testQuery&quot;);
+      if (!sessionInput || !queryInput) return;
+      sessionInput.value = newRuntimeTestSessionId();
+      if (preset === &quot;hydrocarbon_type&quot;) {
+        queryInput.value = &quot;Calculate hydrocarbon type composition from the uploaded workbook.&quot;;
+      } else if (preset === &quot;gc_ir_pca_featureization&quot;) {
+        queryInput.value = &quot;Extract GC-FID and IR PCA features from the uploaded workbook.&quot;;
+      } else if (preset === &quot;gc_ir_pls_featureization&quot;) {
+        queryInput.value = &quot;Extract target-guided GC-FID and IR PLS features from the uploaded workbook.&quot;;
+      } else {
+        queryInput.value = &quot;&quot;;
+      }
+    }
+
+    function listValue(id) {
+      return document.getElementById(id).value
+        .split(/[,\n]/)
+        .map(s =&gt; s.trim())
+        .filter(Boolean);
+    }
+
+    function jsonValue(id) {
+      const value = document.getElementById(id).value.trim();
+      return value ? JSON.parse(value) : {};
+    }
+
+    function parseRequiredSheets(text) {
+      const result = {};
+      String(text || &quot;&quot;).split(/\n/).forEach(line =&gt; {
+        const trimmed = line.trim();
+        if (!trimmed) return;
+        const separatorIndex = trimmed.indexOf(&quot;:&quot;);
+        if (separatorIndex === -1) {
+          result[trimmed] = [];
+          return;
+        }
+        const sheetName = trimmed.slice(0, separatorIndex).trim();
+        const columns = trimmed.slice(separatorIndex + 1)
+          .split(&quot;,&quot;)
+          .map(item =&gt; item.trim())
+          .filter(Boolean);
+        if (sheetName) result[sheetName] = columns;
+      });
+      return result;
+    }
+
+    function formatRequiredSheets(requiredSheets) {
+      return Object.entries(requiredSheets || {})
+        .map(([sheet, columns]) =&gt; {
+          const columnList = Array.isArray(columns) ? columns.join(&quot;, &quot;) : String(columns || &quot;&quot;);
+          return columnList ? `${sheet}: ${columnList}` : sheet;
+        })
+        .join(&quot;\n&quot;);
+    }
+
+    function parseRequirementNotes(text) {
+      return String(text || &quot;&quot;).split(/\n/).map(item =&gt; item.trim()).filter(Boolean);
+    }
+
+    function syncInputRequirementsFromFields() {
+      const schema = jsonValue(&quot;inputSchema&quot;);
+      const requirements = schema.x_petroanalyst_input_requirements || {};
+      const fileType = document.getElementById(&quot;inputFileType&quot;).value.trim();
+      const requiredSheets = parseRequiredSheets(document.getElementById(&quot;requiredSheetsText&quot;).value);
+      const notes = parseRequirementNotes(document.getElementById(&quot;inputNotesText&quot;).value);
+
+      if (fileType) requirements.file_type = fileType;
+      else delete requirements.file_type;
+
+      if (Object.keys(requiredSheets).length) requirements.required_sheets = requiredSheets;
+      else delete requirements.required_sheets;
+
+      if (notes.length) requirements.notes = notes;
+      else delete requirements.notes;
+
+      schema.x_petroanalyst_input_requirements = requirements;
+      document.getElementById(&quot;inputSchema&quot;).value = JSON.stringify(schema, null, 2);
+      return schema;
+    }
+
+    function loadInputRequirementsFromSchema() {
+      const schema = jsonValue(&quot;inputSchema&quot;);
+      const requirements = schema.x_petroanalyst_input_requirements || {};
+      document.getElementById(&quot;inputFileType&quot;).value = requirements.file_type || &quot;&quot;;
+      document.getElementById(&quot;requiredSheetsText&quot;).value = formatRequiredSheets(requirements.required_sheets || {});
+      document.getElementById(&quot;inputNotesText&quot;).value = Array.isArray(requirements.notes) ? requirements.notes.join(&quot;\n&quot;) : &quot;&quot;;
+    }
+
+    function setOnboardingLocked(locked) {
+      presetControlledFieldIds.forEach(id =&gt; {
+        const node = document.getElementById(id);
+        if (node) node.disabled = Boolean(locked);
+      });
+      document.getElementById(&quot;runtimePanel&quot;).classList.toggle(&quot;locked-panel&quot;, locked);
+      document.getElementById(&quot;actionPanel&quot;).classList.toggle(&quot;locked-panel&quot;, locked);
+      document.querySelector(&quot;.test-section&quot;).classList.toggle(&quot;locked-panel&quot;, locked);
+      document.getElementById(&quot;inputTemplateFileButton&quot;).classList.toggle(&quot;disabled&quot;, locked);
+      document.querySelector(&quot;label[for=&#x27;testWorkbook&#x27;]&quot;).classList.toggle(&quot;disabled&quot;, locked);
+      if (locked) {
+        showStatus(&quot;Select an Example preset before configuring or deploying a tool.&quot;, false);
+      } else {
+        showStatus(&quot;Example preset loaded. Review and edit the generated configuration before preparing or deploying.&quot;, true);
+      }
+    }
+
+    function clearOnboardingFields() {
+      currentPackage = {};
+      currentProviderId = null;
+      runtimeTestToolName = &quot;auto&quot;;
+      runtimeLastQuery = &quot;&quot;;
+      [
+        &quot;toolName&quot;,
+        &quot;description&quot;,
+        &quot;entrypoint&quot;,
+        &quot;adapterConfig&quot;,
+        &quot;inputFileType&quot;,
+        &quot;requiredSheetsText&quot;,
+        &quot;inputNotesText&quot;,
+        &quot;inputSchema&quot;,
+        &quot;outputSchema&quot;,
+        &quot;evidenceOutputs&quot;,
+        &quot;preconditions&quot;,
+        &quot;artifacts&quot;,
+        &quot;qualityChecks&quot;,
+        &quot;queries&quot;,
+        &quot;upstreamCapabilities&quot;,
+        &quot;downstreamCapabilities&quot;,
+        &quot;inputBindings&quot;,
+        &quot;outputBindings&quot;,
+        &quot;databaseIntegration&quot;,
+        &quot;testQuery&quot;,
+      ].forEach(id =&gt; {
+        const node = document.getElementById(id);
+        if (node) node.value = &quot;&quot;;
+      });
+      document.getElementById(&quot;invocationType&quot;).value = &quot;python_script&quot;;
+      document.getElementById(&quot;adapterTemplate&quot;).value = &quot;generic_python_function&quot;;
+      document.getElementById(&quot;providerSelect&quot;).value = &quot;&quot;;
+      document.getElementById(&quot;inputTemplateName&quot;).textContent = &quot;No template selected&quot;;
+      document.getElementById(&quot;testWorkbookName&quot;).textContent = &quot;No file selected&quot;;
+      document.getElementById(&quot;inputTemplateFile&quot;).value = &quot;&quot;;
+      document.getElementById(&quot;testWorkbook&quot;).value = &quot;&quot;;
+      document.getElementById(&quot;operationResult&quot;).textContent = &quot;{}&quot;;
+      document.getElementById(&quot;operationResult&quot;).classList.remove(&quot;visible&quot;);
+      document.getElementById(&quot;testEvidence&quot;).textContent = &quot;{}&quot;;
+      document.getElementById(&quot;testConversation&quot;).innerHTML = &quot;&quot;;
+      showTestStatus(&quot;&quot;, true);
+    }
+
+    function showStatus(message, ok = true) {
+      const node = document.getElementById(&quot;status&quot;);
+      if (!message) {
+        node.textContent = &quot;&quot;;
+        node.className = &quot;status&quot;;
+        return;
+      }
+      node.textContent = message;
+      node.className = ok ? &quot;status ok&quot; : &quot;status error&quot;;
+    }
+
+    function showOperation(payload) {
+      const node = document.getElementById(&quot;operationResult&quot;);
+      node.textContent = JSON.stringify(payload || {}, null, 2);
+      node.classList.add(&quot;visible&quot;);
+    }
+
+    function showTestStatus(message, ok = true) {
+      const node = document.getElementById(&quot;testStatus&quot;);
+      if (!message) {
+        node.textContent = &quot;&quot;;
+        node.className = &quot;status&quot;;
+        return;
+      }
+      node.textContent = message;
+      node.className = ok ? &quot;status ok&quot; : &quot;status error&quot;;
+    }
+
+    function setProviderInputTemplates(templates) {
+      const schema = syncInputRequirementsFromFields();
+      const requirements = schema.x_petroanalyst_input_requirements || {};
+      requirements.input_templates = Array.isArray(templates) ? templates : [];
+      schema.x_petroanalyst_input_requirements = requirements;
+      document.getElementById(&quot;inputSchema&quot;).value = JSON.stringify(schema, null, 2);
+      loadInputRequirementsFromSchema();
+    }
+
+    async function uploadInputTemplate() {
+      try {
+        const file = document.getElementById(&quot;inputTemplateFile&quot;).files[0];
+        if (!file) {
+          showStatus(&quot;Choose an input template file first.&quot;, false);
+          return;
+        }
+        const form = new FormData();
+        form.append(&quot;file&quot;, file);
+        const response = await fetch(&quot;/capabilities/tool-onboarding/input-template&quot;, {method: &quot;POST&quot;, body: form});
+        const data = await response.json();
+        if (!response.ok || data.status === &quot;error&quot;) {
+          throw new Error(JSON.stringify(data));
+        }
+        setProviderInputTemplates([
+          {
+            label: &quot;Uploaded input template&quot;,
+            field: &quot;input_file&quot;,
+            path: &quot;templates/input_template.xlsx&quot;,
+            source_path: data.source_path,
+            description: &quot;Input template uploaded from Analytical Tool Onboarding.&quot;
+          }
+        ]);
+        showStatus(`Input template attached: ${data.file_name}. Prepare or deploy the provider to copy it into the package.`, true);
+      } catch (error) {
+        showStatus(String(error.message || error), false);
+      }
+    }
+
+    function escapeHtml(text) {
+      return String(text ?? &quot;&quot;)
+        .replace(/&amp;/g, &quot;&amp;amp;&quot;)
+        .replace(/&lt;/g, &quot;&amp;lt;&quot;)
+        .replace(/&gt;/g, &quot;&amp;gt;&quot;)
+        .replace(/&quot;/g, &quot;&amp;quot;&quot;)
+        .replace(/&#x27;/g, &quot;&amp;#39;&quot;);
+    }
+
+    function firstText(...values) {
+      for (const value of values) {
+        if (value === null || value === undefined) continue;
+        const text = String(value).trim();
+        if (text) return text;
+      }
+      return &quot;&quot;;
+    }
+
+    function asArray(value) {
+      return Array.isArray(value) ? value : [];
+    }
+
+    function normalizeReferenceLabel(label) {
+      const match = String(label || &quot;&quot;).toUpperCase().match(/DOC\s*(\d+)/);
+      return match ? `DOC ${match[1]}` : &quot;&quot;;
+    }
+
+    function citationFromDoc(doc) {
+      if (!doc || typeof doc !== &quot;object&quot;) return {};
+      const citation = doc.citation &amp;&amp; typeof doc.citation === &quot;object&quot; ? doc.citation : {};
+      const metadata = doc.metadata &amp;&amp; typeof doc.metadata === &quot;object&quot; ? doc.metadata : {};
+      return {...metadata, ...citation, ...doc};
+    }
+
+    function chunkText(chunk) {
+      if (!chunk || typeof chunk !== &quot;object&quot;) return &quot;&quot;;
+      return firstText(chunk.text, chunk.content, chunk.chunk_text, chunk.page_content, chunk.snippet);
+    }
+
+    function normalizeEvidenceDoc(doc, index) {
+      if (!doc || typeof doc !== &quot;object&quot;) return null;
+      const citation = citationFromDoc(doc);
+      const source = firstText(citation.source, doc.source, citation.path, doc.path);
+      const chunks = asArray(doc.chunks).length ? asArray(doc.chunks) : (chunkText(doc) ? [doc] : []);
+      return {
+        label: normalizeReferenceLabel(doc.label) || `DOC ${index}`,
+        doc_id: firstText(doc.doc_id, citation.doc_id),
+        title: firstText(citation.title, citation.paper_title, citation.file_name, doc.title, doc.file_name),
+        authors: asArray(citation.authors).length ? citation.authors : asArray(doc.authors),
+        year: firstText(citation.year, doc.year),
+        journal: firstText(citation.journal, doc.journal),
+        doi: firstText(citation.doi, doc.doi),
+        file_name: firstText(citation.file_name, doc.file_name, source ? source.split(/[\\/]/).pop() : &quot;&quot;),
+        source,
+        score: doc.score,
+        chunks,
+      };
+    }
+
+    function docsFromRawResult(rawResult) {
+      if (!rawResult || typeof rawResult !== &quot;object&quot;) return [];
+      const bundleRefs = rawResult.evidence_bundle
+        &amp;&amp; rawResult.evidence_bundle.knowledge_evidence
+        &amp;&amp; Array.isArray(rawResult.evidence_bundle.knowledge_evidence.references)
+        ? rawResult.evidence_bundle.knowledge_evidence.references
+        : [];
+      const bundleDocs = rawResult.evidence_bundle
+        &amp;&amp; rawResult.evidence_bundle.knowledge_evidence
+        &amp;&amp; Array.isArray(rawResult.evidence_bundle.knowledge_evidence.documents)
+        ? rawResult.evidence_bundle.knowledge_evidence.documents
+        : [];
+      const candidates = [
+        rawResult.synthesis_evidences,
+        rawResult.evidences,
+        rawResult.filtered_evidences,
+        rawResult.accumulated_evidences,
+        rawResult.documents,
+        bundleDocs,
+        bundleRefs,
+      ];
+      for (const value of candidates) {
+        if (Array.isArray(value) &amp;&amp; value.length) {
+          return value.map((item, idx) =&gt; normalizeEvidenceDoc(item, idx + 1)).filter(Boolean);
+        }
+      }
+      return [];
+    }
+
+    function renderTestHtml(text) {
+      const escaped = escapeHtml(text || &quot;&quot;);
+      return escaped.replace(/\[DOC\s+(\d+)\]/gi, (_, index) =&gt; {
+        const label = `DOC ${index}`;
+        return `&lt;button type=&quot;button&quot; class=&quot;rag-citation&quot; data-doc-label=&quot;${label}&quot; aria-label=&quot;Open ${label} reference&quot;&gt;[${label}]&lt;/button&gt;`;
+      });
+    }
+
+    function appendReferenceMessage(label, ref) {
+      const authors = asArray(ref &amp;&amp; ref.authors).slice(0, 4).join(&quot;; &quot;);
+      const chunks = asArray(ref &amp;&amp; ref.chunks).slice(0, 2)
+        .map((chunk, idx) =&gt; `Chunk ${idx + 1}: ${chunkText(chunk).slice(0, 600)}`)
+        .filter(Boolean)
+        .join(&quot;\n\n&quot;);
+      const lines = [
+        `${label} reference metadata`,
+        `Title: ${firstText(ref &amp;&amp; ref.title, ref &amp;&amp; ref.file_name, &quot;Not available&quot;)}`,
+        `DOI: ${firstText(ref &amp;&amp; ref.doi, &quot;Not available&quot;)}`,
+        authors ? `Authors: ${authors}` : &quot;&quot;,
+        ref &amp;&amp; ref.year ? `Year: ${ref.year}` : &quot;&quot;,
+        ref &amp;&amp; ref.journal ? `Journal: ${ref.journal}` : &quot;&quot;,
+        ref &amp;&amp; (ref.source || ref.file_name) ? `Source: ${firstText(ref.source, ref.file_name)}` : &quot;&quot;,
+        chunks,
+      ].filter(Boolean);
+      appendTestMessage(&quot;system&quot;, lines.join(&quot;\n&quot;));
+    }
+
+    function attachTestRagReferences(messageNode, rawResult) {
+      const refs = docsFromRawResult(rawResult);
+      const refMap = new Map(refs.map(ref =&gt; [normalizeReferenceLabel(ref &amp;&amp; ref.label), ref]).filter(([label]) =&gt; label));
+      messageNode.querySelectorAll(&quot;.rag-citation&quot;).forEach(button =&gt; {
+        const label = normalizeReferenceLabel(button.dataset.docLabel);
+        const ref = refMap.get(label);
+        button.classList.toggle(&quot;unavailable&quot;, !ref);
+        button.title = ref ? &quot;Show reference metadata and evidence chunks&quot; : &quot;Reference metadata unavailable&quot;;
+        button.onclick = event =&gt; {
+          event.preventDefault();
+          appendReferenceMessage(label, ref || {});
+        };
+      });
+    }
+
+    function appendTestMessage(role, text, rawResult = null) {
+      const box = document.getElementById(&quot;testConversation&quot;);
+      const item = document.createElement(&quot;div&quot;);
+      item.className = `test-message ${role || &quot;system&quot;}`;
+      item.innerHTML = renderTestHtml(text || &quot;&quot;);
+      if (role !== &quot;user&quot;) {
+        attachTestRagReferences(item, rawResult);
+      }
+      box.appendChild(item);
+      box.scrollTop = box.scrollHeight;
+      return item;
+    }
+
+    function attachTestDownloadButtons(messageNode, downloadUrls) {
+      if (!messageNode || !downloadUrls || typeof downloadUrls !== &quot;object&quot;) return;
+      const labels = {
+        template_input_file: &quot;Download example workbook&quot;,
+        output_excel: &quot;Download output workbook&quot;,
+        output_file: &quot;Download output file&quot;,
+        chart_html: &quot;Open chart&quot;,
+      };
+      const entries = Object.entries(downloadUrls).filter(([key, url]) =&gt; url &amp;&amp; labels[key]);
+      if (!entries.length) return;
+      const actions = document.createElement(&quot;div&quot;);
+      actions.className = &quot;actions&quot;;
+      for (const [key, url] of entries) {
+        const link = document.createElement(&quot;a&quot;);
+        link.className = &quot;button-link&quot;;
+        link.href = String(url);
+        link.target = key === &quot;chart_html&quot; ? &quot;_blank&quot; : &quot;_self&quot;;
+        link.rel = &quot;noopener&quot;;
+        link.textContent = labels[key];
+        actions.appendChild(link);
+      }
+      messageNode.appendChild(actions);
+    }
+
+    function showTestEvidence(payload) {
+      document.getElementById(&quot;testEvidence&quot;).textContent = JSON.stringify(payload || {}, null, 2);
+    }
+
+    function renderFrontendRouteResult(stage, data) {
+      const raw = data?.raw_result || data?.result || {};
+      if (data?.session_id) {
+        document.getElementById(&quot;testSessionId&quot;).value = data.session_id;
+      }
+      runtimeTestToolName = raw.tool_name || raw.capability_id || data?.result?.tool_name || runtimeTestToolName || &quot;auto&quot;;
+      const messageNode = appendTestMessage(&quot;system&quot;, `${stage}\n${data?.answer || data?.message || raw.message || &quot;Completed.&quot;}`, data?.raw_result || raw);
+      attachTestDownloadButtons(messageNode, raw.download_urls || data?.result?.download_urls);
+      showTestEvidence(data);
+    }
+
+    async function askPlannerForRuntimeTest() {
+      try {
+        const input = document.getElementById(&quot;testQuery&quot;);
+        const query = input.value.trim();
+        if (!query) {
+          showTestStatus(&quot;Enter a test query first.&quot;, false);
+          return;
+        }
+        const sessionId = ensureRuntimeTestSessionId();
+        runtimeLastQuery = query;
+        appendTestMessage(&quot;user&quot;, query);
+        input.value = &quot;&quot;;
+        const response = await fetch(&quot;/planner/query/stream&quot;, {
+          method: &quot;POST&quot;,
+          headers: {&quot;Content-Type&quot;: &quot;application/json&quot;},
+          body: JSON.stringify({
+            query,
+            task_type: &quot;auto&quot;,
+            template_override: &quot;auto&quot;,
+            rag_mode: &quot;qa_oriented&quot;,
+            session_id: sessionId
+          })
+        });
+        if (!response.ok || !response.body) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder(&quot;utf-8&quot;);
+        let buffer = &quot;&quot;;
+        let streamText = &quot;&quot;;
+        let finalData = null;
+        while (true) {
+          const {value, done} = await reader.read();
+          if (done) break;
+          buffer += decoder.decode(value, {stream: true});
+          const lines = buffer.split(&quot;\n&quot;);
+          buffer = lines.pop() || &quot;&quot;;
+          for (const line of lines) {
+            if (!line.trim()) continue;
+            const event = JSON.parse(line);
+            if (event.type === &quot;meta&quot; &amp;&amp; event.session_id) {
+              document.getElementById(&quot;testSessionId&quot;).value = event.session_id;
+            } else if (event.type === &quot;status&quot;) {
+              showTestStatus(&quot;Executing Planner...&quot;, true);
+            } else if (event.type === &quot;delta&quot;) {
+              streamText += event.content || &quot;&quot;;
+            } else if (event.type === &quot;final&quot;) {
+              finalData = event.data || null;
+            }
+          }
+        }
+        const data = finalData || {answer: streamText, raw_result: null, session_id: sessionId};
+        renderFrontendRouteResult(&quot;Planner response&quot;, data);
+        showTestStatus(&quot;Planner route completed. If a workbook is requested, choose it and send the workbook.&quot;, true);
+      } catch (error) {
+        showTestStatus(String(error.message || error), false);
+        appendTestMessage(&quot;error&quot;, String(error.message || error));
+      }
+    }
+
+    async function uploadAndRunRuntimeToolTest() {
+      try {
+        const file = document.getElementById(&quot;testWorkbook&quot;).files[0];
+        if (!file) {
+          showTestStatus(&quot;Choose a workbook first.&quot;, false);
+          return;
+        }
+        const sessionId = ensureRuntimeTestSessionId();
+        const form = new FormData();
+        form.append(&quot;tool_name&quot;, runtimeTestToolName || &quot;auto&quot;);
+        form.append(&quot;file&quot;, file);
+        form.append(&quot;session_id&quot;, sessionId);
+        form.append(&quot;query&quot;, runtimeLastQuery || &quot;Please process the uploaded workbook.&quot;);
+        form.append(&quot;generate_dashboard&quot;, &quot;false&quot;);
+        form.append(&quot;generate_boiling_point&quot;, &quot;false&quot;);
+        appendTestMessage(&quot;user&quot;, `Uploaded workbook: ${file.name}`);
+        const response = await fetch(&quot;/tools/upload&quot;, {method: &quot;POST&quot;, body: form});
+        const data = await response.json();
+        if (!response.ok) {
+          throw new Error(JSON.stringify(data));
+        }
+        document.getElementById(&quot;testWorkbook&quot;).value = &quot;&quot;;
+        document.getElementById(&quot;testWorkbookName&quot;).textContent = &quot;No file selected&quot;;
+        renderFrontendRouteResult(&quot;Upload route result&quot;, data);
+        showTestStatus(&quot;Workbook was sent through the normal upload execution route.&quot;, data.status !== &quot;error&quot;);
+      } catch (error) {
+        showTestStatus(String(error.message || error), false);
+        appendTestMessage(&quot;error&quot;, String(error.message || error));
+      }
+    }
+
+    async function sendRuntimeTestMessage() {
+      const file = document.getElementById(&quot;testWorkbook&quot;).files[0];
+      if (file) {
+        await uploadAndRunRuntimeToolTest();
+        return;
+      }
+      await askPlannerForRuntimeTest();
+    }
+
+    function selectedProviderId() {
+      const selected = document.getElementById(&quot;providerSelect&quot;).value.trim();
+      return selected || currentProviderId || &quot;&quot;;
+    }
+
+    async function generate() {
+      try {
+        const body = {
+          tool_name: document.getElementById(&quot;toolName&quot;).value,
+          description: document.getElementById(&quot;description&quot;).value,
+          invocation_type: document.getElementById(&quot;invocationType&quot;).value,
+          entrypoint: document.getElementById(&quot;entrypoint&quot;).value || null,
+          input_schema: syncInputRequirementsFromFields(),
+          output_schema: jsonValue(&quot;outputSchema&quot;),
+          evidence_outputs: listValue(&quot;evidenceOutputs&quot;),
+          preconditions: listValue(&quot;preconditions&quot;),
+          artifacts_produced: listValue(&quot;artifacts&quot;),
+          example_queries: listValue(&quot;queries&quot;),
+          quality_checks: listValue(&quot;qualityChecks&quot;),
+          safety_notes: [],
+          upstream_capabilities: listValue(&quot;upstreamCapabilities&quot;),
+          downstream_capabilities: listValue(&quot;downstreamCapabilities&quot;),
+          input_bindings: jsonValue(&quot;inputBindings&quot;),
+          output_bindings: jsonValue(&quot;outputBindings&quot;),
+          database_integration_contract: jsonValue(&quot;databaseIntegration&quot;),
+          adapter_template: document.getElementById(&quot;adapterTemplate&quot;).value || null,
+          adapter_config: jsonValue(&quot;adapterConfig&quot;)
+        };
+        const response = await fetch(&quot;/capabilities/onboard&quot;, {
+          method: &quot;POST&quot;,
+          headers: {&quot;Content-Type&quot;: &quot;application/json&quot;},
+          body: JSON.stringify(body)
+        });
+        const data = await response.json();
+        if (!response.ok) {
+          throw new Error(JSON.stringify(data));
+        }
+        currentPackage = data.package;
+        currentProviderId = null;
+        showStatus(`Package prepared: ${data.package.capability?.capability_id || &quot;generated capability&quot;}`, true);
+        showOperation({stage: &quot;generated&quot;, capability_id: data.package.capability?.capability_id});
+      } catch (error) {
+        showStatus(String(error.message || error), false);
+      }
+    }
+
+    async function saveProvider() {
+      try {
+        if (!currentPackage || !currentPackage.capability) {
+          await generate();
+        }
+        const response = await fetch(&quot;/capabilities/providers/save&quot;, {
+          method: &quot;POST&quot;,
+          headers: {&quot;Content-Type&quot;: &quot;application/json&quot;},
+          body: JSON.stringify({package: currentPackage})
+        });
+        const data = await response.json();
+        if (!response.ok) {
+          throw new Error(JSON.stringify(data));
+        }
+        currentProviderId = data.result.provider_id;
+        document.getElementById(&quot;providerSelect&quot;).value = currentProviderId;
+        showStatus(`Saved provider: ${currentProviderId}`, true);
+        showOperation(data.result);
+        await loadProviderOptions();
+        return data.result;
+      } catch (error) {
+        showStatus(String(error.message || error), false);
+      }
+    }
+
+    async function evaluateProvider() {
+      try {
+        const selectedProviderId = document.getElementById(&quot;providerSelect&quot;).value.trim();
+        if (selectedProviderId) {
+          currentProviderId = selectedProviderId;
+        }
+        if (!currentProviderId) {
+          await saveProvider();
+        }
+        const response = await fetch(`/capabilities/providers/${currentProviderId}/evaluate`, {
+          method: &quot;POST&quot;,
+          headers: {&quot;Content-Type&quot;: &quot;application/json&quot;},
+          body: JSON.stringify({execute: false, sample_payload: {}})
+        });
+        const data = await response.json();
+        if (!response.ok) {
+          throw new Error(JSON.stringify(data));
+        }
+        showStatus(`Evaluation completed for provider: ${currentProviderId}`, true);
+        showOperation(data.result);
+      } catch (error) {
+        showStatus(String(error.message || error), false);
+      }
+    }
+
+    async function markReviewed() {
+      try {
+        if (!currentProviderId) {
+          await saveProvider();
+        }
+        const response = await fetch(`/capabilities/providers/${currentProviderId}/review`, {
+          method: &quot;POST&quot;,
+          headers: {&quot;Content-Type&quot;: &quot;application/json&quot;},
+          body: JSON.stringify({
+            reviewed: true,
+            enabled: true,
+            notes: &quot;Marked reviewed from Analytical Tool Onboarding UI after local adapter/script review.&quot;
+          })
+        });
+        const data = await response.json();
+        if (!response.ok || data.status === &quot;error&quot;) {
+          throw new Error(JSON.stringify(data));
+        }
+        showStatus(`Provider marked reviewed/enabled: ${currentProviderId}`, true);
+        showOperation(data.result);
+        return data.result;
+      } catch (error) {
+        showStatus(String(error.message || error), false);
+      }
+    }
+
+    async function deployProvider() {
+      try {
+        if (!currentProviderId) {
+          await saveProvider();
+        }
+        await markReviewed();
+        const response = await fetch(`/capabilities/providers/${currentProviderId}/register`, {
+          method: &quot;POST&quot;,
+          headers: {&quot;Content-Type&quot;: &quot;application/json&quot;},
+          body: JSON.stringify({})
+        });
+        const data = await response.json();
+        if (!response.ok || data.status === &quot;error&quot;) {
+          throw new Error(JSON.stringify(data));
+        }
+        showStatus(`Provider deployed and registered: ${currentProviderId}`, true);
+        showOperation(data.result);
+        await loadProviderOptions();
+      } catch (error) {
+        showStatus(String(error.message || error), false);
+      }
+    }
+
+    async function revokeProvider() {
+      try {
+        const selectedProviderId = document.getElementById(&quot;providerSelect&quot;).value.trim();
+        if (selectedProviderId) {
+          currentProviderId = selectedProviderId;
+        }
+        if (!currentProviderId) {
+          await loadProviderOptions();
+          showStatus(&quot;Select an existing provider from the provider list before revoking.&quot;, false);
+          return;
+        }
+        const confirmed = window.confirm(
+          `Revoke provider &quot;${currentProviderId}&quot;?\n\nThis disables the provider and unregisters it from the current runtime. Provider files are kept for audit.`
+        );
+        if (!confirmed) {
+          showStatus(&quot;Revoke cancelled by user.&quot;, false);
+          return;
+        }
+        const response = await fetch(`/capabilities/providers/${currentProviderId}/revoke`, {
+          method: &quot;POST&quot;,
+          headers: {&quot;Content-Type&quot;: &quot;application/json&quot;},
+          body: JSON.stringify({
+            confirm: true,
+            reason: &quot;Revoked from Analytical Tool Onboarding UI after user confirmation.&quot;
+          })
+        });
+        const data = await response.json();
+        if (!response.ok || data.status === &quot;error&quot;) {
+          throw new Error(JSON.stringify(data));
+        }
+        showStatus(`Provider revoked: ${currentProviderId}`, true);
+        showOperation(data.result);
+        await loadProviderOptions();
+      } catch (error) {
+        showStatus(String(error.message || error), false);
+      }
+    }
+
+    document.getElementById(&quot;generateBtn&quot;).addEventListener(&quot;click&quot;, generate);
+    document.getElementById(&quot;deployBtn&quot;).addEventListener(&quot;click&quot;, deployProvider);
+    document.getElementById(&quot;evaluateBtn&quot;).addEventListener(&quot;click&quot;, evaluateProvider);
+    document.getElementById(&quot;revokeBtn&quot;).addEventListener(&quot;click&quot;, revokeProvider);
+    document.getElementById(&quot;uploadInputTemplateBtn&quot;).addEventListener(&quot;click&quot;, uploadInputTemplate);
+    document.getElementById(&quot;runtimeSendBtn&quot;).addEventListener(&quot;click&quot;, sendRuntimeTestMessage);
+    document.getElementById(&quot;inputTemplateFile&quot;).addEventListener(&quot;change&quot;, event =&gt; {
+      const file = event.target.files &amp;&amp; event.target.files[0];
+      document.getElementById(&quot;inputTemplateName&quot;).textContent = file ? file.name : &quot;No template selected&quot;;
+    });
+    [&quot;inputFileType&quot;, &quot;requiredSheetsText&quot;, &quot;inputNotesText&quot;].forEach(id =&gt; {
+      document.getElementById(id).addEventListener(&quot;input&quot;, () =&gt; {
+        try {
+          syncInputRequirementsFromFields();
+        } catch (error) {
+          showStatus(`Input requirements could not be synchronized: ${error.message || error}`, false);
+        }
+      });
+    });
+    document.getElementById(&quot;testWorkbook&quot;).addEventListener(&quot;change&quot;, event =&gt; {
+      const file = event.target.files &amp;&amp; event.target.files[0];
+      document.getElementById(&quot;testWorkbookName&quot;).textContent = file ? file.name : &quot;No file selected&quot;;
+    });
+    document.getElementById(&quot;capabilityPreset&quot;).addEventListener(&quot;change&quot;, applyPreset);
+    document.getElementById(&quot;providerSelect&quot;).addEventListener(&quot;change&quot;, event =&gt; {
+      currentProviderId = event.target.value || currentProviderId;
+    });
+    async function loadCapabilityOptions() {
+      try {
+        const response = await fetch(&quot;/capabilities/options&quot;);
+        const data = await response.json();
+        const options = document.getElementById(&quot;capabilityOptions&quot;);
+        options.innerHTML = &quot;&quot;;
+        (data.result.capabilities || []).forEach(item =&gt; {
+          if (!item.capability_id) return;
+          const option = document.createElement(&quot;option&quot;);
+          option.value = item.capability_id;
+          option.label = `${item.source || &quot;&quot;} ${item.description || &quot;&quot;}`;
+          options.appendChild(option);
+        });
+      } catch (_) {
+        // Suggestions are optional; onboarding still works without this endpoint.
+      }
+    }
+
+    async function loadProviderOptions() {
+      try {
+        const response = await fetch(&quot;/capabilities/providers&quot;);
+        const data = await response.json();
+        const select = document.getElementById(&quot;providerSelect&quot;);
+        const selected = currentProviderId || select.value;
+        select.innerHTML = &quot;&quot;;
+        const placeholder = document.createElement(&quot;option&quot;);
+        placeholder.value = &quot;&quot;;
+        placeholder.textContent = &quot;Current generated provider or select existing provider&quot;;
+        select.appendChild(placeholder);
+        (data.result.providers || []).forEach(item =&gt; {
+          if (!item.provider_id) return;
+          const option = document.createElement(&quot;option&quot;);
+          option.value = item.provider_id;
+          const review = item.review || {};
+          const state = review.enabled ? &quot;enabled&quot; : &quot;disabled&quot;;
+          option.textContent = `${item.provider_id} (${item.capability_id || &quot;no capability&quot;}; ${state})`;
+          select.appendChild(option);
+        });
+        if (selected) {
+          select.value = selected;
+        }
+      } catch (_) {
+        // Provider list is optional during early setup.
+      }
+    }
+
+    function applyPreset() {
+      const preset = document.getElementById(&quot;capabilityPreset&quot;).value;
+      if (!preset) {
+        clearOnboardingFields();
+        setOnboardingLocked(true);
+        return;
+      }
+      setOnboardingLocked(false);
+      setRuntimeTestDefaultsForPreset(preset);
+      currentPackage = {};
+      currentProviderId = null;
+      document.getElementById(&quot;providerSelect&quot;).value = &quot;&quot;;
+      document.getElementById(&quot;inputTemplateFile&quot;).value = &quot;&quot;;
+      document.getElementById(&quot;inputTemplateName&quot;).textContent = &quot;No template selected&quot;;
+      if (preset === &quot;gc_ir_pca_featureization&quot;) {
+        document.getElementById(&quot;toolName&quot;).value = &quot;Example: GC/IR PCA Featureization Tool&quot;;
+        document.getElementById(&quot;invocationType&quot;).value = &quot;python_callable&quot;;
+        document.getElementById(&quot;adapterTemplate&quot;).value = &quot;&quot;;
+        document.getElementById(&quot;entrypoint&quot;).value = &quot;app.tools.experimental_db.petroleum_fraction_spectral_feature_tool:extract_pca_features&quot;;
+        document.getElementById(&quot;description&quot;).value = &quot;Example analytical evidence tool that maps GC-FID and IR spectra to PCA latent features for Experimental DB evidence retrieval.&quot;;
+        document.getElementById(&quot;inputSchema&quot;).value = JSON.stringify({
+          type: &quot;object&quot;,
+          properties: {
+            input_file: {type: &quot;string&quot;, description: &quot;Excel workbook containing GC-FID and/or IR spectra for a query sample.&quot;},
+            output_dir: {type: &quot;string&quot;}
+          },
+          required: [&quot;input_file&quot;],
+          x_petroanalyst_input_requirements: {
+            file_type: &quot;.xlsx Excel workbook&quot;,
+            required_sheets: {
+              gc_fid: [&quot;Time&quot;, &quot;Intensity&quot;],
+              ir_spectrum: [&quot;wavenumber&quot;, &quot;transmittance&quot;]
+            },
+            notes: [
+              &quot;This is an onboarding example for a future Planner-callable PCA featureization tool.&quot;,
+              &quot;The current Experimental DB evidence path still calls the petroleum fraction featureization module internally.&quot;
+            ],
+            input_templates: []
+          }
+        }, null, 2);
+        document.getElementById(&quot;outputSchema&quot;).value = JSON.stringify({
+          type: &quot;object&quot;,
+          properties: {
+            status: {type: &quot;string&quot;},
+            tool_evidence: {type: &quot;object&quot;},
+            artifacts: {type: &quot;object&quot;}
+          },
+          required: [&quot;status&quot;, &quot;tool_evidence&quot;]
+        }, null, 2);
+        document.getElementById(&quot;adapterConfig&quot;).value = JSON.stringify({
+          callable_path: &quot;app.tools.experimental_db.petroleum_fraction_spectral_feature_tool:extract_pca_features&quot;,
+          input_field: &quot;input_file&quot;,
+          output_artifact_key: &quot;feature_json&quot;,
+          evidence: {
+            schema_version: &quot;spectral-featureization.v1&quot;,
+            evidence_type: &quot;gc_ir_pca_latent_features&quot;,
+            method: &quot;PCA featureization&quot;
+          }
+        }, null, 2);
+        document.getElementById(&quot;evidenceOutputs&quot;).value = &quot;tool_evidence, artifacts&quot;;
+        document.getElementById(&quot;preconditions&quot;).value = &quot;input_workbook_available, reviewed_internal_callable_available&quot;;
+        document.getElementById(&quot;artifacts&quot;).value = &quot;pca_feature_json&quot;;
+        document.getElementById(&quot;qualityChecks&quot;).value = &quot;status_success, feature_vector_present, feature_schema_present&quot;;
+        document.getElementById(&quot;queries&quot;).value = &quot;Extract GC-FID and IR PCA features from the uploaded workbook.&quot;;
+        document.getElementById(&quot;upstreamCapabilities&quot;).value = &quot;&quot;;
+        document.getElementById(&quot;downstreamCapabilities&quot;).value = &quot;experimental_db_evidence&quot;;
+        document.getElementById(&quot;inputBindings&quot;).value = JSON.stringify({input_file: &quot;uploaded_artifact.path&quot;}, null, 2);
+        document.getElementById(&quot;outputBindings&quot;).value = JSON.stringify({
+          &quot;tool_evidence.feature_vector&quot;: &quot;Evidence Bundle.tool_evidence.gc_ir_pca_features&quot;,
+          &quot;artifacts.feature_json&quot;: &quot;Evidence Bundle.tool_evidence.artifacts.feature_json&quot;
+        }, null, 2);
+        loadInputRequirementsFromSchema();
+        return;
+      }
+      if (preset === &quot;gc_ir_pls_featureization&quot;) {
+        document.getElementById(&quot;toolName&quot;).value = &quot;Example: GC/IR PLS Featureization Tool&quot;;
+        document.getElementById(&quot;invocationType&quot;).value = &quot;python_callable&quot;;
+        document.getElementById(&quot;adapterTemplate&quot;).value = &quot;&quot;;
+        document.getElementById(&quot;entrypoint&quot;).value = &quot;app.tools.experimental_db.petroleum_fraction_spectral_feature_tool:extract_pls_features&quot;;
+        document.getElementById(&quot;description&quot;).value = &quot;Example analytical evidence tool that projects GC-FID and IR spectra to target-guided PLS latent features for property-specific Experimental DB retrieval.&quot;;
+        document.getElementById(&quot;inputSchema&quot;).value = JSON.stringify({
+          type: &quot;object&quot;,
+          properties: {
+            input_file: {type: &quot;string&quot;, description: &quot;Excel workbook containing GC-FID and/or IR spectra for a query sample.&quot;},
+            target_properties: {type: &quot;array&quot;, items: {type: &quot;string&quot;}, description: &quot;Target properties used to select prebuilt PLS feature models.&quot;},
+            output_dir: {type: &quot;string&quot;}
+          },
+          required: [&quot;input_file&quot;],
+          x_petroanalyst_input_requirements: {
+            file_type: &quot;.xlsx Excel workbook&quot;,
+            required_sheets: {
+              gc_fid: [&quot;Time&quot;, &quot;Intensity&quot;],
+              ir_spectrum: [&quot;wavenumber&quot;, &quot;transmittance&quot;]
+            },
+            notes: [
+              &quot;This is an onboarding example for a future Planner-callable PLS featureization tool.&quot;,
+              &quot;PLS uses prebuilt target-specific models; no model is fitted during online inference.&quot;
+            ],
+            input_templates: []
+          }
+        }, null, 2);
+        document.getElementById(&quot;outputSchema&quot;).value = JSON.stringify({
+          type: &quot;object&quot;,
+          properties: {
+            status: {type: &quot;string&quot;},
+            tool_evidence: {type: &quot;object&quot;},
+            artifacts: {type: &quot;object&quot;}
+          },
+          required: [&quot;status&quot;, &quot;tool_evidence&quot;]
+        }, null, 2);
+        document.getElementById(&quot;adapterConfig&quot;).value = JSON.stringify({
+          callable_path: &quot;app.tools.experimental_db.petroleum_fraction_spectral_feature_tool:extract_pls_features&quot;,
+          input_field: &quot;input_file&quot;,
+          target_field: &quot;target_properties&quot;,
+          output_artifact_key: &quot;feature_json&quot;,
+          evidence: {
+            schema_version: &quot;spectral-featureization.v1&quot;,
+            evidence_type: &quot;gc_ir_pls_latent_features&quot;,
+            method: &quot;PLS featureization&quot;
+          }
+        }, null, 2);
+        document.getElementById(&quot;evidenceOutputs&quot;).value = &quot;tool_evidence, artifacts&quot;;
+        document.getElementById(&quot;preconditions&quot;).value = &quot;input_workbook_available, reviewed_internal_callable_available, prebuilt_pls_models_available&quot;;
+        document.getElementById(&quot;artifacts&quot;).value = &quot;pls_feature_json&quot;;
+        document.getElementById(&quot;qualityChecks&quot;).value = &quot;status_success, feature_vector_present, target_model_trace_present&quot;;
+        document.getElementById(&quot;queries&quot;).value = &quot;Extract target-guided GC-FID and IR PLS features from the uploaded workbook.&quot;;
+        document.getElementById(&quot;upstreamCapabilities&quot;).value = &quot;&quot;;
+        document.getElementById(&quot;downstreamCapabilities&quot;).value = &quot;experimental_db_evidence&quot;;
+        document.getElementById(&quot;inputBindings&quot;).value = JSON.stringify({input_file: &quot;uploaded_artifact.path&quot;}, null, 2);
+        document.getElementById(&quot;outputBindings&quot;).value = JSON.stringify({
+          &quot;tool_evidence.feature_vector&quot;: &quot;Evidence Bundle.tool_evidence.gc_ir_pls_features&quot;,
+          &quot;artifacts.feature_json&quot;: &quot;Evidence Bundle.tool_evidence.artifacts.feature_json&quot;
+        }, null, 2);
+        loadInputRequirementsFromSchema();
+        return;
+      }
+      document.getElementById(&quot;toolName&quot;).value = &quot;Hydrocarbon Type Calculator&quot;;
+      document.getElementById(&quot;invocationType&quot;).value = &quot;python_script&quot;;
+      document.getElementById(&quot;adapterTemplate&quot;).value = &quot;generic_python_function&quot;;
+      document.getElementById(&quot;entrypoint&quot;).value = &quot;app/capabilities/providers/hydrocarbon_type_calculator/sht0606_official_full.py&quot;;
+      document.getElementById(&quot;description&quot;).value = &quot;Calculate hydrocarbon type composition from saturated/aromatic MS tables and fraction mass percentages.&quot;;
+      document.getElementById(&quot;inputSchema&quot;).value = JSON.stringify({
+        type: &quot;object&quot;,
+        properties: {
+          input_file: {type: &quot;string&quot;, description: &quot;Excel .xlsx workbook. Required sheets: saturate_ms (m/z, Intensity), aromatic_ms (m/z, Intensity), fractions (saturate_wt_percent, aromatic_wt_percent).&quot;},
+          output_dir: {type: &quot;string&quot;}
+        },
+        required: [&quot;input_file&quot;],
+        x_petroanalyst_input_requirements: {
+          file_type: &quot;.xlsx Excel workbook&quot;,
+          required_sheets: {
+            saturate_ms: [&quot;m/z&quot;, &quot;Intensity&quot;],
+            aromatic_ms: [&quot;m/z&quot;, &quot;Intensity&quot;],
+            fractions: [&quot;saturate_wt_percent&quot;, &quot;aromatic_wt_percent&quot;]
+          },
+          notes: [
+            &quot;m/z and Intensity are mass-spectrometric ion/intensity tables for saturated and aromatic fractions.&quot;,
+            &quot;fractions provides the mass percentages used to combine saturated and aromatic results.&quot;,
+            &quot;summary_compare is generated by the tool and is not an input sheet.&quot;
+          ],
+          input_templates: [
+            {
+              label: &quot;Example input workbook&quot;,
+              field: &quot;input_file&quot;,
+              path: &quot;templates/input_template.xlsx&quot;,
+              description: &quot;Runnable workbook copied from the reviewed hydrocarbon type calculation tool package.&quot;
+            }
+          ]
+        }
+      }, null, 2);
+      document.getElementById(&quot;outputSchema&quot;).value = JSON.stringify({
+        type: &quot;object&quot;,
+        properties: {
+          status: {type: &quot;string&quot;},
+          tool_evidence: {type: &quot;object&quot;},
+          artifacts: {type: &quot;object&quot;}
+        },
+        required: [&quot;status&quot;, &quot;tool_evidence&quot;]
+      }, null, 2);
+      document.getElementById(&quot;adapterConfig&quot;).value = JSON.stringify({
+        script_path: &quot;app/capabilities/providers/hydrocarbon_type_calculator/sht0606_official_full.py&quot;,
+        function_name: &quot;calculate_file&quot;,
+        call_style: &quot;input_output_paths&quot;,
+        input_field: &quot;input_file&quot;,
+        output_artifact_key: &quot;output_excel&quot;,
+        output_suffix: &quot;.xlsx&quot;,
+        output_filename_template: &quot;{input_stem}_hydrocarbon_type_{run_id}{suffix}&quot;,
+        output_parser: {
+          type: &quot;excel_sheet_records&quot;,
+          sheet_name: &quot;summary_compare&quot;
+        },
+        record_value_mapping_name: &quot;hydrocarbon_type_en&quot;,
+        evidence: {
+          schema_version: &quot;hydrocarbon-type.v1&quot;,
+          evidence_type: &quot;hydrocarbon_group_composition&quot;,
+          method: &quot;hydrocarbon type composition&quot;
+        }
+      }, null, 2);
+      document.getElementById(&quot;evidenceOutputs&quot;).value = &quot;tool_evidence, artifacts&quot;;
+      document.getElementById(&quot;preconditions&quot;).value = &quot;input_workbook_available, reviewed_external_script_available&quot;;
+      document.getElementById(&quot;artifacts&quot;).value = &quot;hydrocarbon_type_result_excel&quot;;
+      document.getElementById(&quot;qualityChecks&quot;).value = &quot;status_success, structured_result_present, output_excel_present&quot;;
+      document.getElementById(&quot;queries&quot;).value = &quot;Calculate hydrocarbon type composition from the uploaded workbook.&quot;;
+      document.getElementById(&quot;upstreamCapabilities&quot;).value = &quot;&quot;;
+      document.getElementById(&quot;downstreamCapabilities&quot;).value = &quot;&quot;;
+      document.getElementById(&quot;inputBindings&quot;).value = JSON.stringify({input_file: &quot;uploaded_artifact.path&quot;}, null, 2);
+      document.getElementById(&quot;outputBindings&quot;).value = JSON.stringify({
+        &quot;tool_evidence.structured_result&quot;: &quot;Evidence Bundle.tool_evidence.hydrocarbon_group_composition&quot;,
+        &quot;artifacts.output_excel&quot;: &quot;Evidence Bundle.tool_evidence.artifacts.output_excel&quot;
+      }, null, 2);
+      loadInputRequirementsFromSchema();
+    }
+
+    loadCapabilityOptions();
+    loadProviderOptions();
+    clearOnboardingFields();
+    setOnboardingLocked(true);
+  &lt;/script&gt;
+  
+  
+&lt;script&gt;
+(function(){
+  function attachHelpDots(){
+    document.querySelectorAll(&#x27;.field-help, .hint, .option-help, .action-guide&#x27;).forEach(function(help, idx){
+      const text = (help.textContent || &#x27;&#x27;).trim().replace(/\s+/g, &#x27; &#x27;);
+      if (!text) return;
+      help.classList.add(&#x27;collapsed&#x27;);
+      const dot = document.createElement(&#x27;button&#x27;);
+      dot.type = &#x27;button&#x27;;
+      dot.className = &#x27;help-dot&#x27;;
+      dot.textContent = &#x27;?&#x27;;
+      dot.title = text;
+      dot.setAttribute(&#x27;aria-label&#x27;, text);
+      dot.addEventListener(&#x27;click&#x27;, function(e){
+        e.preventDefault();
+        help.classList.toggle(&#x27;collapsed&#x27;);
+        help.classList.toggle(&#x27;help-open&#x27;);
+      });
+      const anchor = help.previousElementSibling;
+      if (anchor &amp;&amp; /^(LABEL|SUMMARY|H3|H4|P)$/i.test(anchor.tagName)) {
+        anchor.appendChild(dot);
+      } else if (help.parentNode) {
+        help.parentNode.insertBefore(dot, help);
+      }
+    });
+  }
+  attachHelpDots();
+  document.querySelectorAll(&#x27;a&#x27;).forEach(function(a){
+    a.addEventListener(&#x27;click&#x27;, function(e){ e.preventDefault(); });
+    a.setAttribute(&#x27;href&#x27;, &#x27;javascript:void(0)&#x27;);
+  });
+  document.querySelectorAll(&#x27;form&#x27;).forEach(function(f){
+    f.addEventListener(&#x27;submit&#x27;, function(e){ e.preventDefault(); });
+  });
+})();
+
+(function(){
+  [&#x27;manualBtn&#x27;, &#x27;generateBtn&#x27;, &#x27;deployBtn&#x27;, &#x27;evaluateBtn&#x27;, &#x27;revokeBtn&#x27;, &#x27;uploadInputTemplateBtn&#x27;, &#x27;runtimeSendBtn&#x27;].forEach(function(id){
+    const node = document.getElementById(id);
+    if (node) node.disabled = true;
+  });
+})();
+&lt;/script&gt;&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+      </div>
+    </section>
+    </main>
+  </div>
+  <script>
+    (function() {
+      const buttons = document.querySelectorAll('.demo-tabs button');
+      const panels = document.querySelectorAll('.panel');
+      function openPanel(name) {
+        buttons.forEach(btn => btn.classList.toggle('active', btn.dataset.panel === name));
+        panels.forEach(panel => panel.style.display = panel.id === 'panel-' + name ? 'block' : 'none');
+      }
+      buttons.forEach(btn => btn.addEventListener('click', () => openPanel(btn.dataset.panel)));
+    })();
+  </script>
+</body>
+</html>

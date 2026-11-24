@@ -1,0 +1,15 @@
+sample_id,raw_sample_id,split,workbook,channels,feature_count,property_count
+petroleum_fraction_db_007,petroleum_fraction_07,test,demo_workbooks/petroleum_fraction_db_007__petroleum_fraction_07.xlsx,"bulk_properties, gc_fid, gc_ncd, gc_scd, hydrocarbon_types, ir",84,33
+petroleum_fraction_db_013,petroleum_fraction_16,test,demo_workbooks/petroleum_fraction_db_013__petroleum_fraction_16.xlsx,"bulk_properties, gc_fid, gc_ncd, gc_scd, hydrocarbon_types, ir",84,33
+petroleum_fraction_db_001,petroleum_fraction_01,train,demo_workbooks/petroleum_fraction_db_001__petroleum_fraction_01.xlsx,"bulk_properties, gc_fid, gc_ncd, gc_scd, hydrocarbon_types, ir",84,33
+petroleum_fraction_db_002,petroleum_fraction_02,train,demo_workbooks/petroleum_fraction_db_002__petroleum_fraction_02.xlsx,"bulk_properties, gc_fid, gc_ncd, gc_scd, hydrocarbon_types, ir",84,33
+petroleum_fraction_db_003,petroleum_fraction_03,train,demo_workbooks/petroleum_fraction_db_003__petroleum_fraction_03.xlsx,"bulk_properties, gc_fid, gc_ncd, gc_scd, hydrocarbon_types, ir",84,33
+petroleum_fraction_db_004,petroleum_fraction_04,train,demo_workbooks/petroleum_fraction_db_004__petroleum_fraction_04.xlsx,"bulk_properties, gc_fid, gc_ncd, gc_scd, hydrocarbon_types, ir",84,33
+petroleum_fraction_db_005,petroleum_fraction_05,train,demo_workbooks/petroleum_fraction_db_005__petroleum_fraction_05.xlsx,"bulk_properties, gc_fid, gc_ncd, gc_scd, hydrocarbon_types, ir",84,33
+petroleum_fraction_db_006,petroleum_fraction_06,train,demo_workbooks/petroleum_fraction_db_006__petroleum_fraction_06.xlsx,"bulk_properties, gc_fid, gc_ncd, gc_scd, hydrocarbon_types, ir",84,33
+petroleum_fraction_db_008,petroleum_fraction_09,train,demo_workbooks/petroleum_fraction_db_008__petroleum_fraction_09.xlsx,"bulk_properties, gc_fid, gc_ncd, gc_scd, hydrocarbon_types, ir",84,33
+petroleum_fraction_db_009,petroleum_fraction_11,train,demo_workbooks/petroleum_fraction_db_009__petroleum_fraction_11.xlsx,"bulk_properties, gc_fid, gc_ncd, gc_scd, hydrocarbon_types, ir",84,33
+petroleum_fraction_db_010,petroleum_fraction_13,train,demo_workbooks/petroleum_fraction_db_010__petroleum_fraction_13.xlsx,"bulk_properties, gc_fid, gc_ncd, gc_scd, hydrocarbon_types, ir",84,33
+petroleum_fraction_db_011,petroleum_fraction_14,train,demo_workbooks/petroleum_fraction_db_011__petroleum_fraction_14.xlsx,"bulk_properties, gc_fid, gc_ncd, gc_scd, hydrocarbon_types, ir",84,33
+petroleum_fraction_db_012,petroleum_fraction_15,train,demo_workbooks/petroleum_fraction_db_012__petroleum_fraction_15.xlsx,"bulk_properties, gc_fid, gc_ncd, gc_scd, hydrocarbon_types, ir",84,33
+petroleum_fraction_db_014,petroleum_fraction_17,train,demo_workbooks/petroleum_fraction_db_014__petroleum_fraction_17.xlsx,"bulk_properties, gc_fid, gc_ncd, gc_scd, hydrocarbon_types",76,33

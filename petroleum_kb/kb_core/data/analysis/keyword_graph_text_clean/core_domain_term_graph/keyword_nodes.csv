@@ -1,0 +1,23 @@
+﻿id,label,score,doc_freq,group,color
+naphthenic acids,naphthenic acids,8628.2549,118,acids,#ef4444
+diesel fuel,diesel fuel,6132.1336,87,feedstocks,#14b8a6
+vacuum residue,vacuum residue,5842.4391,81,ionization,#3b82f6
+catalytic cracking,catalytic cracking,5381.8567,115,process,#10b981
+fluid catalytic cracking,fluid catalytic cracking,3453.2702,72,process,#10b981
+laser desorption ionization,laser desorption ionization,3430.6469,97,ionization,#3b82f6
+desorption ionization,desorption ionization,2985.7788,116,ionization,#3b82f6
+field ionization,field ionization,2868.1975,87,ionization,#3b82f6
+field desorption ionization,field desorption ionization,2753.6119,70,ionization,#3b82f6
+matrix-assisted laser desorption ionization,matrix-assisted laser desorption ionization,2392.2344,56,ionization,#3b82f6
+aromatic rings,aromatic rings,1454.8214,110,other,#64748b
+carboxylic acids,carboxylic acids,1366.564,83,acids,#ef4444
+formic acid,formic acid,1275.7222,73,acids,#ef4444
+negative-ion electrospray ionization,negative-ion electrospray ionization,1224.8024,34,ionization,#3b82f6
+desorption electrospray ionization ionization,desorption electrospray ionization ionization,1022.7808,28,ionization,#3b82f6
+acetic acid,acetic acid,1016.9569,57,acids,#ef4444
+field desorption ionization ionization,field desorption ionization ionization,1011.5796,24,ionization,#3b82f6
+desorption electrospray ionization,desorption electrospray ionization,951.3329,29,ionization,#3b82f6
+aromatic acids,aromatic acids,948.9957,27,acids,#ef4444
+negative electrospray ionization,negative electrospray ionization,929.5646,20,ionization,#3b82f6
+thermal cracking,thermal cracking,890.3523,36,process,#10b981
+positive-ion electrospray ionization,positive-ion electrospray ionization,886.1041,23,ionization,#3b82f6
