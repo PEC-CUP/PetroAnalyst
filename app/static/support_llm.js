@@ -42,10 +42,12 @@ function setPromptEditor(state) {
 
 function fillConfig(config) {
   byId("llmDeepseekBaseUrl").value = config.deepseek.base_url || "";
+  byId("llmDeepseekKey").value = "";
   byId("llmDeepseekTrustEnv").checked = Boolean(config.deepseek.trust_env);
   byId("llmDeepseekChatModel").value = config.deepseek.chat_model || "";
   byId("llmDeepseekReasonerModel").value = config.deepseek.reasoner_model || "";
   byId("llmOpenaiBaseUrl").value = config.openai_expert.base_url || "";
+  byId("llmOpenaiKey").value = "";
   byId("llmOpenaiModel").value = config.openai_expert.model || "";
   byId("llmOpenaiStrongModel").value = config.openai_expert.strong_model || "";
   byId("llmTimeout").value = config.timeout_seconds || "";
@@ -69,7 +71,7 @@ function panelHtml(title) {
         </div>
         <div>
           <label>DeepSeek API key</label>
-          <input id="llmDeepseekKey" type="password" autocomplete="off" placeholder="leave blank to keep current key">
+          <input id="llmDeepseekKey" type="password" autocomplete="new-password" data-lpignore="true" data-1p-ignore="true" placeholder="leave blank to keep current key">
         </div>
         <div>
           <label>DeepSeek chat model</label>
@@ -85,7 +87,7 @@ function panelHtml(title) {
         </div>
         <div>
           <label>OpenAI expert API key</label>
-          <input id="llmOpenaiKey" type="password" autocomplete="off" placeholder="leave blank to keep current key">
+          <input id="llmOpenaiKey" type="password" autocomplete="new-password" data-lpignore="true" data-1p-ignore="true" placeholder="leave blank to keep current key">
         </div>
         <div>
           <label>OpenAI default model</label>

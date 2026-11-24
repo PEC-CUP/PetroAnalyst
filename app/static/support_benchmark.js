@@ -124,7 +124,7 @@ window.startKbConstruction = async function startKbConstruction() {
 };
 
 window.showChooseFolderHint = function showChooseFolderHint() {
-  window.alert(`Choose folder can only fill a usable path when the browser exposes a native file path. If the browser returns only a folder label, paste the absolute directory path manually, for example F:\\0.??\\test.`);
+  window.alert(`Choose folder can only fill a usable path when the browser exposes a native file path. If the browser returns only a folder label, paste the full directory path of your PDF folder manually.`);
 };
 
 window.showBuildGroupHint = function showBuildGroupHint() {
@@ -384,7 +384,7 @@ window.usePickedPdfDirectory = function usePickedPdfDirectory(event) {
   if (!pdfDir.value && folder) {
     pdfDir.value = folder;
   }
-  show("generationStatus", "Browser folder picker only provided a folder name. Paste the absolute folder path, e.g. F:/petroagnet_test, before generation.");
+  show("generationStatus", "Browser folder picker only provided a folder name. Paste the full folder path of your PDF corpus before generation.");
 };
 
 window.syncSourceMode = function syncSourceMode() {

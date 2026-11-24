@@ -73,7 +73,6 @@ def masked_runtime_config() -> dict[str, Any]:
             "cheap_model": settings.openai_cheap_model,
         },
         "timeout_seconds": settings.llm_timeout_seconds,
-        "env_file": str(ENV_PATH),
     }
 
 
